@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Heritage Portfolio — DS Construction Limited</title>
+<meta name="author" content="Gideon B. Abochie, Gabochie Design">
+<meta name="description" content="Elite private Heritage Portfolio sample for DS Construction Limited. Brand-led layout with image placeholders.">
+<style>
+  @font-face { font-family: "Playfair"; src: url(file:///public/dscons/internal/fonts/PlayfairDisplay.ttf); }
+  @font-face { font-family: "Playfair"; src: url(file:///public/dscons/internal/fonts/PlayfairDisplay-Italic.ttf); font-style: italic; }
+  @font-face { font-family: "Marcellus"; src: url(file:///public/dscons/internal/fonts/Marcellus-Regular.ttf); }
+
+  /* ---------- DS Construction brand system ---------- */
+  /* Gold #dca62c · deep gold #b78b2a · charcoal #11161c / #171b21 · ivory #f7f4ec */
+  @page {
+    size: A4;
+    margin: 25mm 19mm 21mm 19mm;
+    @top-left {
+      content: "DS CONSTRUCTION LIMITED";
+      font-family: "Arial"; font-size: 7.2pt; letter-spacing: 2.6pt;
+      color: #b78b2a; vertical-align: bottom; padding-bottom: 4mm;
+    }
+    @top-right {
+      content: "HERITAGE PORTFOLIO · 2026";
+      font-family: "Arial"; font-size: 7.2pt; letter-spacing: 2.4pt;
+      color: #8c9198; vertical-align: bottom; padding-bottom: 4mm;
+    }
+    @bottom-left {
+      content: "Private & Confidential · Sample Edition";
+      font-family: "Arial"; font-size: 6.8pt; letter-spacing: 1.4pt; color: #9aa0a0;
+    }
+    @bottom-right {
+      content: counter(page) " / " counter(pages);
+      font-family: "Arial"; font-size: 6.8pt; letter-spacing: 1pt; color: #9aa0a0;
+    }
+  }
+  @page dark {
+    size: A4; margin: 0; background: #0d1218;
+    @top-left { content: none; } @top-right { content: none; }
+    @bottom-left { content: none; } @bottom-right { content: none; }
+  }
+  @page cover {
+    size: A4; margin: 0;
+    @top-left { content: none; } @top-right { content: none; }
+    @bottom-left { content: none; } @bottom-right { content: none; }
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    font-family: "Arial", "Helvetica", sans-serif;
+    font-size: 9.6pt; line-height: 1.68; color: #2b3138; background: #fff;
+  }
+  p { margin: 0 0 9pt; }
+  strong { color: #11161c; font-weight: 700; }
+  em { font-style: italic; }
+  .gold { color: #b78b2a; }
+  .sec { break-before: page; }
+  .nobreak { break-inside: avoid; }
+
+  /* ---------- shared typographic furniture ---------- */
+  .label {
+    font-family: "Marcellus", serif; font-size: 7.8pt; letter-spacing: 3.2pt;
+    text-transform: uppercase; color: #b78b2a; margin-bottom: 7pt;
+  }
+  h2 {
+    font-family: "Marcellus", serif; font-weight: 400; font-size: 21pt;
+    letter-spacing: .4pt; line-height: 1.18; color: #11161c; margin: 0 0 10pt;
+  }
+  .thin { color: #858b91; }
+  .rule { border: 0; border-top: 1.1pt solid #11161c; width: 24mm; margin: 0 0 15pt; }
+  .lead { font-size: 11pt; line-height: 1.62; color: #3e464e; margin-bottom: 14pt; }
+  .small { font-size: 8.2pt; line-height: 1.6; color: #737a80; }
+  .note {
+    margin-top: 12pt; padding: 8pt 11pt; background: #f7f4ec;
+    border-left: 2pt solid #dca62c; font-size: 8.2pt; line-height: 1.58; color: #6a6354;
+  }
+
+  /* ---------- DS lockup ---------- */
+  .lockup { display: flex; align-items: center; gap: 9pt; }
+  .ds-mark {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 12mm; height: 12mm; border: 1.1pt solid #dca62c; color: #dca62c;
+    font-family: "Arial"; font-size: 9pt; font-weight: 700; letter-spacing: .4pt;
+    transform: skew(-8deg);
+  }
+  .ds-words { line-height: 1.18; }
+  .ds-words strong {
+    display: block; font-size: 8.4pt; letter-spacing: 1.6pt; color: #11161c;
+  }
+  .ds-words small {
+    display: block; margin-top: 1.4pt; font-size: 6.2pt; letter-spacing: 1.8pt;
+    text-transform: uppercase; color: #b78b2a;
+  }
+  .lockup.on-dark .ds-words strong { color: #f4efe2; }
+  .lockup.on-dark .ds-words small { color: #dca62c; }
+
+  /* ---------- plates / image placeholders ---------- */
+  .plate {
+    position: relative; border: 0.6pt solid rgba(183,139,42,.6);
+    background:
+      repeating-linear-gradient(0deg, rgba(183,139,42,.13) 0, rgba(183,139,42,.13) .35pt, transparent .35pt, transparent 11mm),
+      repeating-linear-gradient(90deg, rgba(183,139,42,.13) 0, rgba(183,139,42,.13) .35pt, transparent .35pt, transparent 11mm),
+      linear-gradient(135deg, #f6f2e8 0%, #ece5d5 100%);
+    display: flex; align-items: center; justify-content: center; text-align: center;
+    padding: 8mm;
+  }
+  .plate .ph {
+    font-family: "Marcellus", serif; font-size: 7.4pt; letter-spacing: 2.6pt;
+    text-transform: uppercase; color: #a4813a;
+  }
+  .plate .ph-desc {
+    margin-top: 3pt; font-family: "Playfair", serif; font-style: italic;
+    font-size: 9pt; line-height: 1.45; color: #746b59;
+  }
+  .plate .ph-size {
+    margin-top: 4pt; font-size: 6.4pt; letter-spacing: 1.5pt; color: #a79d87;
+    text-transform: uppercase;
+  }
+  .plate.dark {
+    border-color: rgba(220,166,44,.5);
+    background:
+      repeating-linear-gradient(0deg, rgba(220,166,44,.12) 0, rgba(220,166,44,.12) .35pt, transparent .35pt, transparent 11mm),
+      repeating-linear-gradient(90deg, rgba(220,166,44,.12) 0, rgba(220,166,44,.12) .35pt, transparent .35pt, transparent 11mm),
+      linear-gradient(135deg, #151b22 0%, #0d1218 100%);
+  }
+  .plate.dark .ph { color: #dca62c; }
+  .plate.dark .ph-desc { color: #b9b09c; }
+  .plate.dark .ph-size { color: #8c826e; }
+  .plate .monogram-wm {
+    position: absolute; right: 5mm; bottom: 4mm; font-family: "Arial";
+    font-size: 6.4pt; letter-spacing: 2pt; color: rgba(183,139,42,.65);
+  }
+
+  /* ---------- cover ---------- */
+  .cover {
+    page: cover; position: relative; width: 210mm; height: 297mm; overflow: hidden;
+    background:
+      radial-gradient(120mm 90mm at 88% 8%, rgba(220,166,44,.16), transparent 70%),
+      radial-gradient(140mm 120mm at 8% 96%, rgba(183,139,42,.10), transparent 70%),
+      linear-gradient(160deg, #0a0f14 0%, #121922 55%, #0a0f14 100%);
+    color: #f4efe2;
+  }
+  .cover-lines {
+    position: absolute; inset: 0;
+    background:
+      repeating-linear-gradient(90deg, rgba(220,166,44,.075) 0, rgba(220,166,44,.075) .35pt, transparent .35pt, transparent 22mm),
+      repeating-linear-gradient(0deg, rgba(220,166,44,.055) 0, rgba(220,166,44,.055) .35pt, transparent .35pt, transparent 22mm);
+  }
+  .cover-frame {
+    position: absolute; top: 10mm; left: 10mm; right: 10mm; bottom: 10mm;
+    border: 0.7pt solid rgba(220,166,44,.5);
+  }
+  .cover-inner { position: absolute; inset: 10mm; padding: 17mm 17mm 14mm; }
+  .cover-top { display: flex; align-items: flex-start; justify-content: space-between; }
+  .cover-top .edition {
+    font-size: 6.8pt; letter-spacing: 3pt; text-transform: uppercase; color: #9b927e; text-align: right;
+  }
+  .cover-center { margin-top: 30mm; }
+  .cover-kicker {
+    font-family: "Marcellus", serif; font-size: 8pt; letter-spacing: 5pt;
+    text-transform: uppercase; color: #dca62c;
+  }
+  .cover h1 {
+    margin: 9mm 0 0; font-family: "Playfair", serif; font-weight: 700;
+    font-size: 52pt; line-height: .96; letter-spacing: -1pt; color: #f7f2e5;
+  }
+  .cover h1 .script {
+    display: block; margin-top: 3mm; font-family: "Marcellus", serif; font-weight: 400;
+    font-size: 20pt; line-height: 1.2; letter-spacing: 9pt; color: #dca62c;
+  }
+  .cover-rule { width: 34mm; border: 0; border-top: 1pt solid #dca62c; margin: 10mm 0 8mm; }
+  .cover-sub {
+    font-family: "Playfair", serif; font-style: italic; font-size: 14pt; line-height: 1.5; color: #e4dcc7;
+  }
+  .cover-sub2 {
+    margin-top: 5mm; font-size: 8.4pt; letter-spacing: 2pt; text-transform: uppercase; color: #a9a18d;
+  }
+  .cover-plate { position: absolute; left: 17mm; right: 17mm; bottom: 30mm; height: 92mm; }
+  .cover-foot {
+    position: absolute; left: 17mm; right: 17mm; bottom: 14mm;
+    display: flex; justify-content: space-between; align-items: flex-end;
+    font-size: 6.6pt; letter-spacing: 2.4pt; text-transform: uppercase; color: #8e8777;
+  }
+
+  /* ---------- inside cover ---------- */
+  .inside-cover { break-after: page; }
+  .inside-top { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 10mm; }
+  .inside-top .private {
+    font-family: "Marcellus", serif; font-size: 7.4pt; letter-spacing: 3pt;
+    text-transform: uppercase; color: #b78b2a;
+  }
+  .inside-cover h2 { font-size: 23pt; }
+  .positioning {
+    margin: 9pt 0 12pt; padding: 11pt 14pt; background: #11161c; color: #ece6d7;
+    border-left: 3pt solid #dca62c; font-family: "Playfair", serif;
+    font-size: 11.6pt; line-height: 1.58;
+  }
+  .positioning .pl {
+    display: block; margin-bottom: 5pt; font-family: "Arial"; font-style: normal;
+    font-size: 6.8pt; letter-spacing: 2.6pt; text-transform: uppercase; color: #dca62c;
+  }
+  table.meta-table { width: 100%; border-collapse: collapse; margin: 4pt 0 10pt; }
+  table.meta-table td { padding: 4.6pt 0; border-bottom: 0.6pt solid #e7e1d4; vertical-align: top; }
+  table.meta-table td.k {
+    width: 34mm; font-size: 6.9pt; font-weight: 700; letter-spacing: 1.7pt;
+    text-transform: uppercase; color: #b78b2a;
+  }
+  table.meta-table td.v { font-size: 8.8pt; color: #3e464e; }
+  .contents {
+    margin-top: 2pt; padding-top: 8pt; border-top: 1pt solid #11161c;
+  }
+  .contents .ct {
+    font-family: "Marcellus", serif; font-size: 8pt; letter-spacing: 3pt;
+    text-transform: uppercase; color: #b78b2a; margin-bottom: 7pt;
+  }
+  table.toc { width: 100%; border-collapse: collapse; }
+  table.toc td { padding: 2.8pt 0; vertical-align: top; }
+  table.toc td.n {
+    width: 9mm; font-family: "Playfair", serif; font-weight: 700;
+    font-size: 10pt; color: #b78b2a;
+  }
+  table.toc td.t { font-size: 8.9pt; color: #3e464e; }
+  table.toc td.p { width: 12mm; text-align: right; font-size: 8pt; color: #8b9198; }
+
+  /* ---------- statement ---------- */
+  .statement-grid { width: 100%; border-collapse: collapse; margin-top: 6pt; }
+  .statement-grid td { vertical-align: top; }
+  .statement-grid td.q { width: 58%; padding-right: 9mm; }
+  .statement-grid td.portrait { width: 42%; }
+  .bigquote {
+    position: relative; font-family: "Playfair", serif; font-size: 15.4pt;
+    line-height: 1.55; color: #232a31;
+  }
+  .bigquote::before {
+    content: "\201C"; display: block; font-family: "Playfair", serif;
+    font-size: 56pt; line-height: .55; color: #dca62c; margin-bottom: 2mm;
+  }
+  .bigquote strong { color: #0d1218; }
+  .attrib {
+    margin-top: 6mm; font-size: 8.6pt; line-height: 1.6; color: #5c636a;
+  }
+  .attrib b { color: #11161c; }
+
+  /* ---------- stats ---------- */
+  table.stats { width: 100%; border-collapse: collapse; margin: 4pt 0 14pt; }
+  table.stats td {
+    width: 25%; vertical-align: top; padding: 11pt 8pt 10pt;
+    border-top: 1.4pt solid #dca62c; border-left: 0.6pt solid #e5dfd1;
+  }
+  table.stats td:first-child { border-left: 0; }
+  .stat-num { font-family: "Playfair", serif; font-weight: 700; font-size: 23pt; line-height: 1; color: #11161c; }
+  .stat-unit { margin-top: 3pt; font-size: 6.7pt; letter-spacing: 2.2pt; text-transform: uppercase; color: #b78b2a; }
+  .stat-cap { margin-top: 5pt; font-size: 7.8pt; line-height: 1.5; color: #6f767d; }
+
+  /* ---------- data tables ---------- */
+  .table-wrap { width: 100%; }
+  table.data { width: 100%; border-collapse: collapse; font-size: 8.6pt; line-height: 1.5; }
+  table.data th {
+    background: #11161c; color: #f4efe2; font-family: "Marcellus", serif;
+    font-weight: 400; font-size: 8.3pt; letter-spacing: 1pt; text-align: left;
+    padding: 7pt 9pt; border: 0.6pt solid #11161c;
+  }
+  table.data td { padding: 6.6pt 9pt; border: 0.6pt solid #e5dfd1; vertical-align: top; }
+  table.data tr:nth-child(even) td { background: #faf8f2; }
+  table.data td.lbl {
+    width: 34mm; background: #f3eee2; color: #5f5745;
+    font-size: 7pt; font-weight: 700; letter-spacing: 1.1pt; text-transform: uppercase;
+  }
+  table.data td.lbl-gold { background: #f7f0dc; color: #8a6a20; }
+  table.data td.num { width: 9mm; font-family: "Playfair", serif; font-weight: 700; color: #b78b2a; }
+
+  /* ---------- logos strip ---------- */
+  table.logos { width: 100%; border-collapse: separate; border-spacing: 3mm 0; margin: 6pt 0 0; }
+  table.logos td { width: 20%; vertical-align: top; text-align: center; }
+  .logo-box {
+    height: 13mm; border: 0.6pt solid #e0d9c9; background: #faf8f2;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 6pt; letter-spacing: 1.5pt; color: #b3a98f; text-transform: uppercase;
+  }
+  .logo-name { margin-top: 4pt; font-size: 7.4pt; line-height: 1.35; color: #5b6268; }
+
+  /* ---------- two-column layouts ---------- */
+  table.cols { width: 100%; border-collapse: collapse; }
+  table.cols td { vertical-align: top; }
+  table.cols td.left { width: 56%; padding-right: 7mm; }
+  table.cols td.right { width: 44%; }
+  .stack > * + * { margin-top: 6mm; }
+
+  /* ---------- case study intro pages ---------- */
+  .dark-page {
+    page: dark; break-before: page; break-after: page;
+    width: 210mm; height: 297mm; position: relative; overflow: hidden;
+    background:
+      radial-gradient(120mm 100mm at 92% 4%, rgba(220,166,44,.14), transparent 72%),
+      linear-gradient(165deg, #0b1015 0%, #121a22 55%, #0b1015 100%);
+    color: #f4efe2;
+  }
+  .dark-frame {
+    position: absolute; top: 12mm; left: 12mm; right: 12mm; bottom: 12mm;
+    border: 0.6pt solid rgba(220,166,44,.42);
+  }
+  .dark-inner { position: absolute; inset: 12mm; padding: 15mm 16mm 12mm; }
+  .dark-top { display: flex; align-items: flex-start; justify-content: space-between; }
+  .dark-top .cs-label {
+    font-size: 6.8pt; letter-spacing: 3.2pt; text-transform: uppercase; color: #9a907a;
+  }
+  .cs-head { margin-top: 12mm; }
+  .cs-head .num {
+    font-family: "Playfair", serif; font-weight: 700; font-size: 54pt;
+    line-height: .8; color: #dca62c;
+  }
+  .cs-head .sector {
+    margin-top: 4mm; font-family: "Marcellus", serif; font-size: 8pt;
+    letter-spacing: 4pt; text-transform: uppercase; color: #dca62c;
+  }
+  .cs-head h1 {
+    margin: 4mm 0 0; font-family: "Playfair", serif; font-weight: 700;
+    font-size: 28pt; line-height: 1.1; color: #f7f2e5;
+  }
+  .cs-head h1 .ph-name { color: #bdb5a2; font-weight: 400; font-style: italic; }
+  .cs-head .loc { margin-top: 3mm; font-size: 8.2pt; letter-spacing: 1.4pt; color: #a79d88; text-transform: uppercase; }
+  .cs-plate { position: absolute; left: 16mm; right: 16mm; bottom: 24mm; height: 120mm; }
+  .dark-foot {
+    position: absolute; left: 16mm; right: 16mm; bottom: 13mm;
+    display: flex; justify-content: space-between;
+    font-size: 6.5pt; letter-spacing: 2.2pt; text-transform: uppercase; color: #8a806b;
+  }
+
+  /* ---------- pull quote / outcome ---------- */
+  .pullquote {
+    margin: 9pt 0 0; padding: 10pt 0 10pt 13pt; border-left: 2.4pt solid #dca62c;
+    font-family: "Playfair", serif; font-style: italic; font-size: 10.6pt; line-height: 1.6; color: #3d454c;
+  }
+  .pullquote .who { display: block; margin-top: 4pt; font-family: "Arial"; font-style: normal; font-size: 7.4pt; letter-spacing: 1.2pt; color: #8b9198; text-transform: uppercase; }
+  .outcome {
+    margin-top: 9pt; padding: 9pt 11pt; background: #11161c; color: #ece6d7;
+    font-size: 8.8pt; line-height: 1.55;
+  }
+  .outcome b { color: #dca62c; letter-spacing: 1.4pt; font-size: 7pt; text-transform: uppercase; }
+
+  /* ---------- capability / technical ---------- */
+  .cap-table { font-size: 7.5pt; line-height: 1.4; }
+  .cap-table td { padding: 4.4pt 6.5pt; }
+  .cap-table th { font-size: 7.4pt; padding: 6pt 6.5pt; }
+  .assurance { width: 100%; border-collapse: separate; border-spacing: 3mm 0; margin: 10pt 0 0; }
+  .assurance td {
+    width: 33.33%; vertical-align: top; padding: 11pt 12pt;
+    background: #f7f4ec; border-top: 2pt solid #dca62c;
+  }
+  .assurance .at { font-family: "Marcellus", serif; font-size: 9.4pt; letter-spacing: 1pt; color: #11161c; }
+  .assurance .ad { margin-top: 4pt; font-size: 7.8pt; line-height: 1.55; color: #6f767d; }
+
+  /* ---------- private contact ---------- */
+  .contact-page {
+    page: dark; break-before: page; width: 210mm; height: 297mm; position: relative; overflow: hidden;
+    background:
+      radial-gradient(130mm 100mm at 80% 90%, rgba(220,166,44,.15), transparent 70%),
+      linear-gradient(155deg, #0b1015 0%, #131b24 58%, #0b1015 100%);
+    color: #f4efe2;
+  }
+  .contact-inner { position: absolute; inset: 12mm; padding: 18mm 18mm 15mm; }
+  .contact-page .label { color: #dca62c; }
+  .contact-page h2 {
+    font-family: "Playfair", serif; font-size: 31pt; line-height: 1.15; color: #f7f2e5;
+    margin: 6mm 0 6mm;
+  }
+  .contact-page .invite {
+    font-family: "Playfair", serif; font-style: italic; font-size: 13pt; line-height: 1.62;
+    color: #d8d0bc; max-width: 130mm;
+  }
+  .contact-rule { width: 32mm; border: 0; border-top: 1pt solid #dca62c; margin: 9mm 0; }
+  table.contact { width: 100%; border-collapse: collapse; margin-top: 2mm; }
+  table.contact td { padding: 4.4pt 0; vertical-align: top; }
+  table.contact td.k {
+    width: 33mm; font-size: 6.6pt; letter-spacing: 2pt; text-transform: uppercase; color: #b78b2a;
+  }
+  table.contact td.v { font-size: 9pt; line-height: 1.55; color: #e4ddcb; }
+  .qr {
+    position: absolute; right: 18mm; bottom: 22mm; width: 35mm; height: 35mm;
+    border: 0.6pt solid rgba(220,166,44,.55); display: flex; align-items: center; justify-content: center;
+    text-align: center; font-size: 5.8pt; letter-spacing: 1.4pt; line-height: 1.6;
+    text-transform: uppercase; color: #9d937d; padding: 4mm;
+  }
+  .contact-credit {
+    position: absolute; left: 18mm; right: 18mm; bottom: 12mm;
+    display: flex; justify-content: space-between; font-size: 6.2pt;
+    letter-spacing: 1.8pt; text-transform: uppercase; color: #857b67;
+  }
+
+  /* ---------- annex ---------- */
+  .checklist { width: 100%; border-collapse: collapse; margin-top: 2pt; }
+  .checklist td { padding: 5.4pt 0; border-bottom: 0.6pt solid #e7e1d4; vertical-align: top; }
+  .checklist td.cb { width: 8mm; }
+  .checklist .box {
+    display: inline-block; width: 3.6mm; height: 3.6mm; border: 0.9pt solid #11161c; vertical-align: -0.7mm;
+  }
+  .checklist .ctx { font-size: 8.9pt; line-height: 1.5; color: #3e464e; }
+  .protocol { margin-top: 10pt; counter-reset: pr; }
+  .protocol .p {
+    position: relative; padding: 4.4pt 0 4.4pt 9mm; border-bottom: 0.6pt solid #eee9dd;
+    font-size: 8.7pt; line-height: 1.52; color: #3e464e;
+  }
+  .protocol .p::before {
+    counter-increment: pr; content: counter(pr) ".";
+    position: absolute; left: 0; top: 4.4pt; font-family: "Playfair", serif;
+    font-weight: 700; font-size: 10pt; color: #b78b2a;
+  }
+
+  .closing {
+    margin-top: 14pt; padding: 13pt 16pt; background: #11161c; color: #e8e1cf;
+    font-family: "Playfair", serif; font-style: italic; font-size: 11.6pt;
+    line-height: 1.62; text-align: center;
+  }
+  .foot-note {
+    margin-top: 10pt; font-size: 7.6pt; line-height: 1.65; color: #8b9198; text-align: center;
+  }
+  .print-btn {
+    position: fixed; right: 22px; bottom: 22px; z-index: 50; padding: 12px 18px;
+    border: 0; border-radius: 999px; background: #11161c; color: #f4efe2;
+    font: inherit; font-size: 13px; font-weight: 700; cursor: pointer;
+    box-shadow: 0 10px 26px rgba(0,0,0,.28);
+  }
+  @media print { .print-btn { display: none; } }
+</style>
+</head>
+<body>
+
+<!-- ================= COVER ================= -->
+<div class="cover">
+  <div class="cover-lines"></div>
+  <div class="cover-frame"></div>
+  <div class="cover-inner">
+    <div class="cover-top">
+      <div class="lockup on-dark">
+        <span class="ds-mark">DS</span>
+        <span class="ds-words"><strong>DS CONSTRUCTION</strong><small>Architectural Solutions</small></span>
+      </div>
+      <div class="edition">Private Portfolio<br>2026 Edition</div>
+    </div>
+
+    <div class="cover-center">
+      <div class="cover-kicker">Selected Works · Ghana</div>
+      <h1>Heritage<span class="script">PORTFOLIO</span></h1>
+      <hr class="cover-rule">
+      <p class="cover-sub">26 Years of Engineering Glass &amp; Steel</p>
+      <p class="cover-sub2">Structural glazing · curtain walls · architectural aluminium</p>
+    </div>
+
+    <div class="plate dark cover-plate">
+      <div>
+        <div class="ph">Cover Plate · Hero Exterior</div>
+        <div class="ph-desc">[ Replace with a dusk photograph of an iconic completed DS facade — a building instantly recognisable to a Ghanaian developer. ]</div>
+        <div class="ph-size">Full bleed · landscape · 300 dpi</div>
+      </div>
+      <span class="monogram-wm">DS / HERITAGE</span>
+    </div>
+
+    <div class="cover-foot">
+      <span>DS Construction Limited · Accra · Ghana</span>
+      <span>Private &amp; Confidential</span>
+    </div>
+  </div>
+</div>
+
+<!-- ================= INSIDE COVER ================= -->
+<div class="inside-cover">
+  <div class="inside-top">
+    <div class="lockup">
+      <span class="ds-mark">DS</span>
+      <span class="ds-words"><strong>DS CONSTRUCTION</strong><small>Architectural Solutions</small></span>
+    </div>
+    <div class="private">Private &amp; Confidential</div>
+  </div>
+
+  <h2>This portfolio is private.</h2>
+  <p class="lead">This portfolio is shared privately with architects, developers, contractors and procurement teams considering DS Construction for a specific project. It is not for public distribution or publication.</p>
+
+  <div class="positioning">
+    <span class="pl">Positioning</span>
+    Ghana’s most experienced aluminium glazing factory — institution-trusted for 26 years, manufactured in-house in Accra, delivered nationwide and into Togo.
+  </div>
+
+  <table class="meta-table">
+    <tr><td class="k">Prepared for</td><td class="v">DS Construction Limited · 13 Onyaa Crescent, Nima — Accra · GA-026-8877</td></tr>
+    <tr><td class="k">Prepared by</td><td class="v">Gideon B. Abochie — Founder, Gabochie Design · design.gabochie.com</td></tr>
+    <tr><td class="k">Date</td><td class="v">November 2026 · Sample edition</td></tr>
+    <tr><td class="k">Status</td><td class="v">Worked sample layout and production template — not for final print</td></tr>
+    <tr><td class="k">Confidentiality</td><td class="v">Private distribution only — never post publicly</td></tr>
+  </table>
+
+  <div class="contents">
+    <div class="ct">Contents</div>
+    <table class="toc">
+      <tr><td class="n">01</td><td class="t">The legacy statement</td><td class="p">03</td></tr>
+      <tr><td class="n">02</td><td class="t">The record — scale, verified</td><td class="p">04</td></tr>
+      <tr><td class="n">03</td><td class="t">The case-study method — proof, not adjectives</td><td class="p">05</td></tr>
+      <tr><td class="n">04</td><td class="t">Institutional / education — Ashesi University</td><td class="p">06</td></tr>
+      <tr><td class="n">05</td><td class="t">Corporate / commercial — Toyota Ghana</td><td class="p">08</td></tr>
+      <tr><td class="n">06</td><td class="t">Luxury residential / specialist glazing</td><td class="p">10</td></tr>
+      <tr><td class="n">07</td><td class="t">Capability matrix</td><td class="p">12</td></tr>
+      <tr><td class="n">08</td><td class="t">Standards, warranty &amp; private contact</td><td class="p">13</td></tr>
+      <tr><td class="n">—</td><td class="t">Annex — production inputs</td><td class="p">15</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- ================= 01 LEGACY STATEMENT ================= -->
+<div class="sec">
+  <div class="label">01 · The Legacy Statement</div>
+  <h2>Twenty-six years, still standing.</h2>
+  <hr class="rule">
+
+  <table class="statement-grid">
+    <tr>
+      <td class="q">
+        <div class="bigquote">
+          Since 2000, DS Construction has fabricated and installed glass, aluminium and steel for the buildings Ghana relies on — universities, banks, corporate headquarters, estates and institutions. We do not sell windows. We engineer building envelopes that must perform for decades under Accra’s sun, salt and rain. <strong>Twenty-six years later, the proof is still standing.</strong>
+        </div>
+        <div class="attrib">
+          <b>[ Founder / Managing Director name ]</b><br>
+          DS Construction Limited
+        </div>
+      </td>
+      <td class="portrait">
+        <div class="plate" style="height:88mm">
+          <div>
+            <div class="ph">Portrait</div>
+            <div class="ph-desc">[ Founder or MD on site — not a studio portrait ]</div>
+            <div class="ph-size">Portrait · 4:5 · 300 dpi</div>
+          </div>
+        </div>
+        <p class="small" style="margin-top:6pt">Keep the statement to 80–100 words, in the founder’s own voice. The photograph should feel like the person, not the office.</p>
+      </td>
+    </tr>
+  </table>
+
+  <div class="note"><strong>Production note.</strong> The legacy page is the emotional centre of the book. It should read as a signed statement, not as marketing copy. One photograph, one voice, no slogan.</div>
+</div>
+
+<!-- ================= 02 RECORD ================= -->
+<div class="sec">
+  <div class="label">02 · The Record</div>
+  <h2>Scale, verified.</h2>
+  <hr class="rule">
+  <p class="lead">Numbers silence scepticism. Every figure below is confirmed against DS records before print — if it cannot be verified, it is left out.</p>
+
+  <table class="stats">
+    <tr>
+      <td><div class="stat-num">26</div><div class="stat-unit">Years</div><div class="stat-cap">of continuous operation, founded 2000</div></td>
+      <td><div class="stat-num">[00]</div><div class="stat-unit">Projects</div><div class="stat-cap">completed across Ghana and Togo</div></td>
+      <td><div class="stat-num">[0,000]</div><div class="stat-unit">m² Installed</div><div class="stat-cap">of architectural glazing and facade</div></td>
+      <td><div class="stat-num">[00]</div><div class="stat-unit">In-house Team</div><div class="stat-cap">fabrication and installation staff</div></td>
+    </tr>
+  </table>
+
+  <table class="data">
+    <tr><td class="lbl">Years in operation</td><td>26 — founded 2000 <span class="small">[confirm]</span></td></tr>
+    <tr><td class="lbl">In-house manufacturing</td><td>Accra factory — [location] <span class="small">[confirm]</span></td></tr>
+    <tr><td class="lbl">Projects completed</td><td>[number] <span class="small">[confirm from records]</span></td></tr>
+    <tr><td class="lbl">Glazing / facade area installed</td><td>[m²] <span class="small">[confirm]</span></td></tr>
+    <tr><td class="lbl">Coverage</td><td>Ghana-wide + Togo <span class="small">[confirm current reach]</span></td></tr>
+    <tr><td class="lbl">Own fleet</td><td>[number] vehicles <span class="small">[confirm]</span></td></tr>
+    <tr><td class="lbl">Typical contract range</td><td>[GHS range] <span class="small">[confirm]</span></td></tr>
+    <tr><td class="lbl">Institutional clients</td><td>Ashesi University · University of Ghana · Toyota Ghana · GNAT · GEA <span class="small">[validate before print]</span></td></tr>
+  </table>
+
+  <div class="label" style="margin-top:14pt">Selected Clients &amp; Partners</div>
+  <table class="logos">
+    <tr>
+      <td><div class="logo-box">Client Logo</div><div class="logo-name">Ashesi University</div></td>
+      <td><div class="logo-box">Client Logo</div><div class="logo-name">Toyota Ghana</div></td>
+      <td><div class="logo-box">Client Logo</div><div class="logo-name">GNAT</div></td>
+      <td><div class="logo-box">Client Logo</div><div class="logo-name">Ghana Employers Association</div></td>
+      <td><div class="logo-box">Client Logo</div><div class="logo-name">Glenshire Hills Estate</div></td>
+    </tr>
+  </table>
+  <p class="small" style="margin-top:8pt">Client marks reproduced with permission only. Validate every name and logo before print.</p>
+</div>
+
+<!-- ================= 03 METHOD ================= -->
+<div class="sec">
+  <div class="label">03 · The Case-Study Method</div>
+  <h2>Proof, not adjectives.</h2>
+  <hr class="rule">
+  <p class="lead">Every case study is built the same way: the facts on the left, the evidence on the right. A reader should be able to verify the claim without asking us a single question.</p>
+
+  <table class="cols">
+    <tr>
+      <td class="left">
+        <div class="label">The Facts</div>
+        <table class="data">
+          <tr><td class="lbl">Project name</td><td>[e.g., Ashesi University — Engineering Building]</td></tr>
+          <tr><td class="lbl">Location</td><td>[Berekuso, Eastern Region]</td></tr>
+          <tr><td class="lbl">Sector</td><td>[Education / institutional]</td></tr>
+          <tr><td class="lbl">Client / contractor</td><td>[name — confirm permission to name]</td></tr>
+          <tr><td class="lbl">Year completed</td><td>[year]</td></tr>
+          <tr><td class="lbl">Scope of work</td><td>[curtain walling · aluminium windows · balustrades · shower enclosures · cladding — confirm]</td></tr>
+          <tr><td class="lbl">Systems</td><td>[glass make-up and aluminium system — confirm]</td></tr>
+          <tr><td class="lbl">Technical highlights</td><td>[wind load · thermal performance · safety glass · acoustic · coastal durability — confirm]</td></tr>
+          <tr><td class="lbl">DS role</td><td>[design-assist · fabrication · installation · full package]</td></tr>
+        </table>
+      </td>
+      <td class="right">
+        <div class="label">The Proof</div>
+        <div class="stack">
+          <div class="plate" style="height:52mm">
+            <div>
+              <div class="ph">Hero Photograph</div>
+              <div class="ph-desc">[ Completed facade — wide daylight shot ]</div>
+              <div class="ph-size">Landscape · 16:9</div>
+            </div>
+          </div>
+          <div class="plate" style="height:38mm">
+            <div>
+              <div class="ph">Detail Photograph</div>
+              <div class="ph-desc">[ Joint, fixing, glass edge or finish ]</div>
+              <div class="ph-size">Landscape · 3:2</div>
+            </div>
+          </div>
+          <div class="plate" style="height:38mm">
+            <div>
+              <div class="ph">Process Photograph</div>
+              <div class="ph-desc">[ Factory fabrication or site installation ]</div>
+              <div class="ph-size">Landscape · 3:2</div>
+            </div>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <div class="note"><strong>Use this template for every project.</strong> Keep each case study to one spread. Lead with proof, not adjectives: “42,000 m² installed” beats “world-class quality.”</div>
+</div>
+
+<!-- ================= 04 CASE STUDY 01 OPENER ================= -->
+<div class="dark-page">
+  <div class="dark-frame"></div>
+  <div class="dark-inner">
+    <div class="dark-top">
+      <div class="lockup on-dark">
+        <span class="ds-mark">DS</span>
+        <span class="ds-words"><strong>DS CONSTRUCTION</strong><small>Architectural Solutions</small></span>
+      </div>
+      <div class="cs-label">Case Study 01</div>
+    </div>
+
+    <div class="cs-head">
+      <div class="num">01</div>
+      <div class="sector">Institutional · Education</div>
+      <h1>Ashesi University<br><span class="ph-name">[ Building Name ]</span></h1>
+      <div class="loc">Berekuso, Eastern Region · [Year]</div>
+    </div>
+
+    <div class="plate dark cs-plate">
+      <div>
+        <div class="ph">Hero Image · Campus Exterior</div>
+        <div class="ph-desc">[ Replace with the completed campus building showing the glazed element at its strongest angle. ]</div>
+        <div class="ph-size">Landscape · full width · 300 dpi</div>
+      </div>
+      <span class="monogram-wm">CASE STUDY / 01</span>
+    </div>
+
+    <div class="dark-foot">
+      <span>Institutional / Education</span>
+      <span>DS Construction Limited · Heritage Portfolio</span>
+    </div>
+  </div>
+</div>
+
+<!-- ================= 04 CASE STUDY 01 FACTS ================= -->
+<div class="sec">
+  <div class="label">Case Study 01 · The Facts</div>
+  <h2>Ashesi University — <span class="thin">[Building]</span></h2>
+  <hr class="rule">
+
+  <table class="cols">
+    <tr>
+      <td class="left">
+        <table class="data">
+          <tr><td class="lbl">Sector</td><td>Education / institutional</td></tr>
+          <tr><td class="lbl">Scope</td><td>[ curtain walling · aluminium windows · balustrades — confirm ]</td></tr>
+          <tr><td class="lbl">Systems</td><td>[ confirm glass make-up and aluminium system ]</td></tr>
+          <tr><td class="lbl">Year</td><td>[ confirm ]</td></tr>
+          <tr><td class="lbl">DS role</td><td>[ design-assist · fabrication · installation ]</td></tr>
+          <tr><td class="lbl">Why it matters</td><td>Institutional buyers demand documented performance, safety and finish — exactly the standard DS works to.</td></tr>
+        </table>
+        <p style="margin-top:9pt;font-size:9pt;line-height:1.62;color:#3e464e"><em>“Institution-scale work leaves no room for improvisation. For [building], DS fabricated and installed [scope] to the specification set by the project’s consulting team — on programme, and to the finish standard the campus expects.”</em></p>
+      </td>
+      <td class="right">
+        <div class="plate" style="height:62mm">
+          <div>
+            <div class="ph">Detail Image</div>
+            <div class="ph-desc">[ Curtain wall or window system detail ]</div>
+            <div class="ph-size">Landscape · 3:2</div>
+          </div>
+        </div>
+        <div class="plate" style="height:52mm;margin-top:6mm">
+          <div>
+            <div class="ph">Process Image</div>
+            <div class="ph-desc">[ Factory fabrication or site installation ]</div>
+            <div class="ph-size">Landscape · 3:2</div>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <div class="pullquote">
+    “[ One sentence from the client about reliability, quality or programme. ]”
+    <span class="who">[ Name · Title · Organisation ]</span>
+  </div>
+
+  <div class="outcome"><b>Outcome</b><br>[ One measurable line — e.g., delivered a [m²] facade package on programme, with zero glass breakage at handover. ]</div>
+
+  <div class="note"><strong>Validation.</strong> Every name, scope and technical detail on this spread is confirmed with DS before print. No unverifiable claim goes in.</div>
+</div>
+
+<!-- ================= 05 CASE STUDY 02 OPENER ================= -->
+<div class="dark-page">
+  <div class="dark-frame"></div>
+  <div class="dark-inner">
+    <div class="dark-top">
+      <div class="lockup on-dark">
+        <span class="ds-mark">DS</span>
+        <span class="ds-words"><strong>DS CONSTRUCTION</strong><small>Architectural Solutions</small></span>
+      </div>
+      <div class="cs-label">Case Study 02</div>
+    </div>
+
+    <div class="cs-head">
+      <div class="num">02</div>
+      <div class="sector">Corporate · Commercial</div>
+      <h1>Toyota Ghana<br><span class="ph-name">[ Facility / Showroom ]</span></h1>
+      <div class="loc">Accra, Greater Accra · [Year]</div>
+    </div>
+
+    <div class="plate dark cs-plate">
+      <div>
+        <div class="ph">Hero Image · Corporate Facade</div>
+        <div class="ph-desc">[ Replace with the completed showroom or corporate facade — the angle a customer would see from the road. ]</div>
+        <div class="ph-size">Landscape · full width · 300 dpi</div>
+      </div>
+      <span class="monogram-wm">CASE STUDY / 02</span>
+    </div>
+
+    <div class="dark-foot">
+      <span>Corporate / Commercial</span>
+      <span>DS Construction Limited · Heritage Portfolio</span>
+    </div>
+  </div>
+</div>
+
+<!-- ================= 05 CASE STUDY 02 FACTS ================= -->
+<div class="sec">
+  <div class="label">Case Study 02 · The Facts</div>
+  <h2>Toyota Ghana — <span class="thin">[Facility]</span></h2>
+  <hr class="rule">
+
+  <table class="cols">
+    <tr>
+      <td class="left">
+        <table class="data">
+          <tr><td class="lbl">Sector</td><td>Corporate / commercial</td></tr>
+          <tr><td class="lbl">Scope</td><td>[ shopfront · curtain wall · entrance glazing · cladding — confirm ]</td></tr>
+          <tr><td class="lbl">Systems</td><td>[ confirm ]</td></tr>
+          <tr><td class="lbl">Year</td><td>[ confirm ]</td></tr>
+          <tr><td class="lbl">DS role</td><td>[ design-assist · fabrication · installation ]</td></tr>
+          <tr><td class="lbl">Why it matters</td><td>Corporate brands need the building to look right on day one and every day after.</td></tr>
+        </table>
+        <p style="margin-top:9pt;font-size:9pt;line-height:1.62;color:#3e464e"><em>“A corporate facade is a brand statement. DS delivered [scope] for [facility] with the alignment, finish and weather-tightness a national brand requires.”</em></p>
+      </td>
+      <td class="right">
+        <div class="plate" style="height:62mm">
+          <div>
+            <div class="ph">Detail Image</div>
+            <div class="ph-desc">[ Entrance, shopfront or structural glazing detail ]</div>
+            <div class="ph-size">Landscape · 3:2</div>
+          </div>
+        </div>
+        <div class="plate" style="height:52mm;margin-top:6mm">
+          <div>
+            <div class="ph">Process Image</div>
+            <div class="ph-desc">[ Fabrication or installation on site ]</div>
+            <div class="ph-size">Landscape · 3:2</div>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <div class="pullquote">
+    “[ One sentence from the client about reliability, quality or programme. ]”
+    <span class="who">[ Name · Title · Organisation ]</span>
+  </div>
+
+  <div class="outcome"><b>Outcome</b><br>[ One measurable line — area, programme, finish standard or zero-defect handover. ]</div>
+
+  <div class="note"><strong>Validation.</strong> Confirm permission to name the client and building before this spread is printed.</div>
+</div>
+
+<!-- ================= 06 CASE STUDY 03 OPENER ================= -->
+<div class="dark-page">
+  <div class="dark-frame"></div>
+  <div class="dark-inner">
+    <div class="dark-top">
+      <div class="lockup on-dark">
+        <span class="ds-mark">DS</span>
+        <span class="ds-words"><strong>DS CONSTRUCTION</strong><small>Architectural Solutions</small></span>
+      </div>
+      <div class="cs-label">Case Study 03</div>
+    </div>
+
+    <div class="cs-head">
+      <div class="num">03</div>
+      <div class="sector">Luxury Residential · Specialist Glazing</div>
+      <h1>Private Residence<br><span class="ph-name">[ Estate / Project Name ]</span></h1>
+      <div class="loc">East Legon · Cantonments · Tse Addo · [Year]</div>
+    </div>
+
+    <div class="plate dark cs-plate">
+      <div>
+        <div class="ph">Hero Image · Fine Residential Work</div>
+        <div class="ph-desc">[ Replace with a frameless shower enclosure, glass balustrade or floor-to-ceiling glazing detail. ]</div>
+        <div class="ph-size">Landscape · full width · 300 dpi</div>
+      </div>
+      <span class="monogram-wm">CASE STUDY / 03</span>
+    </div>
+
+    <div class="dark-foot">
+      <span>Luxury Residential</span>
+      <span>DS Construction · Heritage Portfolio</span>
+    </div>
+  </div>
+</div>
+
+<!-- ================= 06 CASE STUDY 03 FACTS ================= -->
+<div class="sec">
+  <div class="label">Case Study 03 · The Facts</div>
+  <h2>Private Residence — <span class="thin">[Location]</span></h2>
+  <hr class="rule">
+
+  <table class="cols">
+    <tr>
+      <td class="left">
+        <table class="data">
+          <tr><td class="lbl">Sector</td><td>Luxury residential</td></tr>
+          <tr><td class="lbl">Scope</td><td>[ frameless shower enclosures · glass balustrades · floor-to-ceiling windows — confirm ]</td></tr>
+          <tr><td class="lbl">Systems</td><td>[ confirm glass make-up, hardware and finish ]</td></tr>
+          <tr><td class="lbl">Year</td><td>[ confirm ]</td></tr>
+          <tr><td class="lbl">DS role</td><td>[ measurement · fabrication · installation ]</td></tr>
+          <tr><td class="lbl">Why it matters</td><td>High-end homeowners judge on detail: edges, alignment, hardware and silence.</td></tr>
+        </table>
+        <p style="margin-top:9pt;font-size:9pt;line-height:1.62;color:#3e464e"><em>“In a private home, every millimetre is visible. DS measures, fabricates and installs to the tolerance the finished room demands — not the tolerance the site can spare.”</em></p>
+      </td>
+      <td class="right">
+        <div class="plate" style="height:62mm">
+          <div>
+            <div class="ph">Detail Image</div>
+            <div class="ph-desc">[ Fixing, polished edge, hardware or frame detail ]</div>
+            <div class="ph-size">Landscape · 3:2</div>
+          </div>
+        </div>
+        <div class="plate" style="height:52mm;margin-top:6mm">
+          <div>
+            <div class="ph">Process Image</div>
+            <div class="ph-desc">[ Workshop or careful site installation ]</div>
+            <div class="ph-size">Landscape · 3:2</div>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <div class="pullquote">
+    “[ One sentence from the client or architect about finish and care. ]”
+    <span class="who">[ Name · Title · Organisation ]</span>
+  </div>
+
+  <div class="outcome"><b>Outcome</b><br>[ One measurable line — tolerance, finish, programme or repeat commission. ]</div>
+
+  <div class="note"><strong>Validation.</strong> For private homes, confirm written permission before naming the residence or showing identifiable interiors.</div>
+</div>
+
+<!-- ================= 07 CAPABILITY ================= -->
+<div class="sec">
+  <div class="label">07 · Capability</div>
+  <h2>One envelope. Every system.</h2>
+  <hr class="rule">
+  <p class="lead" style="margin-bottom:8pt">The reader is checking one thing: <em>can they do my job?</em> Answer it visually and concretely. Keep this to one page.</p>
+
+  <table class="data cap-table">
+    <tr><th style="width:35mm">Capability</th><th>What DS offers</th><th style="width:40mm">Typical application</th><th style="width:22mm">Proof</th></tr>
+    <tr><td class="lbl-gold"><strong>Curtain walling</strong></td><td>[ unitised / stick — confirm ]</td><td>Office towers, institutions, showrooms</td><td>[ project ]</td></tr>
+    <tr><td class="lbl-gold"><strong>Structural glazing</strong></td><td>[ bolted / fin / point-fixed ]</td><td>Feature entrances, atria</td><td>[ project ]</td></tr>
+    <tr><td class="lbl-gold"><strong>Aluminium windows &amp; doors</strong></td><td>[ casement, sliding, tilt-turn ]</td><td>Homes, apartments, offices</td><td>[ project ]</td></tr>
+    <tr><td class="lbl-gold"><strong>uPVC systems</strong></td><td>[ sliding and casement profiles ]</td><td>Residential, light commercial</td><td>[ project ]</td></tr>
+    <tr><td class="lbl-gold"><strong>Frameless shower enclosures</strong></td><td>[ 8–12 mm toughened glass ]</td><td>Luxury residential, hotels</td><td>[ project ]</td></tr>
+    <tr><td class="lbl-gold"><strong>Glass balustrades</strong></td><td>[ frameless, standoff, handrail ]</td><td>Stairs, terraces, mezzanines</td><td>[ project ]</td></tr>
+    <tr><td class="lbl-gold"><strong>Alucobond / composite cladding</strong></td><td>[ confirm ]</td><td>Facades, signage zones</td><td>[ project ]</td></tr>
+    <tr><td class="lbl-gold"><strong>Acoustic ceilings &amp; partitions</strong></td><td>[ confirm ]</td><td>Offices, institutions</td><td>[ project ]</td></tr>
+    <tr><td class="lbl-gold"><strong>Sun breakers &amp; burglarproof</strong></td><td>[ confirm ]</td><td>Residential, commercial</td><td>[ project ]</td></tr>
+    <tr><td class="lbl-gold"><strong>Design-assist &amp; BOQ support</strong></td><td>[ confirm service ]</td><td>Architects, QS firms, developers</td><td>—</td></tr>
+  </table>
+
+  <div class="promise" style="margin-top:9pt;padding:8pt 11pt;background:#f7f4ec;border-left:2pt solid #dca62c;font-size:8.4pt;color:#5f5745">
+    <strong>One factory. One accountable team.</strong> Design, fabrication and installation are controlled in-house — which is why DS can commit to programme, finish and aftercare on the same page.
+  </div>
+</div>
+
+<!-- ================= 08 STANDARDS & WARRANTY ================= -->
+<div class="sec">
+  <div class="label">08 · Standards &amp; Warranty</div>
+  <h2>Built to be inspected.</h2>
+  <hr class="rule">
+  <p class="lead">A building envelope is judged twice: on the day it is handed over, and ten years later. This page states the standard plainly — and leaves the proof where a buyer can check it.</p>
+
+  <table class="data">
+    <tr><td class="lbl">Glass types</td><td>[ toughened · laminated · double-glazed · low-E — confirm ]</td></tr>
+    <tr><td class="lbl">Aluminium systems</td><td>[ local / international systems — confirm ]</td></tr>
+    <tr><td class="lbl">uPVC systems</td><td>[ profile brands — confirm ]</td></tr>
+    <tr><td class="lbl">Standards followed</td><td>[ Ghana Building Code · EN · ASTM — confirm ]</td></tr>
+    <tr><td class="lbl">Fabrication</td><td>[ in-house factory, Accra — address and capacity ]</td></tr>
+    <tr><td class="lbl">Workmanship warranty</td><td>[ x years — confirm ]</td></tr>
+    <tr><td class="lbl">Hardware warranty</td><td>[ x years — confirm ]</td></tr>
+    <tr><td class="lbl">Maintenance guide</td><td>[ available on request — confirm ]</td></tr>
+    <tr><td class="lbl">Quality process</td><td>[ dimensional checks · water test · site snag close-out — confirm ]</td></tr>
+    <tr><td class="lbl">Aftercare</td><td>[ named contact and response window — confirm ]</td></tr>
+  </table>
+
+  <table class="assurance">
+    <tr>
+      <td><div class="at">Safety</div><div class="ad">Glass specification, fixing design and installation are checked against the use and location — not chosen from a catalogue.</div></td>
+      <td><div class="at">Durability</div><div class="ad">Systems are selected for Accra’s sun, salt and rain, with the finish and hardware to match the exposure.</div></td>
+      <td><div class="at">Aftercare</div><div class="ad">A named contact, a maintenance guide and a clear response path — the building is not abandoned at handover.</div></td>
+    </tr>
+  </table>
+
+  <div class="note"><strong>Validation.</strong> Warranty terms and standards are confirmed in writing with DS before print. No warranty period is published until it is contractual.</div>
+</div>
+
+<!-- ================= PRIVATE CONTACT ================= -->
+<div class="contact-page">
+  <div class="contact-inner">
+    <div class="lockup on-dark">
+      <span class="ds-mark">DS</span>
+      <span class="ds-words"><strong>DS CONSTRUCTION</strong><small>Architectural Solutions</small></span>
+    </div>
+
+    <div style="margin-top:18mm">
+      <div class="label">Private Contact</div>
+      <h2>A private invitation.</h2>
+      <p class="invite">If you are specifying glass or aluminium for a current project, we would welcome a short, private site meeting. Send us the drawings or the address, and our estimator will attend at your convenience.</p>
+      <hr class="contact-rule">
+
+      <table class="contact">
+        <tr><td class="k">Office</td><td class="v">13 Onyaa Crescent, Nima — Accra · GA-026-8877</td></tr>
+        <tr><td class="k">Telephone</td><td class="v">+233 303 936 286 · +233 208 117 328 · +233 244 360 846</td></tr>
+        <tr><td class="k">Email</td><td class="v">info@dscons-gh.com · sales@dscons-gh.com</td></tr>
+        <tr><td class="k">Web</td><td class="v">dscons-gh.com</td></tr>
+        <tr><td class="k">Showroom</td><td class="v">Open Monday–Friday · 8:00am–5:00pm</td></tr>
+      </table>
+    </div>
+
+    <div class="qr">QR Placeholder<br>Private Project Enquiry<br>Generate before print</div>
+
+    <div class="contact-credit">
+      <span>DS Construction Limited</span>
+      <span>Design — Gabochie</span>
+    </div>
+  </div>
+</div>
+
+<!-- ================= ANNEX ================= -->
+<div class="sec">
+  <div class="label">Annex · Production Inputs</div>
+  <h2>What we need from DS.</h2>
+  <hr class="rule">
+  <p class="lead">The book is built from DS’s own record. These are the inputs that turn the sample into the final portfolio.</p>
+
+  <table class="checklist">
+    <tr><td class="cb"><span class="box"></span></td><td class="ctx">Three iconic projects to start — ideally one institutional, one corporate and one luxury residential.</td></tr>
+    <tr><td class="cb"><span class="box"></span></td><td class="ctx">10–15 high-resolution photographs per project — exterior hero, detail, and process or site.</td></tr>
+    <tr><td class="cb"><span class="box"></span></td><td class="ctx">Project facts: name, location, sector, client, year, scope, systems and outcome.</td></tr>
+    <tr><td class="cb"><span class="box"></span></td><td class="ctx">Written permission to name any client or building where required.</td></tr>
+    <tr><td class="cb"><span class="box"></span></td><td class="ctx">Confirmed warranty terms and technical standards.</td></tr>
+    <tr><td class="cb"><span class="box"></span></td><td class="ctx">Factory and fleet photographs — one or two of each.</td></tr>
+    <tr><td class="cb"><span class="box"></span></td><td class="ctx">Founder or MD photograph on site, plus a short signed statement.</td></tr>
+    <tr><td class="cb"><span class="box"></span></td><td class="ctx">Company logo files in print quality — vector preferred.</td></tr>
+  </table>
+
+  <div class="label" style="margin-top:16pt">Handling Protocol</div>
+  <div class="protocol">
+    <div class="p">Send only to a named decision-maker — Project Manager, Site Engineer, Owner or Lead Architect — of an active project.</div>
+    <div class="p">Send by private WhatsApp or email, with a short personal message — never as a mass broadcast.</div>
+    <div class="p">Record the send and recipient in the introduced-project register.</div>
+    <div class="p">Never post the PDF, screenshots or project photographs on any public page, advert or social account.</div>
+    <div class="p">Update the portfolio after every significant completed project — it is a living credential, not a one-off brochure.</div>
+  </div>
+
+  <div class="closing">“The proof is already built.<br>Our only job is to make it visible to the next buyer.”</div>
+
+  <div class="foot-note">
+    Working sample — remove this annex before the final print run.<br>
+    Prepared by Gideon B. Abochie · Founder, Gabochie Design · design.gabochie.com · admin@gabochie.com · +233 26 824 8970
+  </div>
+</div>
+
+<button class="print-btn" onclick="window.print()" type="button">Print / Save as PDF</button>
+
+</body>
+</html>

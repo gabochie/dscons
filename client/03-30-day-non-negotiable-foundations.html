@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>30-Day Non-Negotiable Foundations — DS Construction Limited</title>
+<meta name="author" content="Gideon B. Abochie, Gabochie Marketing / Gabochie Corp">
+<meta name="description" content="Client document for DS Construction Limited, prepared by Gideon B. Abochie.">
+<style>
+:root {
+  --ink: #1f2a30;
+  --muted: #5c6b73;
+  --accent: #14532d;
+  --accent-2: #b45309;
+  --accent-soft: #eef5ef;
+  --panel: #f6f8f7;
+  --border: #d8e2dc;
+  --paper: #ffffff;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: #e9eeea;
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+.page { max-width: 980px; margin: 0 auto; background: var(--paper); box-shadow: 0 18px 60px rgba(20, 50, 35, .12); }
+.cover {
+  position: relative;
+  padding: 68px 64px 52px;
+  background: radial-gradient(1100px 420px at 110% -10%, rgba(20,83,45,.12), transparent 60%), linear-gradient(180deg, #fbfdfb 0%, #ffffff 100%);
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+}
+.cover::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 10px; background: linear-gradient(180deg, var(--accent), var(--accent-2)); }
+.eyebrow { margin: 0 0 14px; color: var(--accent); font-size: 12px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+.cover h1 { margin: 0 0 12px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(34px, 5vw, 52px); line-height: 1.08; letter-spacing: -0.02em; color: var(--accent); }
+.subtitle { margin: 0 0 28px; max-width: 760px; color: var(--muted); font-size: 19px; line-height: 1.45; }
+.cover-note { margin: 0 0 26px; padding: 14px 18px; background: var(--accent-soft); border-left: 4px solid var(--accent); border-radius: 4px; font-size: 14px; }
+.meta { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 36px; margin: 0 0 26px; padding: 24px 0 0; border-top: 1px solid var(--border); }
+.meta div { min-width: 0; }
+.meta dt { color: var(--muted); font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 3px; }
+.meta dd { margin: 0; font-size: 14.5px; line-height: 1.5; }
+.meta dd strong { color: var(--accent); }
+.enclosure-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.enclosure-list li { padding: 12px 16px; background: var(--accent-soft); border: 1px solid var(--border); border-left: 4px solid var(--accent); border-radius: 4px; font-size: 14px; }
+.enclosure-list span { color: var(--muted); font-weight: 600; }
+.enclosure-list a { color: var(--accent); font-weight: 700; text-decoration: none; }
+.enclosure-list a:hover { text-decoration: underline; }
+.toc-page { padding: 48px 64px 56px; border-bottom: 1px solid var(--border); }
+.toc-page h2 { margin: 0 0 18px; font-family: Georgia, "Times New Roman", serif; font-size: 26px; color: var(--accent); }
+.toc { font-size: 15px; }
+.toc > ul { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 40px; }
+.toc ul ul { display: none; }
+.toc li { margin: 0 0 10px; break-inside: avoid; }
+.toc a { color: var(--ink); text-decoration: none; border-bottom: 1px dotted var(--border); }
+.toc a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+main { padding: 8px 64px 72px; }
+h1, h2, h3, h4 { line-height: 1.25; }
+main h2 { margin: 52px 0 18px; padding-bottom: 10px; border-bottom: 2px solid var(--accent); font-family: Georgia, "Times New Roman", serif; font-size: 28px; color: var(--accent); scroll-margin-top: 18px; }
+main h3 { margin: 34px 0 10px; font-size: 19px; color: var(--accent); }
+main h4 { margin: 28px 0 10px; font-size: 15px; letter-spacing: .04em; text-transform: uppercase; color: var(--accent-2); }
+p { margin: 0 0 15px; }
+ul, ol { margin: 0 0 18px; padding-left: 24px; }
+li { margin: 0 0 8px; }
+li.task { list-style: none; margin-left: -24px; }
+.cb { display: inline-block; width: 14px; height: 14px; margin-right: 10px; border: 1.5px solid var(--accent); border-radius: 3px; vertical-align: -2px; }
+strong { color: #14211a; }
+a { color: var(--accent); }
+blockquote { margin: 0 0 24px; padding: 22px 26px; background: var(--accent-soft); border-left: 5px solid var(--accent); border-radius: 4px; font-size: 17px; line-height: 1.62; }
+blockquote p:last-child { margin-bottom: 0; }
+hr { border: 0; border-top: 1px solid var(--border); margin: 40px 0; }
+.table-wrap { width: 100%; overflow-x: auto; margin: 0 0 24px; }
+table { width: 100%; border-collapse: collapse; font-size: 13.5px; line-height: 1.45; }
+th, td { padding: 10px 12px; border: 1px solid var(--border); text-align: left; vertical-align: top; }
+thead th { background: var(--accent); color: #fff; font-size: 12px; letter-spacing: .03em; }
+tbody tr:nth-child(even) { background: #f8fbf8; }
+tbody td:first-child { font-weight: 600; color: #24322a; }
+figure.diagram { margin: 26px 0 30px; padding: 18px; background: #fff; border: 1px solid var(--border); border-radius: 8px; text-align: center; break-inside: avoid; }
+figure.diagram img { display: block; max-width: 100%; height: auto; margin: 0 auto; }
+figure.diagram figcaption { margin-top: 12px; color: var(--muted); font-size: 12.5px; font-style: italic; }
+.print-btn { position: fixed; right: 22px; bottom: 22px; z-index: 50; padding: 12px 18px; border: 0; border-radius: 999px; background: var(--accent); color: #fff; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer; box-shadow: 0 10px 26px rgba(20, 83, 45, .28); }
+.print-btn:hover { background: #0f3d22; }
+.footer-note { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--border); color: var(--muted); font-size: 12.5px; }
+@media (max-width: 760px) {
+  .cover, .toc-page, main { padding-left: 24px; padding-right: 24px; }
+  .cover { padding-top: 44px; }
+  .meta { grid-template-columns: 1fr; }
+  .toc > ul { columns: 1; }
+  table { font-size: 12.5px; white-space: nowrap; }
+}
+@media print {
+  @page { size: A4; margin: 17mm 15mm 18mm; }
+  body { background: #fff; font-size: 10.5pt; line-height: 1.5; }
+  .page { max-width: none; box-shadow: none; }
+  .print-btn { display: none; }
+  .cover { min-height: 236mm; padding: 40mm 0 0; border: 0; break-after: page; background: #fff; }
+  .cover::before { width: 6px; }
+  .cover h1 { font-size: 38pt; }
+  .subtitle { font-size: 14pt; }
+  .toc-page { padding: 0; border: 0; break-after: page; }
+  main { padding: 0; }
+  main h2 { break-before: page; font-size: 20pt; margin-top: 0; }
+  main h2:first-of-type { break-before: auto; }
+  h3 { font-size: 13pt; }
+  table { font-size: 9pt; }
+  th, td { padding: 6px 7px; }
+  figure.diagram { padding: 10px; margin: 16px 0 20px; }
+  figure.diagram img { max-height: 105mm; width: auto; max-width: 100%; }
+  blockquote { padding: 14px 16px; font-size: 11pt; }
+  a { color: var(--ink); text-decoration: none; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="cover">
+    <p class="eyebrow">CLIENT ANNEX · DAY 1–30</p>
+    <h1>30-Day Non-Negotiable Foundations</h1>
+    <p class="subtitle">Immediate actions to make the DS Growth & Sales System executable</p>
+    
+    <dl class="meta"><div><dt>Client</dt><dd>DS Construction Limited</dd></div><div><dt>Prepared by</dt><dd>Gideon B. Abochie — Gabochie Marketing / Gabochie Corp</dd></div><div><dt>Date</dt><dd>6 November 2026</dd></div><div><dt>Window</dt><dd>Day 1–30 from kickoff</dd></div><div><dt>Guiding rule</dt><dd>No paid ads. No ad tracking. Organic, owned and referral channels only.</dd></div><div><dt>Reference</dt><dd>mkt.gabochie.com</dd></div></dl>
+    <ul class="enclosure-list"><li><span>Companion:</span> <a href="01-winning-offer-proposal.html">The DS Growth & Sales System — Proposal</a></li><li><span>Companion:</span> <a href="02-audit-summary-giveaway.html">Market & Digital Presence Audit — Summary</a></li></ul>
+  </header>
+
+  <nav class="toc-page" aria-label="Contents">
+    <h2>Contents</h2>
+    <div class="toc">
+<ul>
+<li><a href="#1-why-this-annex-exists">1. Why this annex exists</a></li>
+<li><a href="#2-the-two-meeting-realities-that-shape-this-plan">2. The two meeting realities that shape this plan</a></li>
+<li><a href="#3-the-30-non-negotiable-actions">3. The 30 non-negotiable actions</a></li>
+<li><a href="#4-what-it-costs">4. What it costs</a></li>
+<li><a href="#5-the-30-day-timeline">5. The 30-day timeline</a></li>
+<li><a href="#6-what-ds-must-provide-the-non-negotiable-inputs">6. What DS must provide (the non-negotiable inputs)</a></li>
+<li><a href="#7-what-the-consultant-delivers-in-the-30-days">7. What the consultant delivers in the 30 days</a></li>
+<li><a href="#8-the-do-not-do-list">8. The do-not-do list</a></li>
+<li><a href="#9-definition-of-done-by-day-30">9. Definition of done by Day 30</a></li>
+<li><a href="#10-risks-and-mitigations">10. Risks and mitigations</a></li>
+<li><a href="#11-sign-off">11. Sign-off</a></li>
+</ul>
+</div>
+
+  </nav>
+
+  <main>
+    <h2 id="1-why-this-annex-exists">1. Why this annex exists</h2>
+<p>The 90-day plan in the proposal only works if the first 30 days are used to lay the foundations. This is the minimum operating condition for serious execution — not a wish list, and not a second proposal.</p>
+<p><em>This annex accompanies the digital-system options (A, B and C). If DS selects Option D — the Private Growth Partnership — the public-proof actions here still strengthen the same pipeline, but the private setup checklist in the proposal §9 governs the first two weeks (portfolio assets, target list, outreach scripts). No paid advertising is used in any option.</em></p>
+<p>Three things are true at the same time:</p>
+<ol>
+<li>DS already has the strongest raw material in the market: 26 years, an in-house factory, a fleet, and blue-chip institutional work.</li>
+<li>Buyers now verify before they shortlist — through Google, maps, reviews, and a working enquiry route.</li>
+<li>The current foundations are incomplete: the Klagon showroom has no frontage signboard, public proof is thin, and enquiries are not yet tracked as a pipeline.</li>
+</ol>
+<p><strong>What "non-negotiable" means here:</strong> if any item in this annex slips by more than 48 hours, the Day-90 KPI sheet is at risk. The responsible person escalates to the MD the same day. Nothing on this list is optional, and nothing on it requires paid advertising.</p>
+<hr />
+<h2 id="2-the-two-meeting-realities-that-shape-this-plan">2. The two meeting realities that shape this plan</h2>
+<h3 id="21-no-paid-ads-the-tax-tracking-concern-is-respected">2.1 No paid ads — the tax-tracking concern is respected</h3>
+<p>DS has said it avoids paid advertising because it does not want to be targeted and tracked by revenue authorities. We will respect that boundary completely.</p>
+<p><strong>What we will NOT do in the first 30 days (or without written approval):</strong></p>
+<ul>
+<li>No Facebook, Instagram or Google ads</li>
+<li>No boosted posts</li>
+<li>No ad pixels, conversion tags or retargeting audiences</li>
+<li>No uploading customer lists or phone numbers to any ad platform</li>
+<li>No lookalike audiences built from DS customers</li>
+</ul>
+<p><strong>What we will do instead:</strong> build the free, owned and referral channels that do not depend on ad platforms — Google Business Profile, search-friendly pages, real reviews, WhatsApp, trade outreach, signage and referrals. These are the foundations that make any future paid media work; they are also the foundations that work without it.</p>
+<p>This is not tax advice. It is an operating boundary. Revenue and customer records remain inside DS's own systems. If DS ever wants to test paid media, it will be after Day 90, with written approval, and without customer-list uploads or pixel-based retargeting.</p>
+<h3 id="22-the-klagon-showroom-has-no-frontage-signboard">2.2 The Klagon showroom has no frontage signboard</h3>
+<p>A signboard is not a magic Google ranking button, but its absence weakens every foundation we are trying to build:</p>
+<ul>
+<li>Buyers arriving from Google Maps cannot immediately confirm they are in the right place.</li>
+<li>Google Business Profile verification, photo authenticity and prominence signals are weaker.</li>
+<li>The showroom cannot convert walk-ins it never identifies.</li>
+<li>The 26-year brand looks less established than it is at the exact moment of first contact.</li>
+</ul>
+<p><strong>Non-negotiable:</strong> obtain two quotes by Day 5 and install by Day 20. The sign must carry the exact business name, logo, phone number, <code>mkt.gabochie.com</code>, and opening hours. Add a QR code to the Google review link and a directional sign at the road entrance. Photograph the finished frontage from three angles and upload the photos to Google Business Profile the same week.</p>
+<hr />
+<h2 id="3-the-30-non-negotiable-actions">3. The 30 non-negotiable actions</h2>
+<h3 id="week-1-days-17-control-the-basics">Week 1 (Days 1–7) — Control the basics</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Action</th>
+<th>Owner</th>
+<th>Deadline</th>
+<th>Evidence of done</th>
+<th>Direct cost (GHS)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Appoint a named <strong>Sales Coordinator</strong> (existing staff is ideal) and protect 45 minutes/day</td>
+<td>MD</td>
+<td>Day 2</td>
+<td>Name and written role note</td>
+<td>0</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Hand over access: domain, hosting, website admin, Google Business Profile, Facebook, Instagram, WhatsApp Business, email</td>
+<td>MD / IT</td>
+<td>Day 2</td>
+<td>Signed access checklist</td>
+<td>0</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Switch on one <strong>enquiry log</strong> (Google Sheet or free CRM) and log every enquiry the same day</td>
+<td>Coordinator</td>
+<td>Day 1</td>
+<td>First 5 enquiries logged</td>
+<td>0</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Adopt the <strong>24-hour response standard</strong> and WhatsApp auto-reply</td>
+<td>MD + Coordinator</td>
+<td>Day 1</td>
+<td>Auto-reply live; standard posted</td>
+<td>0</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Audit and correct <strong>NAP</strong> (name, address, phone, hours, website) across Google, Facebook, Instagram and directories</td>
+<td>Consultant + Coordinator</td>
+<td>Day 5</td>
+<td>NAP sheet and screenshots</td>
+<td>0</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Get two quotes and <strong>order the Klagon frontage signboard</strong></td>
+<td>MD</td>
+<td>Day 5</td>
+<td>Signed quote / order</td>
+<td>4,500–9,000</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Apply for or confirm the <strong>signage permit</strong> with the local assembly</td>
+<td>MD</td>
+<td>Day 5</td>
+<td>Application / receipt</td>
+<td>300–1,200</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Book the <strong>photo and video shoot</strong> (showroom, factory, team, three projects)</td>
+<td>Coordinator</td>
+<td>Day 7</td>
+<td>Booking confirmation</td>
+<td>1,200–3,000</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Compile the <strong>past-client list</strong> — minimum 40 names and numbers for reviews and case studies</td>
+<td>MD + Coordinator</td>
+<td>Day 7</td>
+<td>List in the CRM</td>
+<td>0</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Approve the <strong>review-request script</strong> and the approval workflow</td>
+<td>MD</td>
+<td>Day 7</td>
+<td>Signed script</td>
+<td>0</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="week-2-days-814-become-findable-and-verifiable">Week 2 (Days 8–14) — Become findable and verifiable</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Action</th>
+<th>Owner</th>
+<th>Deadline</th>
+<th>Evidence of done</th>
+<th>Direct cost (GHS)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>11</td>
+<td>Claim and verify <strong>Google Business Profile</strong>; set primary category (aluminium window supplier / window installation service), service areas, hours, services, products, opening date (2000)</td>
+<td>Consultant</td>
+<td>Day 10</td>
+<td>Live, verified profile</td>
+<td>0</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Upload <strong>20+ real photos</strong>, logo, cover image and a 30-second showroom video</td>
+<td>Coordinator + Consultant</td>
+<td>Day 14</td>
+<td>Photo count on profile</td>
+<td>0</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Install the <strong>signboard</strong>, directional sign and QR review decal</td>
+<td>Vendor / MD</td>
+<td>Day 20 target Day 14</td>
+<td>Installation photos</td>
+<td>500–1,200 (directional)</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Publish the <strong>Google review link and QR cards</strong>; begin asking the first 20 past clients</td>
+<td>Coordinator</td>
+<td>Day 10 start</td>
+<td>WhatsApp log and review count</td>
+<td>300–700</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Fix the <strong>website enquiry form</strong> end-to-end; add WhatsApp click-to-chat, click-to-call and a Klagon showroom map/directions page</td>
+<td>Web developer + Consultant</td>
+<td>Day 14</td>
+<td>Test submission and live URL</td>
+<td>1,500–4,500</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Add <strong>local business schema</strong> and correct titles/descriptions for the top 5 pages</td>
+<td>Web developer + Consultant</td>
+<td>Day 14</td>
+<td>Live URLs and test result</td>
+<td>included in #15</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Confirm <strong>ownership</strong> of domain, hosting, WhatsApp line and social accounts (in DS's name, not a vendor's)</td>
+<td>MD + Consultant</td>
+<td>Day 14</td>
+<td>Ownership checklist</td>
+<td>0 (renewals 500–1,500 if due)</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Publish <strong>2 project stories</strong> with photos, scope, location and outcome (no confidential pricing)</td>
+<td>Consultant + Coordinator</td>
+<td>Day 21</td>
+<td>Live URLs</td>
+<td>0</td>
+</tr>
+<tr>
+<td>19</td>
+<td>Build the <strong>20-target trade list</strong> (architects, QS firms, developers, estate managers) and start a three-touch cadence</td>
+<td>MD + Coordinator</td>
+<td>Day 14 list; ongoing</td>
+<td>Outreach log</td>
+<td>0</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Start the <strong>weekly 30-minute pipeline review</strong> and the five-line dashboard</td>
+<td>MD</td>
+<td>Day 7 first meeting; weekly</td>
+<td>Meeting notes and dashboard</td>
+<td>0</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="week-3-days-1521-make-the-system-run">Week 3 (Days 15–21) — Make the system run</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Action</th>
+<th>Owner</th>
+<th>Deadline</th>
+<th>Evidence of done</th>
+<th>Direct cost (GHS)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>21</td>
+<td>Approve the <strong>rate card</strong> and three package offers (Estate Bundle, Fit-Out Package, Home Upgrade)</td>
+<td>MD</td>
+<td>Day 20</td>
+<td>Signed rate card</td>
+<td>0</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Put the <strong>four templates</strong> into daily use: survey form, quote/BOQ, rate card, deposit-and-milestones contract</td>
+<td>Coordinator</td>
+<td>Day 21</td>
+<td>First 3 quotes issued from templates</td>
+<td>0</td>
+</tr>
+<tr>
+<td>23</td>
+<td>Run the <strong>two-hour team training</strong>: 24-hour response, WhatsApp scripts, enquiry log, review requests, quote handoff</td>
+<td>Consultant</td>
+<td>Day 20</td>
+<td>Attendance sheet</td>
+<td>250–600</td>
+</tr>
+<tr>
+<td>24</td>
+<td>Install <strong>privacy-friendly analytics</strong> or rely on Google Business Profile insights only; <strong>no ad pixels</strong></td>
+<td>Web developer + Consultant</td>
+<td>Day 21</td>
+<td>Dashboard access</td>
+<td>0–250/month</td>
+</tr>
+<tr>
+<td>25</td>
+<td>Reach <strong>15 Google reviews</strong> (the Day-30 target; 25 by Day 90) and reply to every review within 48 hours</td>
+<td>Coordinator</td>
+<td>Day 30</td>
+<td>Profile review count</td>
+<td>0</td>
+</tr>
+<tr>
+<td>26</td>
+<td>Publish <strong>8–10 Google posts</strong> and at least 3 social posts per week</td>
+<td>Coordinator</td>
+<td>Ongoing</td>
+<td>Post log</td>
+<td>0</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="week-4-days-2230-lock-the-habit">Week 4 (Days 22–30) — Lock the habit</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Action</th>
+<th>Owner</th>
+<th>Deadline</th>
+<th>Evidence of done</th>
+<th>Direct cost (GHS)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>27</td>
+<td>Hold the first <strong>numbers review</strong>: enquiries, quotes, wins, losses, response time</td>
+<td>MD + Consultant</td>
+<td>Day 28</td>
+<td>Dashboard screenshot</td>
+<td>0</td>
+</tr>
+<tr>
+<td>28</td>
+<td>Fix the blockers found in the review and confirm the <strong>Day-60 targets</strong></td>
+<td>MD + Consultant</td>
+<td>Day 30</td>
+<td>Signed review note</td>
+<td>0</td>
+</tr>
+<tr>
+<td>29</td>
+<td>Assemble the <strong>evidence pack</strong>: signboard photos, GBP live, reviews, form test, templates, dashboard</td>
+<td>Consultant</td>
+<td>Day 30</td>
+<td>Evidence pack</td>
+<td>0</td>
+</tr>
+<tr>
+<td>30</td>
+<td>Decide and sign the <strong>Phase 2 go-ahead</strong> (Days 31–90)</td>
+<td>MD</td>
+<td>Day 30</td>
+<td>Signed go-ahead</td>
+<td>0</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="4-what-it-costs">4. What it costs</h2>
+<p>These are DS's <strong>direct operating costs</strong> — not the consultant's fee. All figures are indicative Greater Accra ranges as of November 2026. Obtain two local quotes for the signboard and website work; the plan proceeds with the lower compliant quote.</p>
+<h3 id="41-non-negotiable-minimum-one-time">4.1 Non-negotiable minimum (one-time)</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: right;">Low (GHS)</th>
+<th style="text-align: right;">High (GHS)</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Klagon frontage signboard, installed</td>
+<td style="text-align: right;">4,500</td>
+<td style="text-align: right;">9,000</td>
+<td>Illuminated only if the lower quote allows; non-illuminated is acceptable</td>
+</tr>
+<tr>
+<td>Signage permit / assembly fee</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">1,200</td>
+<td>Confirm at the local assembly</td>
+</tr>
+<tr>
+<td>Directional sign and QR review decal</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">1,200</td>
+<td>Road entrance plus showroom door</td>
+</tr>
+<tr>
+<td>Print kit: review cards, rate cards, survey forms, quote books, vehicle stickers</td>
+<td style="text-align: right;">900</td>
+<td style="text-align: right;">2,000</td>
+<td>Use DS's existing printer where possible</td>
+</tr>
+<tr>
+<td>Website fixes (form, WhatsApp, schema, showroom page)</td>
+<td style="text-align: right;">1,500</td>
+<td style="text-align: right;">4,500</td>
+<td>Brief supplied by the consultant</td>
+</tr>
+<tr>
+<td>Domain / hosting / SSL renewal (if due)</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">1,500</td>
+<td>Must be registered in DS's name</td>
+</tr>
+<tr>
+<td>Training refreshments and printing</td>
+<td style="text-align: right;">250</td>
+<td style="text-align: right;">600</td>
+<td>Two-hour session</td>
+</tr>
+<tr>
+<td><strong>Subtotal</strong></td>
+<td style="text-align: right;"><strong>8,450</strong></td>
+<td style="text-align: right;"><strong>20,000</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Contingency (10%)</td>
+<td style="text-align: right;">845</td>
+<td style="text-align: right;">2,000</td>
+<td>Signage and permit variability</td>
+</tr>
+<tr>
+<td><strong>NON-NEGOTIABLE TOTAL</strong></td>
+<td style="text-align: right;"><strong>9,300</strong></td>
+<td style="text-align: right;"><strong>22,000</strong></td>
+<td><strong>Paid by DS; no ad spend</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="42-strongly-recommended-not-blocking-but-improves-speed">4.2 Strongly recommended (not blocking, but improves speed)</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: right;">Low (GHS)</th>
+<th style="text-align: right;">High (GHS)</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Professional photo/video shoot</td>
+<td style="text-align: right;">1,200</td>
+<td style="text-align: right;">3,000</td>
+<td>A phone shoot at GHS 0 is acceptable if the coordinator is coached</td>
+</tr>
+<tr>
+<td>Review thank-you cards (no paid reviews)</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">700</td>
+<td>Policy-compliant thank-you only</td>
+</tr>
+<tr>
+<td>Privacy-friendly analytics</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">250 / month</td>
+<td>Or use Google Business Profile insights only</td>
+</tr>
+<tr>
+<td>Coordinator airtime, data and transport</td>
+<td style="text-align: right;">400</td>
+<td style="text-align: right;">800 / month</td>
+<td>If not already covered by DS</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="43-30-day-cash-view">4.3 30-day cash view</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Category</th>
+<th style="text-align: right;">Low (GHS)</th>
+<th style="text-align: right;">High (GHS)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Direct one-time costs (all items above)</td>
+<td style="text-align: right;">10,800</td>
+<td style="text-align: right;">25,700</td>
+</tr>
+<tr>
+<td>Monthly recurring costs</td>
+<td style="text-align: right;">400</td>
+<td style="text-align: right;">1,050</td>
+</tr>
+<tr>
+<td>Paid advertising</td>
+<td style="text-align: right;"><strong>0</strong></td>
+<td style="text-align: right;"><strong>0</strong></td>
+</tr>
+<tr>
+<td>Consultant Foundation fee (Option B, proposal §5)</td>
+<td style="text-align: right;">40,000</td>
+<td style="text-align: right;">40,000</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The foundation budget is roughly GHS 10,800–25,700 once, plus GHS 400–1,050/month. Paid ads are zero.</strong> The consultant fee is separate and already set out in the proposal; it is not part of this operating budget.</p>
+<figure class="diagram"><img src="data:image/svg+xml;base64,PHN2ZyBpZD0ibWVybWFpZC1zdmciIHdpZHRoPSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHN0eWxlPSJtYXgtd2lkdGg6IDcwMHB4OyIgdmlld0JveD0iMCAwIDcwMCA1MDAiIHJvbGU9ImdyYXBoaWNzLWRvY3VtZW50IGRvY3VtZW50IiBhcmlhLXJvbGVkZXNjcmlwdGlvbj0ieHljaGFydCIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxzdHlsZSB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCI+QGltcG9ydCB1cmwoImh0dHBzOi8vY2RuanMuY2xvdWRmbGFyZS5jb20vYWpheC9saWJzL2ZvbnQtYXdlc29tZS83LjIuMC9jc3MvYWxsLm1pbi5jc3MiKTs8L3N0eWxlPjxzdHlsZT4jbWVybWFpZC1zdmd7Zm9udC1mYW1pbHk6InRyZWJ1Y2hldCBtcyIsdmVyZGFuYSxhcmlhbCxzYW5zLXNlcmlmO2ZvbnQtc2l6ZToxNnB4O2ZpbGw6IzMzMzt9QGtleWZyYW1lcyBlZGdlLWFuaW1hdGlvbi1mcmFtZXtmcm9te3N0cm9rZS1kYXNob2Zmc2V0OjA7fX1Aa2V5ZnJhbWVzIGRhc2h7dG97c3Ryb2tlLWRhc2hvZmZzZXQ6MDt9fSNtZXJtYWlkLXN2ZyAuZWRnZS1hbmltYXRpb24tc2xvd3tzdHJva2UtZGFzaGFycmF5OjksNSFpbXBvcnRhbnQ7c3Ryb2tlLWRhc2hvZmZzZXQ6OTAwO2FuaW1hdGlvbjpkYXNoIDUwcyBsaW5lYXIgaW5maW5pdGU7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7fSNtZXJtYWlkLXN2ZyAuZWRnZS1hbmltYXRpb24tZmFzdHtzdHJva2UtZGFzaGFycmF5OjksNSFpbXBvcnRhbnQ7c3Ryb2tlLWRhc2hvZmZzZXQ6OTAwO2FuaW1hdGlvbjpkYXNoIDIwcyBsaW5lYXIgaW5maW5pdGU7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7fSNtZXJtYWlkLXN2ZyAuZXJyb3ItaWNvbntmaWxsOiM1NTIyMjI7fSNtZXJtYWlkLXN2ZyAuZXJyb3ItdGV4dHtmaWxsOiM1NTIyMjI7c3Ryb2tlOiM1NTIyMjI7fSNtZXJtYWlkLXN2ZyAuZWRnZS10aGlja25lc3Mtbm9ybWFse3N0cm9rZS13aWR0aDoxcHg7fSNtZXJtYWlkLXN2ZyAuZWRnZS10aGlja25lc3MtdGhpY2t7c3Ryb2tlLXdpZHRoOjMuNXB4O30jbWVybWFpZC1zdmcgLmVkZ2UtcGF0dGVybi1zb2xpZHtzdHJva2UtZGFzaGFycmF5OjA7fSNtZXJtYWlkLXN2ZyAuZWRnZS10aGlja25lc3MtaW52aXNpYmxle3N0cm9rZS13aWR0aDowO2ZpbGw6bm9uZTt9I21lcm1haWQtc3ZnIC5lZGdlLXBhdHRlcm4tZGFzaGVke3N0cm9rZS1kYXNoYXJyYXk6Mzt9I21lcm1haWQtc3ZnIC5lZGdlLXBhdHRlcm4tZG90dGVke3N0cm9rZS1kYXNoYXJyYXk6Mjt9I21lcm1haWQtc3ZnIC5tYXJrZXJ7ZmlsbDojMzMzMzMzO3N0cm9rZTojMzMzMzMzO30jbWVybWFpZC1zdmcgLm1hcmtlci5jcm9zc3tzdHJva2U6IzMzMzMzMzt9I21lcm1haWQtc3ZnIHN2Z3tmb250LWZhbWlseToidHJlYnVjaGV0IG1zIix2ZXJkYW5hLGFyaWFsLHNhbnMtc2VyaWY7Zm9udC1zaXplOjE2cHg7fSNtZXJtYWlkLXN2ZyBwe21hcmdpbjowO30jbWVybWFpZC1zdmcgLm5vZGUgLm5lby1ub2Rle3N0cm9rZTojOTM3MERCO30jbWVybWFpZC1zdmcgW2RhdGEtbG9vaz0ibmVvIl0ubm9kZSByZWN0LCNtZXJtYWlkLXN2ZyBbZGF0YS1sb29rPSJuZW8iXS5jbHVzdGVyIHJlY3QsI21lcm1haWQtc3ZnIFtkYXRhLWxvb2s9Im5lbyJdLm5vZGUgcG9seWdvbntzdHJva2U6IzkzNzBEQjtmaWx0ZXI6ZHJvcC1zaGFkb3coMXB4IDJweCAycHggcmdiYSgxODUsIDE4NSwgMTg1LCAxKSk7fSNtZXJtYWlkLXN2ZyBbZGF0YS1sb29rPSJuZW8iXS5zd2ltbGFuZS5jbHVzdGVyIHJlY3R7ZmlsdGVyOm5vbmU7fSNtZXJtYWlkLXN2ZyBbZGF0YS1sb29rPSJuZW8iXS5ub2RlIHBhdGh7c3Ryb2tlOiM5MzcwREI7c3Ryb2tlLXdpZHRoOjFweDt9I21lcm1haWQtc3ZnIFtkYXRhLWxvb2s9Im5lbyJdLm5vZGUgLm91dGVyLXBhdGh7ZmlsdGVyOmRyb3Atc2hhZG93KDFweCAycHggMnB4IHJnYmEoMTg1LCAxODUsIDE4NSwgMSkpO30jbWVybWFpZC1zdmcgW2RhdGEtbG9vaz0ibmVvIl0ubm9kZSAubmVvLWxpbmUgcGF0aHtzdHJva2U6IzkzNzBEQjtmaWx0ZXI6bm9uZTt9I21lcm1haWQtc3ZnIFtkYXRhLWxvb2s9Im5lbyJdLm5vZGUgY2lyY2xle3N0cm9rZTojOTM3MERCO2ZpbHRlcjpkcm9wLXNoYWRvdygxcHggMnB4IDJweCByZ2JhKDE4NSwgMTg1LCAxODUsIDEpKTt9I21lcm1haWQtc3ZnIFtkYXRhLWxvb2s9Im5lbyJdLm5vZGUgY2lyY2xlIC5zdGF0ZS1zdGFydHtmaWxsOiMwMDAwMDA7fSNtZXJtYWlkLXN2ZyBbZGF0YS1sb29rPSJuZW8iXS5pY29uLXNoYXBlIC5pY29ue2ZpbGw6IzkzNzBEQjtmaWx0ZXI6ZHJvcC1zaGFkb3coMXB4IDJweCAycHggcmdiYSgxODUsIDE4NSwgMTg1LCAxKSk7fSNtZXJtYWlkLXN2ZyBbZGF0YS1sb29rPSJuZW8iXS5pY29uLXNoYXBlIC5pY29uLW5lbyBwYXRoe3N0cm9rZTojOTM3MERCO2ZpbHRlcjpkcm9wLXNoYWRvdygxcHggMnB4IDJweCByZ2JhKDE4NSwgMTg1LCAxODUsIDEpKTt9I21lcm1haWQtc3ZnIDpyb290ey0tbWVybWFpZC1mb250LWZhbWlseToidHJlYnVjaGV0IG1zIix2ZXJkYW5hLGFyaWFsLHNhbnMtc2VyaWY7fTwvc3R5bGU+PGcvPjxnIGNsYXNzPSJtYWluIj48cmVjdCB3aWR0aD0iNzAwIiBoZWlnaHQ9IjUwMCIgY2xhc3M9ImJhY2tncm91bmQiIGZpbGw9IndoaXRlIi8+PGcgY2xhc3M9ImNoYXJ0LXRpdGxlIj48dGV4dCB4PSIwIiB5PSIwIiBmaWxsPSIjMTMxMzAwIiBmb250LXNpemU9IjIwIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzODcuNjc5MjAwMTcyNDI0MywgMjEpIHJvdGF0ZSgwKSI+MzAtZGF5IGZvdW5kYXRpb24gYnVkZ2V0IOKAlCBtaWQtY2FzZSAoR0hTKTwvdGV4dD48L2c+PGcgY2xhc3M9InBsb3QiPjxnIGNsYXNzPSJiYXItcGxvdC0wIj48cmVjdCB4PSI5MC44OTE5MTY5MzQ2NDkxNSIgeT0iNzkuNTM4ODg4ODg4ODg4ODgiIHdpZHRoPSI4MS4xMzYwOTE4MjAzOTg5NiIgaGVpZ2h0PSIzODcuNDYxMTExMTExMTExMSIgZmlsbD0iI0VDRUNGRiIgc3Ryb2tlPSIjRUNFQ0ZGIiBzdHJva2Utd2lkdGg9IjAiLz48cmVjdCB4PSIxOTMuMzc5NjExODY1Njc5NCIgeT0iMjc3LjIyMjIyMjIyMjIyMjIzIiB3aWR0aD0iODEuMTM2MDkxODIwMzk4OTYiIGhlaWdodD0iMTg5Ljc3Nzc3Nzc3Nzc3Nzc3IiBmaWxsPSIjRUNFQ0ZGIiBzdHJva2U9IiNFQ0VDRkYiIHN0cm9rZS13aWR0aD0iMCIvPjxyZWN0IHg9IjI5NS44NjczMDY3OTY3MDk2NyIgeT0iMzYzLjU2NjY2NjY2NjY2NjY2IiB3aWR0aD0iODEuMTM2MDkxODIwMzk4OTYiIGhlaWdodD0iMTAzLjQzMzMzMzMzMzMzMzM0IiBmaWxsPSIjRUNFQ0ZGIiBzdHJva2U9IiNFQ0VDRkYiIHN0cm9rZS13aWR0aD0iMCIvPjxyZWN0IHg9IjM5OC4zNTUwMDE3Mjc3NCIgeT0iMzcwLjM4MzMzMzMzMzMzMzMiIHdpZHRoPSI4MS4xMzYwOTE4MjAzOTg5NiIgaGVpZ2h0PSI5Ni42MTY2NjY2NjY2NjY2NyIgZmlsbD0iI0VDRUNGRiIgc3Ryb2tlPSIjRUNFQ0ZGIiBzdHJva2Utd2lkdGg9IjAiLz48cmVjdCB4PSI1MDAuODQyNjk2NjU4NzcwMiIgeT0iNDM5LjY4NjExMTExMTExMTEiIHdpZHRoPSI4MS4xMzYwOTE4MjAzOTg5NiIgaGVpZ2h0PSIyNy4zMTM4ODg4ODg4ODg5MjYiIGZpbGw9IiNFQ0VDRkYiIHN0cm9rZT0iI0VDRUNGRiIgc3Ryb2tlLXdpZHRoPSIwIi8+PHJlY3QgeD0iNjAzLjMzMDM5MTU4OTgwMDYiIHk9IjM3Mi42NTU1NTU1NTU1NTU1IiB3aWR0aD0iODEuMTM2MDkxODIwMzk4OTYiIGhlaWdodD0iOTQuMzQ0NDQ0NDQ0NDQ0NDkiIGZpbGw9IiNFQ0VDRkYiIHN0cm9rZT0iI0VDRUNGRiIgc3Ryb2tlLXdpZHRoPSIwIi8+PC9nPjwvZz48ZyBjbGFzcz0iYm90dG9tLWF4aXMiPjxnIGNsYXNzPSJheGlzLWxpbmUiPjxwYXRoIGQ9Ik0gNzUuMzU4NDAwMzQ0ODQ4NjMsNDY4IEwgNzAwLDQ2OCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTMxMzAwIiBzdHJva2Utd2lkdGg9IjIiLz48L2c+PGcgY2xhc3M9ImxhYmVsIj48dGV4dCB4PSIwIiB5PSIwIiBmaWxsPSIjMTMxMzAwIiBmb250LXNpemU9IjE0IiBkb21pbmFudC1iYXNlbGluZT0idGV4dC1iZWZvcmUtZWRnZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTMxLjQ1OTk2Mjg0NDg0ODYzLCA0NzkpIHJvdGF0ZSgwKSI+U2lnbmFnZSArIHBlcm1pdDwvdGV4dD48dGV4dCB4PSIwIiB5PSIwIiBmaWxsPSIjMTMxMzAwIiBmb250LXNpemU9IjE0IiBkb21pbmFudC1iYXNlbGluZT0idGV4dC1iZWZvcmUtZWRnZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjMzLjk0NzY1Nzc3NTg3ODksIDQ3OSkgcm90YXRlKDApIj5XZWJzaXRlICsgZG9tYWluPC90ZXh0Pjx0ZXh0IHg9IjAiIHk9IjAiIGZpbGw9IiMxMzEzMDAiIGZvbnQtc2l6ZT0iMTQiIGRvbWluYW50LWJhc2VsaW5lPSJ0ZXh0LWJlZm9yZS1lZGdlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMzYuNDM1MzUyNzA2OTA5MTYsIDQ3OSkgcm90YXRlKDApIj5QaG90by92aWRlbzwvdGV4dD48dGV4dCB4PSIwIiB5PSIwIiBmaWxsPSIjMTMxMzAwIiBmb250LXNpemU9IjE0IiBkb21pbmFudC1iYXNlbGluZT0idGV4dC1iZWZvcmUtZWRnZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDM4LjkyMzA0NzYzNzkzOTUsIDQ3OSkgcm90YXRlKDApIj5QcmludCArIHJldmlld3M8L3RleHQ+PHRleHQgeD0iMCIgeT0iMCIgZmlsbD0iIzEzMTMwMCIgZm9udC1zaXplPSIxNCIgZG9taW5hbnQtYmFzZWxpbmU9InRleHQtYmVmb3JlLWVkZ2UiIHRleHQtYW5jaG9yPSJtaWRkbGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU0MS40MTA3NDI1Njg5Njk3LCA0NzkpIHJvdGF0ZSgwKSI+VHJhaW5pbmc8L3RleHQ+PHRleHQgeD0iMCIgeT0iMCIgZmlsbD0iIzEzMTMwMCIgZm9udC1zaXplPSIxNCIgZG9taW5hbnQtYmFzZWxpbmU9InRleHQtYmVmb3JlLWVkZ2UiIHRleHQtYW5jaG9yPSJtaWRkbGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDY0My44OTg0Mzc1LCA0NzkpIHJvdGF0ZSgwKSI+Q29udGluZ2VuY3k8L3RleHQ+PC9nPjxnIGNsYXNzPSJ0aWNrcyI+PHBhdGggZD0iTSAxMzEuNDU5OTYyODQ0ODQ4NjMsNDY5IEwgMTMxLjQ1OTk2Mjg0NDg0ODYzLDQ3NCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTMxMzAwIiBzdHJva2Utd2lkdGg9IjIiLz48cGF0aCBkPSJNIDIzMy45NDc2NTc3NzU4Nzg5LDQ2OSBMIDIzMy45NDc2NTc3NzU4Nzg5LDQ3NCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTMxMzAwIiBzdHJva2Utd2lkdGg9IjIiLz48cGF0aCBkPSJNIDMzNi40MzUzNTI3MDY5MDkxNiw0NjkgTCAzMzYuNDM1MzUyNzA2OTA5MTYsNDc0IiBmaWxsPSJub25lIiBzdHJva2U9IiMxMzEzMDAiIHN0cm9rZS13aWR0aD0iMiIvPjxwYXRoIGQ9Ik0gNDM4LjkyMzA0NzYzNzkzOTUsNDY5IEwgNDM4LjkyMzA0NzYzNzkzOTUsNDc0IiBmaWxsPSJub25lIiBzdHJva2U9IiMxMzEzMDAiIHN0cm9rZS13aWR0aD0iMiIvPjxwYXRoIGQ9Ik0gNTQxLjQxMDc0MjU2ODk2OTcsNDY5IEwgNTQxLjQxMDc0MjU2ODk2OTcsNDc0IiBmaWxsPSJub25lIiBzdHJva2U9IiMxMzEzMDAiIHN0cm9rZS13aWR0aD0iMiIvPjxwYXRoIGQ9Ik0gNjQzLjg5ODQzNzUsNDY5IEwgNjQzLjg5ODQzNzUsNDc0IiBmaWxsPSJub25lIiBzdHJva2U9IiMxMzEzMDAiIHN0cm9rZS13aWR0aD0iMiIvPjwvZz48L2c+PGcgY2xhc3M9ImxlZnQtYXhpcyI+PGcgY2xhc3M9ImF4aXNsLWxpbmUiPjxwYXRoIGQ9Ik0gNzQuMzU4NDAwMzQ0ODQ4NjMsNDIgTCA3NC4zNTg0MDAzNDQ4NDg2Myw0NjcgIiBmaWxsPSJub25lIiBzdHJva2U9IiMxMzEzMDAiIHN0cm9rZS13aWR0aD0iMiIvPjwvZz48ZyBjbGFzcz0ibGFiZWwiPjx0ZXh0IHg9IjAiIHk9IjAiIGZpbGw9IiMxMzEzMDAiIGZvbnQtc2l6ZT0iMTQiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJlbmQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYzLjM1ODQwMDM0NDg0ODYzLCA1MCkgcm90YXRlKDApIj45MDAwPC90ZXh0Pjx0ZXh0IHg9IjAiIHk9IjAiIGZpbGw9IiMxMzEzMDAiIGZvbnQtc2l6ZT0iMTQiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJlbmQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYzLjM1ODQwMDM0NDg0ODYzLCA5NS40NDQ0NDQ0NDQ0NDQ0Nikgcm90YXRlKDApIj44MDAwPC90ZXh0Pjx0ZXh0IHg9IjAiIHk9IjAiIGZpbGw9IiMxMzEzMDAiIGZvbnQtc2l6ZT0iMTQiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJlbmQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYzLjM1ODQwMDM0NDg0ODYzLCAxNDAuODg4ODg4ODg4ODg4ODkpIHJvdGF0ZSgwKSI+NzAwMDwvdGV4dD48dGV4dCB4PSIwIiB5PSIwIiBmaWxsPSIjMTMxMzAwIiBmb250LXNpemU9IjE0IiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0iZW5kIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2My4zNTg0MDAzNDQ4NDg2MywgMTg2LjMzMzMzMzMzMzMzMzM3KSByb3RhdGUoMCkiPjYwMDA8L3RleHQ+PHRleHQgeD0iMCIgeT0iMCIgZmlsbD0iIzEzMTMwMCIgZm9udC1zaXplPSIxNCIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9ImVuZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjMuMzU4NDAwMzQ0ODQ4NjMsIDIzMS43Nzc3Nzc3Nzc3Nzc3Nykgcm90YXRlKDApIj41MDAwPC90ZXh0Pjx0ZXh0IHg9IjAiIHk9IjAiIGZpbGw9IiMxMzEzMDAiIGZvbnQtc2l6ZT0iMTQiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJlbmQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYzLjM1ODQwMDM0NDg0ODYzLCAyNzcuMjIyMjIyMjIyMjIyMjMpIHJvdGF0ZSgwKSI+NDAwMDwvdGV4dD48dGV4dCB4PSIwIiB5PSIwIiBmaWxsPSIjMTMxMzAwIiBmb250LXNpemU9IjE0IiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0iZW5kIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2My4zNTg0MDAzNDQ4NDg2MywgMzIyLjY2NjY2NjY2NjY2Njc0KSByb3RhdGUoMCkiPjMwMDA8L3RleHQ+PHRleHQgeD0iMCIgeT0iMCIgZmlsbD0iIzEzMTMwMCIgZm9udC1zaXplPSIxNCIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9ImVuZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjMuMzU4NDAwMzQ0ODQ4NjMsIDM2OC4xMTExMTExMTExMTExKSByb3RhdGUoMCkiPjIwMDA8L3RleHQ+PHRleHQgeD0iMCIgeT0iMCIgZmlsbD0iIzEzMTMwMCIgZm9udC1zaXplPSIxNCIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9ImVuZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjMuMzU4NDAwMzQ0ODQ4NjMsIDQxMy41NTU1NTU1NTU1NTU1NCkgcm90YXRlKDApIj4xMDAwPC90ZXh0Pjx0ZXh0IHg9IjAiIHk9IjAiIGZpbGw9IiMxMzEzMDAiIGZvbnQtc2l6ZT0iMTQiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJlbmQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYzLjM1ODQwMDM0NDg0ODYzLCA0NTkpIHJvdGF0ZSgwKSI+MDwvdGV4dD48L2c+PGcgY2xhc3M9InRpY2tzIj48cGF0aCBkPSJNIDczLjM1ODQwMDM0NDg0ODYzLDUwIEwgNjguMzU4NDAwMzQ0ODQ4NjMsNTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzEzMTMwMCIgc3Ryb2tlLXdpZHRoPSIyIi8+PHBhdGggZD0iTSA3My4zNTg0MDAzNDQ4NDg2Myw5NS40NDQ0NDQ0NDQ0NDQ0NiBMIDY4LjM1ODQwMDM0NDg0ODYzLDk1LjQ0NDQ0NDQ0NDQ0NDQ2IiBmaWxsPSJub25lIiBzdHJva2U9IiMxMzEzMDAiIHN0cm9rZS13aWR0aD0iMiIvPjxwYXRoIGQ9Ik0gNzMuMzU4NDAwMzQ0ODQ4NjMsMTQwLjg4ODg4ODg4ODg4ODg5IEwgNjguMzU4NDAwMzQ0ODQ4NjMsMTQwLjg4ODg4ODg4ODg4ODg5IiBmaWxsPSJub25lIiBzdHJva2U9IiMxMzEzMDAiIHN0cm9rZS13aWR0aD0iMiIvPjxwYXRoIGQ9Ik0gNzMuMzU4NDAwMzQ0ODQ4NjMsMTg2LjMzMzMzMzMzMzMzMzM3IEwgNjguMzU4NDAwMzQ0ODQ4NjMsMTg2LjMzMzMzMzMzMzMzMzM3IiBmaWxsPSJub25lIiBzdHJva2U9IiMxMzEzMDAiIHN0cm9rZS13aWR0aD0iMiIvPjxwYXRoIGQ9Ik0gNzMuMzU4NDAwMzQ0ODQ4NjMsMjMxLjc3Nzc3Nzc3Nzc3Nzc3IEwgNjguMzU4NDAwMzQ0ODQ4NjMsMjMxLjc3Nzc3Nzc3Nzc3Nzc3IiBmaWxsPSJub25lIiBzdHJva2U9IiMxMzEzMDAiIHN0cm9rZS13aWR0aD0iMiIvPjxwYXRoIGQ9Ik0gNzMuMzU4NDAwMzQ0ODQ4NjMsMjc3LjIyMjIyMjIyMjIyMjIzIEwgNjguMzU4NDAwMzQ0ODQ4NjMsMjc3LjIyMjIyMjIyMjIyMjIzIiBmaWxsPSJub25lIiBzdHJva2U9IiMxMzEzMDAiIHN0cm9rZS13aWR0aD0iMiIvPjxwYXRoIGQ9Ik0gNzMuMzU4NDAwMzQ0ODQ4NjMsMzIyLjY2NjY2NjY2NjY2Njc0IEwgNjguMzU4NDAwMzQ0ODQ4NjMsMzIyLjY2NjY2NjY2NjY2Njc0IiBmaWxsPSJub25lIiBzdHJva2U9IiMxMzEzMDAiIHN0cm9rZS13aWR0aD0iMiIvPjxwYXRoIGQ9Ik0gNzMuMzU4NDAwMzQ0ODQ4NjMsMzY4LjExMTExMTExMTExMTEgTCA2OC4zNTg0MDAzNDQ4NDg2MywzNjguMTExMTExMTExMTExMSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTMxMzAwIiBzdHJva2Utd2lkdGg9IjIiLz48cGF0aCBkPSJNIDczLjM1ODQwMDM0NDg0ODYzLDQxMy41NTU1NTU1NTU1NTU1NCBMIDY4LjM1ODQwMDM0NDg0ODYzLDQxMy41NTU1NTU1NTU1NTU1NCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTMxMzAwIiBzdHJva2Utd2lkdGg9IjIiLz48cGF0aCBkPSJNIDczLjM1ODQwMDM0NDg0ODYzLDQ1OSBMIDY4LjM1ODQwMDM0NDg0ODYzLDQ1OSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTMxMzAwIiBzdHJva2Utd2lkdGg9IjIiLz48L2c+PGcgY2xhc3M9InRpdGxlIj48dGV4dCB4PSIwIiB5PSIwIiBmaWxsPSIjMTMxMzAwIiBmb250LXNpemU9IjE2IiBkb21pbmFudC1iYXNlbGluZT0idGV4dC1iZWZvcmUtZWRnZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNSwgMjU0LjUpIHJvdGF0ZSgyNzApIj5HSFM8L3RleHQ+PC9nPjwvZz48L2c+PGcgY2xhc3M9Im1lcm1haWQtdG1wLWdyb3VwIi8+PC9zdmc+" alt="30-day non-negotiable sprint." loading="lazy"><figcaption>Figure 1 — 30-day non-negotiable sprint.</figcaption></figure>
+
+<hr />
+<h2 id="5-the-30-day-timeline">5. The 30-day timeline</h2>
+<figure class="diagram"><img src="data:image/svg+xml;base64,PHN2ZyBpZD0ibWVybWFpZC1zdmciIHdpZHRoPSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTA0IDM4OCIgc3R5bGU9Im1heC13aWR0aDogMTkwNHB4OyIgcm9sZT0iZ3JhcGhpY3MtZG9jdW1lbnQgZG9jdW1lbnQiIGFyaWEtcm9sZWRlc2NyaXB0aW9uPSJnYW50dCIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxzdHlsZSB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCI+QGltcG9ydCB1cmwoImh0dHBzOi8vY2RuanMuY2xvdWRmbGFyZS5jb20vYWpheC9saWJzL2ZvbnQtYXdlc29tZS83LjIuMC9jc3MvYWxsLm1pbi5jc3MiKTs8L3N0eWxlPjxzdHlsZT4jbWVybWFpZC1zdmd7Zm9udC1mYW1pbHk6InRyZWJ1Y2hldCBtcyIsdmVyZGFuYSxhcmlhbCxzYW5zLXNlcmlmO2ZvbnQtc2l6ZToxNnB4O2ZpbGw6IzMzMzt9QGtleWZyYW1lcyBlZGdlLWFuaW1hdGlvbi1mcmFtZXtmcm9te3N0cm9rZS1kYXNob2Zmc2V0OjA7fX1Aa2V5ZnJhbWVzIGRhc2h7dG97c3Ryb2tlLWRhc2hvZmZzZXQ6MDt9fSNtZXJtYWlkLXN2ZyAuZWRnZS1hbmltYXRpb24tc2xvd3tzdHJva2UtZGFzaGFycmF5OjksNSFpbXBvcnRhbnQ7c3Ryb2tlLWRhc2hvZmZzZXQ6OTAwO2FuaW1hdGlvbjpkYXNoIDUwcyBsaW5lYXIgaW5maW5pdGU7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7fSNtZXJtYWlkLXN2ZyAuZWRnZS1hbmltYXRpb24tZmFzdHtzdHJva2UtZGFzaGFycmF5OjksNSFpbXBvcnRhbnQ7c3Ryb2tlLWRhc2hvZmZzZXQ6OTAwO2FuaW1hdGlvbjpkYXNoIDIwcyBsaW5lYXIgaW5maW5pdGU7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7fSNtZXJtYWlkLXN2ZyAuZXJyb3ItaWNvbntmaWxsOiM1NTIyMjI7fSNtZXJtYWlkLXN2ZyAuZXJyb3ItdGV4dHtmaWxsOiM1NTIyMjI7c3Ryb2tlOiM1NTIyMjI7fSNtZXJtYWlkLXN2ZyAuZWRnZS10aGlja25lc3Mtbm9ybWFse3N0cm9rZS13aWR0aDoxcHg7fSNtZXJtYWlkLXN2ZyAuZWRnZS10aGlja25lc3MtdGhpY2t7c3Ryb2tlLXdpZHRoOjMuNXB4O30jbWVybWFpZC1zdmcgLmVkZ2UtcGF0dGVybi1zb2xpZHtzdHJva2UtZGFzaGFycmF5OjA7fSNtZXJtYWlkLXN2ZyAuZWRnZS10aGlja25lc3MtaW52aXNpYmxle3N0cm9rZS13aWR0aDowO2ZpbGw6bm9uZTt9I21lcm1haWQtc3ZnIC5lZGdlLXBhdHRlcm4tZGFzaGVke3N0cm9rZS1kYXNoYXJyYXk6Mzt9I21lcm1haWQtc3ZnIC5lZGdlLXBhdHRlcm4tZG90dGVke3N0cm9rZS1kYXNoYXJyYXk6Mjt9I21lcm1haWQtc3ZnIC5tYXJrZXJ7ZmlsbDojMzMzMzMzO3N0cm9rZTojMzMzMzMzO30jbWVybWFpZC1zdmcgLm1hcmtlci5jcm9zc3tzdHJva2U6IzMzMzMzMzt9I21lcm1haWQtc3ZnIHN2Z3tmb250LWZhbWlseToidHJlYnVjaGV0IG1zIix2ZXJkYW5hLGFyaWFsLHNhbnMtc2VyaWY7Zm9udC1zaXplOjE2cHg7fSNtZXJtYWlkLXN2ZyBwe21hcmdpbjowO30jbWVybWFpZC1zdmcgLm1lcm1haWQtbWFpbi1mb250e2ZvbnQtZmFtaWx5OiJ0cmVidWNoZXQgbXMiLHZlcmRhbmEsYXJpYWwsc2Fucy1zZXJpZjt9I21lcm1haWQtc3ZnIC5leGNsdWRlLXJhbmdle2ZpbGw6I2VlZWVlZTt9I21lcm1haWQtc3ZnIC5zZWN0aW9ue3N0cm9rZTpub25lO29wYWNpdHk6MC4yO30jbWVybWFpZC1zdmcgLnNlY3Rpb24we2ZpbGw6cmdiYSgxMDIsIDEwMiwgMjU1LCAwLjQ5KTt9I21lcm1haWQtc3ZnIC5zZWN0aW9uMntmaWxsOiNmZmY0MDA7fSNtZXJtYWlkLXN2ZyAuc2VjdGlvbjEsI21lcm1haWQtc3ZnIC5zZWN0aW9uM3tmaWxsOndoaXRlO29wYWNpdHk6MC4yO30jbWVybWFpZC1zdmcgLnNlY3Rpb25UaXRsZTB7ZmlsbDojMzMzO30jbWVybWFpZC1zdmcgLnNlY3Rpb25UaXRsZTF7ZmlsbDojMzMzO30jbWVybWFpZC1zdmcgLnNlY3Rpb25UaXRsZTJ7ZmlsbDojMzMzO30jbWVybWFpZC1zdmcgLnNlY3Rpb25UaXRsZTN7ZmlsbDojMzMzO30jbWVybWFpZC1zdmcgLnNlY3Rpb25UaXRsZXt0ZXh0LWFuY2hvcjpzdGFydDtmb250LWZhbWlseToidHJlYnVjaGV0IG1zIix2ZXJkYW5hLGFyaWFsLHNhbnMtc2VyaWY7fSNtZXJtYWlkLXN2ZyAuZ3JpZCAudGlja3tzdHJva2U6bGlnaHRncmV5O29wYWNpdHk6MC44O3NoYXBlLXJlbmRlcmluZzpjcmlzcEVkZ2VzO30jbWVybWFpZC1zdmcgLmdyaWQgLnRpY2sgdGV4dHtmb250LWZhbWlseToidHJlYnVjaGV0IG1zIix2ZXJkYW5hLGFyaWFsLHNhbnMtc2VyaWY7ZmlsbDojMzMzO30jbWVybWFpZC1zdmcgLmdyaWQgcGF0aHtzdHJva2Utd2lkdGg6MDt9I21lcm1haWQtc3ZnIC50b2RheXtmaWxsOm5vbmU7c3Ryb2tlOnJlZDtzdHJva2Utd2lkdGg6MnB4O30jbWVybWFpZC1zdmcgLnRhc2t7c3Ryb2tlLXdpZHRoOjI7fSNtZXJtYWlkLXN2ZyAudGFza1RleHR7dGV4dC1hbmNob3I6bWlkZGxlO2ZvbnQtZmFtaWx5OiJ0cmVidWNoZXQgbXMiLHZlcmRhbmEsYXJpYWwsc2Fucy1zZXJpZjt9I21lcm1haWQtc3ZnIC50YXNrVGV4dE91dHNpZGVSaWdodHtmaWxsOmJsYWNrO3RleHQtYW5jaG9yOnN0YXJ0O2ZvbnQtZmFtaWx5OiJ0cmVidWNoZXQgbXMiLHZlcmRhbmEsYXJpYWwsc2Fucy1zZXJpZjt9I21lcm1haWQtc3ZnIC50YXNrVGV4dE91dHNpZGVMZWZ0e2ZpbGw6YmxhY2s7dGV4dC1hbmNob3I6ZW5kO30jbWVybWFpZC1zdmcgLnRhc2suY2xpY2thYmxle2N1cnNvcjpwb2ludGVyO30jbWVybWFpZC1zdmcgLnRhc2tUZXh0LmNsaWNrYWJsZXtjdXJzb3I6cG9pbnRlcjtmaWxsOiMwMDMxNjMhaW1wb3J0YW50O2ZvbnQtd2VpZ2h0OmJvbGQ7fSNtZXJtYWlkLXN2ZyAudGFza1RleHRPdXRzaWRlTGVmdC5jbGlja2FibGV7Y3Vyc29yOnBvaW50ZXI7ZmlsbDojMDAzMTYzIWltcG9ydGFudDtmb250LXdlaWdodDpib2xkO30jbWVybWFpZC1zdmcgLnRhc2tUZXh0T3V0c2lkZVJpZ2h0LmNsaWNrYWJsZXtjdXJzb3I6cG9pbnRlcjtmaWxsOiMwMDMxNjMhaW1wb3J0YW50O2ZvbnQtd2VpZ2h0OmJvbGQ7fSNtZXJtYWlkLXN2ZyAudGFza1RleHQwLCNtZXJtYWlkLXN2ZyAudGFza1RleHQxLCNtZXJtYWlkLXN2ZyAudGFza1RleHQyLCNtZXJtYWlkLXN2ZyAudGFza1RleHQze2ZpbGw6d2hpdGU7fSNtZXJtYWlkLXN2ZyAudGFzazAsI21lcm1haWQtc3ZnIC50YXNrMSwjbWVybWFpZC1zdmcgLnRhc2syLCNtZXJtYWlkLXN2ZyAudGFzazN7ZmlsbDojOGE5MGRkO3N0cm9rZTojNTM0ZmJjO30jbWVybWFpZC1zdmcgLnRhc2tUZXh0T3V0c2lkZTAsI21lcm1haWQtc3ZnIC50YXNrVGV4dE91dHNpZGUye2ZpbGw6YmxhY2s7fSNtZXJtYWlkLXN2ZyAudGFza1RleHRPdXRzaWRlMSwjbWVybWFpZC1zdmcgLnRhc2tUZXh0T3V0c2lkZTN7ZmlsbDpibGFjazt9I21lcm1haWQtc3ZnIC5hY3RpdmUwLCNtZXJtYWlkLXN2ZyAuYWN0aXZlMSwjbWVybWFpZC1zdmcgLmFjdGl2ZTIsI21lcm1haWQtc3ZnIC5hY3RpdmUze2ZpbGw6I2JmYzdmZjtzdHJva2U6IzUzNGZiYzt9I21lcm1haWQtc3ZnIC5hY3RpdmVUZXh0MCwjbWVybWFpZC1zdmcgLmFjdGl2ZVRleHQxLCNtZXJtYWlkLXN2ZyAuYWN0aXZlVGV4dDIsI21lcm1haWQtc3ZnIC5hY3RpdmVUZXh0M3tmaWxsOmJsYWNrIWltcG9ydGFudDt9I21lcm1haWQtc3ZnIC5kb25lMCwjbWVybWFpZC1zdmcgLmRvbmUxLCNtZXJtYWlkLXN2ZyAuZG9uZTIsI21lcm1haWQtc3ZnIC5kb25lM3tzdHJva2U6Z3JleTtmaWxsOmxpZ2h0Z3JleTtzdHJva2Utd2lkdGg6Mjt9I21lcm1haWQtc3ZnIC5kb25lVGV4dDAsI21lcm1haWQtc3ZnIC5kb25lVGV4dDEsI21lcm1haWQtc3ZnIC5kb25lVGV4dDIsI21lcm1haWQtc3ZnIC5kb25lVGV4dDN7ZmlsbDpibGFjayFpbXBvcnRhbnQ7fSNtZXJtYWlkLXN2ZyAuZG9uZVRleHQwLnRhc2tUZXh0T3V0c2lkZUxlZnQsI21lcm1haWQtc3ZnIC5kb25lVGV4dDAudGFza1RleHRPdXRzaWRlUmlnaHQsI21lcm1haWQtc3ZnIC5kb25lVGV4dDEudGFza1RleHRPdXRzaWRlTGVmdCwjbWVybWFpZC1zdmcgLmRvbmVUZXh0MS50YXNrVGV4dE91dHNpZGVSaWdodCwjbWVybWFpZC1zdmcgLmRvbmVUZXh0Mi50YXNrVGV4dE91dHNpZGVMZWZ0LCNtZXJtYWlkLXN2ZyAuZG9uZVRleHQyLnRhc2tUZXh0T3V0c2lkZVJpZ2h0LCNtZXJtYWlkLXN2ZyAuZG9uZVRleHQzLnRhc2tUZXh0T3V0c2lkZUxlZnQsI21lcm1haWQtc3ZnIC5kb25lVGV4dDMudGFza1RleHRPdXRzaWRlUmlnaHR7ZmlsbDpibGFjayFpbXBvcnRhbnQ7fSNtZXJtYWlkLXN2ZyAuY3JpdDAsI21lcm1haWQtc3ZnIC5jcml0MSwjbWVybWFpZC1zdmcgLmNyaXQyLCNtZXJtYWlkLXN2ZyAuY3JpdDN7c3Ryb2tlOiNmZjg4ODg7ZmlsbDpyZWQ7c3Ryb2tlLXdpZHRoOjI7fSNtZXJtYWlkLXN2ZyAuYWN0aXZlQ3JpdDAsI21lcm1haWQtc3ZnIC5hY3RpdmVDcml0MSwjbWVybWFpZC1zdmcgLmFjdGl2ZUNyaXQyLCNtZXJtYWlkLXN2ZyAuYWN0aXZlQ3JpdDN7c3Ryb2tlOiNmZjg4ODg7ZmlsbDojYmZjN2ZmO3N0cm9rZS13aWR0aDoyO30jbWVybWFpZC1zdmcgLmRvbmVDcml0MCwjbWVybWFpZC1zdmcgLmRvbmVDcml0MSwjbWVybWFpZC1zdmcgLmRvbmVDcml0MiwjbWVybWFpZC1zdmcgLmRvbmVDcml0M3tzdHJva2U6I2ZmODg4ODtmaWxsOmxpZ2h0Z3JleTtzdHJva2Utd2lkdGg6MjtjdXJzb3I6cG9pbnRlcjtzaGFwZS1yZW5kZXJpbmc6Y3Jpc3BFZGdlczt9I21lcm1haWQtc3ZnIC5taWxlc3RvbmV7dHJhbnNmb3JtOnJvdGF0ZSg0NWRlZykgc2NhbGUoMC44LDAuOCk7fSNtZXJtYWlkLXN2ZyAubWlsZXN0b25lVGV4dHtmb250LXN0eWxlOml0YWxpYzt9I21lcm1haWQtc3ZnIC5kb25lQ3JpdFRleHQwLCNtZXJtYWlkLXN2ZyAuZG9uZUNyaXRUZXh0MSwjbWVybWFpZC1zdmcgLmRvbmVDcml0VGV4dDIsI21lcm1haWQtc3ZnIC5kb25lQ3JpdFRleHQze2ZpbGw6YmxhY2shaW1wb3J0YW50O30jbWVybWFpZC1zdmcgLmRvbmVDcml0VGV4dDAudGFza1RleHRPdXRzaWRlTGVmdCwjbWVybWFpZC1zdmcgLmRvbmVDcml0VGV4dDAudGFza1RleHRPdXRzaWRlUmlnaHQsI21lcm1haWQtc3ZnIC5kb25lQ3JpdFRleHQxLnRhc2tUZXh0T3V0c2lkZUxlZnQsI21lcm1haWQtc3ZnIC5kb25lQ3JpdFRleHQxLnRhc2tUZXh0T3V0c2lkZVJpZ2h0LCNtZXJtYWlkLXN2ZyAuZG9uZUNyaXRUZXh0Mi50YXNrVGV4dE91dHNpZGVMZWZ0LCNtZXJtYWlkLXN2ZyAuZG9uZUNyaXRUZXh0Mi50YXNrVGV4dE91dHNpZGVSaWdodCwjbWVybWFpZC1zdmcgLmRvbmVDcml0VGV4dDMudGFza1RleHRPdXRzaWRlTGVmdCwjbWVybWFpZC1zdmcgLmRvbmVDcml0VGV4dDMudGFza1RleHRPdXRzaWRlUmlnaHR7ZmlsbDpibGFjayFpbXBvcnRhbnQ7fSNtZXJtYWlkLXN2ZyAudmVydHtzdHJva2U6bmF2eTt9I21lcm1haWQtc3ZnIC52ZXJ0VGV4dHtmb250LXNpemU6MTVweDt0ZXh0LWFuY2hvcjptaWRkbGU7ZmlsbDpuYXZ5IWltcG9ydGFudDt9I21lcm1haWQtc3ZnIC5hY3RpdmVDcml0VGV4dDAsI21lcm1haWQtc3ZnIC5hY3RpdmVDcml0VGV4dDEsI21lcm1haWQtc3ZnIC5hY3RpdmVDcml0VGV4dDIsI21lcm1haWQtc3ZnIC5hY3RpdmVDcml0VGV4dDN7ZmlsbDpibGFjayFpbXBvcnRhbnQ7fSNtZXJtYWlkLXN2ZyAudGl0bGVUZXh0e3RleHQtYW5jaG9yOm1pZGRsZTtmb250LXNpemU6MThweDtmaWxsOiMzMzM7Zm9udC1mYW1pbHk6InRyZWJ1Y2hldCBtcyIsdmVyZGFuYSxhcmlhbCxzYW5zLXNlcmlmO30jbWVybWFpZC1zdmcgLm5vZGUgLm5lby1ub2Rle3N0cm9rZTojOTM3MERCO30jbWVybWFpZC1zdmcgW2RhdGEtbG9vaz0ibmVvIl0ubm9kZSByZWN0LCNtZXJtYWlkLXN2ZyBbZGF0YS1sb29rPSJuZW8iXS5jbHVzdGVyIHJlY3QsI21lcm1haWQtc3ZnIFtkYXRhLWxvb2s9Im5lbyJdLm5vZGUgcG9seWdvbntzdHJva2U6IzkzNzBEQjtmaWx0ZXI6ZHJvcC1zaGFkb3coMXB4IDJweCAycHggcmdiYSgxODUsIDE4NSwgMTg1LCAxKSk7fSNtZXJtYWlkLXN2ZyBbZGF0YS1sb29rPSJuZW8iXS5zd2ltbGFuZS5jbHVzdGVyIHJlY3R7ZmlsdGVyOm5vbmU7fSNtZXJtYWlkLXN2ZyBbZGF0YS1sb29rPSJuZW8iXS5ub2RlIHBhdGh7c3Ryb2tlOiM5MzcwREI7c3Ryb2tlLXdpZHRoOjFweDt9I21lcm1haWQtc3ZnIFtkYXRhLWxvb2s9Im5lbyJdLm5vZGUgLm91dGVyLXBhdGh7ZmlsdGVyOmRyb3Atc2hhZG93KDFweCAycHggMnB4IHJnYmEoMTg1LCAxODUsIDE4NSwgMSkpO30jbWVybWFpZC1zdmcgW2RhdGEtbG9vaz0ibmVvIl0ubm9kZSAubmVvLWxpbmUgcGF0aHtzdHJva2U6IzkzNzBEQjtmaWx0ZXI6bm9uZTt9I21lcm1haWQtc3ZnIFtkYXRhLWxvb2s9Im5lbyJdLm5vZGUgY2lyY2xle3N0cm9rZTojOTM3MERCO2ZpbHRlcjpkcm9wLXNoYWRvdygxcHggMnB4IDJweCByZ2JhKDE4NSwgMTg1LCAxODUsIDEpKTt9I21lcm1haWQtc3ZnIFtkYXRhLWxvb2s9Im5lbyJdLm5vZGUgY2lyY2xlIC5zdGF0ZS1zdGFydHtmaWxsOiMwMDAwMDA7fSNtZXJtYWlkLXN2ZyBbZGF0YS1sb29rPSJuZW8iXS5pY29uLXNoYXBlIC5pY29ue2ZpbGw6IzkzNzBEQjtmaWx0ZXI6ZHJvcC1zaGFkb3coMXB4IDJweCAycHggcmdiYSgxODUsIDE4NSwgMTg1LCAxKSk7fSNtZXJtYWlkLXN2ZyBbZGF0YS1sb29rPSJuZW8iXS5pY29uLXNoYXBlIC5pY29uLW5lbyBwYXRoe3N0cm9rZTojOTM3MERCO2ZpbHRlcjpkcm9wLXNoYWRvdygxcHggMnB4IDJweCByZ2JhKDE4NSwgMTg1LCAxODUsIDEpKTt9I21lcm1haWQtc3ZnIDpyb290ey0tbWVybWFpZC1mb250LWZhbWlseToidHJlYnVjaGV0IG1zIix2ZXJkYW5hLGFyaWFsLHNhbnMtc2VyaWY7fTwvc3R5bGU+PGcvPjxnIGNsYXNzPSJncmlkIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3NSwgMzM4KSIgZmlsbD0ibm9uZSIgZm9udC1zaXplPSIxMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjxwYXRoIGNsYXNzPSJkb21haW4iIHN0cm9rZT0iY3VycmVudENvbG9yIiBkPSJNMC41LC0zMDNWMC41SDE3NTQuNVYtMzAzIi8+PGcgY2xhc3M9InRpY2siIG9wYWNpdHk9IjEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuNSwwKSI+PGxpbmUgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHkyPSItMzAzIi8+PHRleHQgZmlsbD0iIzAwMCIgeT0iMyIgZHk9IjFlbSIgc3Ryb2tlPSJub25lIiBmb250LXNpemU9IjEwIiBzdHlsZT0idGV4dC1hbmNob3I6IG1pZGRsZTsiPiAwOSBOb3Y8L3RleHQ+PC9nPjxnIGNsYXNzPSJ0aWNrIiBvcGFjaXR5PSIxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMTcuNSwwKSI+PGxpbmUgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHkyPSItMzAzIi8+PHRleHQgZmlsbD0iIzAwMCIgeT0iMyIgZHk9IjFlbSIgc3Ryb2tlPSJub25lIiBmb250LXNpemU9IjEwIiBzdHlsZT0idGV4dC1hbmNob3I6IG1pZGRsZTsiPiAxMSBOb3Y8L3RleHQ+PC9nPjxnIGNsYXNzPSJ0aWNrIiBvcGFjaXR5PSIxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMzQuNSwwKSI+PGxpbmUgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHkyPSItMzAzIi8+PHRleHQgZmlsbD0iIzAwMCIgeT0iMyIgZHk9IjFlbSIgc3Ryb2tlPSJub25lIiBmb250LXNpemU9IjEwIiBzdHlsZT0idGV4dC1hbmNob3I6IG1pZGRsZTsiPiAxMyBOb3Y8L3RleHQ+PC9nPjxnIGNsYXNzPSJ0aWNrIiBvcGFjaXR5PSIxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzNTEuNSwwKSI+PGxpbmUgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHkyPSItMzAzIi8+PHRleHQgZmlsbD0iIzAwMCIgeT0iMyIgZHk9IjFlbSIgc3Ryb2tlPSJub25lIiBmb250LXNpemU9IjEwIiBzdHlsZT0idGV4dC1hbmNob3I6IG1pZGRsZTsiPiAxNSBOb3Y8L3RleHQ+PC9nPjxnIGNsYXNzPSJ0aWNrIiBvcGFjaXR5PSIxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0NjguNSwwKSI+PGxpbmUgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHkyPSItMzAzIi8+PHRleHQgZmlsbD0iIzAwMCIgeT0iMyIgZHk9IjFlbSIgc3Ryb2tlPSJub25lIiBmb250LXNpemU9IjEwIiBzdHlsZT0idGV4dC1hbmNob3I6IG1pZGRsZTsiPiAxNyBOb3Y8L3RleHQ+PC9nPjxnIGNsYXNzPSJ0aWNrIiBvcGFjaXR5PSIxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1ODUuNSwwKSI+PGxpbmUgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHkyPSItMzAzIi8+PHRleHQgZmlsbD0iIzAwMCIgeT0iMyIgZHk9IjFlbSIgc3Ryb2tlPSJub25lIiBmb250LXNpemU9IjEwIiBzdHlsZT0idGV4dC1hbmNob3I6IG1pZGRsZTsiPiAxOSBOb3Y8L3RleHQ+PC9nPjxnIGNsYXNzPSJ0aWNrIiBvcGFjaXR5PSIxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3MDIuNSwwKSI+PGxpbmUgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHkyPSItMzAzIi8+PHRleHQgZmlsbD0iIzAwMCIgeT0iMyIgZHk9IjFlbSIgc3Ryb2tlPSJub25lIiBmb250LXNpemU9IjEwIiBzdHlsZT0idGV4dC1hbmNob3I6IG1pZGRsZTsiPiAyMSBOb3Y8L3RleHQ+PC9nPjxnIGNsYXNzPSJ0aWNrIiBvcGFjaXR5PSIxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4MTkuNSwwKSI+PGxpbmUgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHkyPSItMzAzIi8+PHRleHQgZmlsbD0iIzAwMCIgeT0iMyIgZHk9IjFlbSIgc3Ryb2tlPSJub25lIiBmb250LXNpemU9IjEwIiBzdHlsZT0idGV4dC1hbmNob3I6IG1pZGRsZTsiPiAyMyBOb3Y8L3RleHQ+PC9nPjxnIGNsYXNzPSJ0aWNrIiBvcGFjaXR5PSIxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5MzUuNSwwKSI+PGxpbmUgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHkyPSItMzAzIi8+PHRleHQgZmlsbD0iIzAwMCIgeT0iMyIgZHk9IjFlbSIgc3Ryb2tlPSJub25lIiBmb250LXNpemU9IjEwIiBzdHlsZT0idGV4dC1hbmNob3I6IG1pZGRsZTsiPiAyNSBOb3Y8L3RleHQ+PC9nPjxnIGNsYXNzPSJ0aWNrIiBvcGFjaXR5PSIxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMDUyLjUsMCkiPjxsaW5lIHN0cm9rZT0iY3VycmVudENvbG9yIiB5Mj0iLTMwMyIvPjx0ZXh0IGZpbGw9IiMwMDAiIHk9IjMiIGR5PSIxZW0iIHN0cm9rZT0ibm9uZSIgZm9udC1zaXplPSIxMCIgc3R5bGU9InRleHQtYW5jaG9yOiBtaWRkbGU7Ij4gMjcgTm92PC90ZXh0PjwvZz48ZyBjbGFzcz0idGljayIgb3BhY2l0eT0iMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTE2OS41LDApIj48bGluZSBzdHJva2U9ImN1cnJlbnRDb2xvciIgeTI9Ii0zMDMiLz48dGV4dCBmaWxsPSIjMDAwIiB5PSIzIiBkeT0iMWVtIiBzdHJva2U9Im5vbmUiIGZvbnQtc2l6ZT0iMTAiIHN0eWxlPSJ0ZXh0LWFuY2hvcjogbWlkZGxlOyI+IDI5IE5vdjwvdGV4dD48L2c+PGcgY2xhc3M9InRpY2siIG9wYWNpdHk9IjEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyODYuNSwwKSI+PGxpbmUgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHkyPSItMzAzIi8+PHRleHQgZmlsbD0iIzAwMCIgeT0iMyIgZHk9IjFlbSIgc3Ryb2tlPSJub25lIiBmb250LXNpemU9IjEwIiBzdHlsZT0idGV4dC1hbmNob3I6IG1pZGRsZTsiPiAwMSBEZWM8L3RleHQ+PC9nPjxnIGNsYXNzPSJ0aWNrIiBvcGFjaXR5PSIxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNDAzLjUsMCkiPjxsaW5lIHN0cm9rZT0iY3VycmVudENvbG9yIiB5Mj0iLTMwMyIvPjx0ZXh0IGZpbGw9IiMwMDAiIHk9IjMiIGR5PSIxZW0iIHN0cm9rZT0ibm9uZSIgZm9udC1zaXplPSIxMCIgc3R5bGU9InRleHQtYW5jaG9yOiBtaWRkbGU7Ij4gMDMgRGVjPC90ZXh0PjwvZz48ZyBjbGFzcz0idGljayIgb3BhY2l0eT0iMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTUyMC41LDApIj48bGluZSBzdHJva2U9ImN1cnJlbnRDb2xvciIgeTI9Ii0zMDMiLz48dGV4dCBmaWxsPSIjMDAwIiB5PSIzIiBkeT0iMWVtIiBzdHJva2U9Im5vbmUiIGZvbnQtc2l6ZT0iMTAiIHN0eWxlPSJ0ZXh0LWFuY2hvcjogbWlkZGxlOyI+IDA1IERlYzwvdGV4dD48L2c+PGcgY2xhc3M9InRpY2siIG9wYWNpdHk9IjEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE2MzcuNSwwKSI+PGxpbmUgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHkyPSItMzAzIi8+PHRleHQgZmlsbD0iIzAwMCIgeT0iMyIgZHk9IjFlbSIgc3Ryb2tlPSJub25lIiBmb250LXNpemU9IjEwIiBzdHlsZT0idGV4dC1hbmNob3I6IG1pZGRsZTsiPiAwNyBEZWM8L3RleHQ+PC9nPjxnIGNsYXNzPSJ0aWNrIiBvcGFjaXR5PSIxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNzU0LjUsMCkiPjxsaW5lIHN0cm9rZT0iY3VycmVudENvbG9yIiB5Mj0iLTMwMyIvPjx0ZXh0IGZpbGw9IiMwMDAiIHk9IjMiIGR5PSIxZW0iIHN0cm9rZT0ibm9uZSIgZm9udC1zaXplPSIxMCIgc3R5bGU9InRleHQtYW5jaG9yOiBtaWRkbGU7Ij4gMDkgRGVjPC90ZXh0PjwvZz48L2c+PGc+PHJlY3QgeD0iMCIgeT0iNDgiIHdpZHRoPSIxODY2LjUiIGhlaWdodD0iMjQiIGNsYXNzPSJzZWN0aW9uIHNlY3Rpb24wIi8+PHJlY3QgeD0iMCIgeT0iNzIiIHdpZHRoPSIxODY2LjUiIGhlaWdodD0iMjQiIGNsYXNzPSJzZWN0aW9uIHNlY3Rpb24wIi8+PHJlY3QgeD0iMCIgeT0iOTYiIHdpZHRoPSIxODY2LjUiIGhlaWdodD0iMjQiIGNsYXNzPSJzZWN0aW9uIHNlY3Rpb24wIi8+PHJlY3QgeD0iMCIgeT0iMjg4IiB3aWR0aD0iMTg2Ni41IiBoZWlnaHQ9IjI0IiBjbGFzcz0ic2VjdGlvbiBzZWN0aW9uMiIvPjxyZWN0IHg9IjAiIHk9IjE0NCIgd2lkdGg9IjE4NjYuNSIgaGVpZ2h0PSIyNCIgY2xhc3M9InNlY3Rpb24gc2VjdGlvbjEiLz48cmVjdCB4PSIwIiB5PSIxMjAiIHdpZHRoPSIxODY2LjUiIGhlaWdodD0iMjQiIGNsYXNzPSJzZWN0aW9uIHNlY3Rpb24wIi8+PHJlY3QgeD0iMCIgeT0iMTY4IiB3aWR0aD0iMTg2Ni41IiBoZWlnaHQ9IjI0IiBjbGFzcz0ic2VjdGlvbiBzZWN0aW9uMSIvPjxyZWN0IHg9IjAiIHk9IjE5MiIgd2lkdGg9IjE4NjYuNSIgaGVpZ2h0PSIyNCIgY2xhc3M9InNlY3Rpb24gc2VjdGlvbjEiLz48cmVjdCB4PSIwIiB5PSIyMTYiIHdpZHRoPSIxODY2LjUiIGhlaWdodD0iMjQiIGNsYXNzPSJzZWN0aW9uIHNlY3Rpb24xIi8+PHJlY3QgeD0iMCIgeT0iMjQwIiB3aWR0aD0iMTg2Ni41IiBoZWlnaHQ9IjI0IiBjbGFzcz0ic2VjdGlvbiBzZWN0aW9uMSIvPjxyZWN0IHg9IjAiIHk9IjI2NCIgd2lkdGg9IjE4NjYuNSIgaGVpZ2h0PSIyNCIgY2xhc3M9InNlY3Rpb24gc2VjdGlvbjIiLz48cmVjdCB4PSIwIiB5PSIzMTIiIHdpZHRoPSIxODY2LjUiIGhlaWdodD0iMjQiIGNsYXNzPSJzZWN0aW9uIHNlY3Rpb24yIi8+PC9nPjxnPjxyZWN0IGlkPSJtZXJtYWlkLXN2Zy1hMSIgcng9IjMiIHJ5PSIzIiB4PSI3NSIgeT0iNTAiIHdpZHRoPSIxNzUiIGhlaWdodD0iMjAiIHRyYW5zZm9ybS1vcmlnaW49IjE2Mi41cHggNjBweCIgY2xhc3M9InRhc2sgdGFzazAgIi8+PHJlY3QgaWQ9Im1lcm1haWQtc3ZnLWEyIiByeD0iMyIgcnk9IjMiIHg9Ijc1IiB5PSI3NCIgd2lkdGg9IjI5MiIgaGVpZ2h0PSIyMCIgdHJhbnNmb3JtLW9yaWdpbj0iMjIxcHggODRweCIgY2xhc3M9InRhc2sgdGFzazAgIi8+PHJlY3QgaWQ9Im1lcm1haWQtc3ZnLWEzIiByeD0iMyIgcnk9IjMiIHg9Ijc1IiB5PSI5OCIgd2lkdGg9IjQwOSIgaGVpZ2h0PSIyMCIgdHJhbnNmb3JtLW9yaWdpbj0iMjc5LjVweCAxMDhweCIgY2xhc3M9InRhc2sgdGFzazAgIi8+PHJlY3QgaWQ9Im1lcm1haWQtc3ZnLWMyIiByeD0iMyIgcnk9IjMiIHg9Ijc1IiB5PSIyOTAiIHdpZHRoPSIxNzU0IiBoZWlnaHQ9IjIwIiB0cmFuc2Zvcm0tb3JpZ2luPSI5NTJweCAzMDBweCIgY2xhc3M9InRhc2sgdGFzazIgIi8+PHJlY3QgaWQ9Im1lcm1haWQtc3ZnLWIxIiByeD0iMyIgcnk9IjMiIHg9IjEzMyIgeT0iMTQ2IiB3aWR0aD0iNDEwIiBoZWlnaHQ9IjIwIiB0cmFuc2Zvcm0tb3JpZ2luPSIzMzhweCAxNTZweCIgY2xhc3M9InRhc2sgdGFzazEgIi8+PHJlY3QgaWQ9Im1lcm1haWQtc3ZnLWE0IiByeD0iMyIgcnk9IjMiIHg9IjI1MCIgeT0iMTIyIiB3aWR0aD0iMTc2IiBoZWlnaHQ9IjIwIiB0cmFuc2Zvcm0tb3JpZ2luPSIzMzhweCAxMzJweCIgY2xhc3M9InRhc2sgdGFzazAgIi8+PHJlY3QgaWQ9Im1lcm1haWQtc3ZnLWIyIiByeD0iMyIgcnk9IjMiIHg9IjQ4NCIgeT0iMTcwIiB3aWR0aD0iMjkzIiBoZWlnaHQ9IjIwIiB0cmFuc2Zvcm0tb3JpZ2luPSI2MzAuNXB4IDE4MHB4IiBjbGFzcz0idGFzayB0YXNrMSAiLz48cmVjdCBpZD0ibWVybWFpZC1zdmctYjMiIHJ4PSIzIiByeT0iMyIgeD0iNDg0IiB5PSIxOTQiIHdpZHRoPSI0MTAiIGhlaWdodD0iMjAiIHRyYW5zZm9ybS1vcmlnaW49IjY4OXB4IDIwNHB4IiBjbGFzcz0idGFzayB0YXNrMSAiLz48cmVjdCBpZD0ibWVybWFpZC1zdmctYjQiIHJ4PSIzIiByeT0iMyIgeD0iNDg0IiB5PSIyMTgiIHdpZHRoPSIxMzQ1IiBoZWlnaHQ9IjIwIiB0cmFuc2Zvcm0tb3JpZ2luPSIxMTU2LjVweCAyMjhweCIgY2xhc3M9InRhc2sgdGFzazEgIi8+PHJlY3QgaWQ9Im1lcm1haWQtc3ZnLWI1IiByeD0iMyIgcnk9IjMiIHg9IjQ4NCIgeT0iMjQyIiB3aWR0aD0iMTM0NSIgaGVpZ2h0PSIyMCIgdHJhbnNmb3JtLW9yaWdpbj0iMTE1Ni41cHggMjUycHgiIGNsYXNzPSJ0YXNrIHRhc2sxICIvPjxyZWN0IGlkPSJtZXJtYWlkLXN2Zy1jMSIgcng9IjMiIHJ5PSIzIiB4PSI3MTgiIHk9IjI2NiIgd2lkdGg9IjQ2OCIgaGVpZ2h0PSIyMCIgdHJhbnNmb3JtLW9yaWdpbj0iOTUycHggMjc2cHgiIGNsYXNzPSJ0YXNrIHRhc2syICIvPjxyZWN0IGlkPSJtZXJtYWlkLXN2Zy1tMSIgcng9IjMiIHJ5PSIzIiB4PSIxODE5IiB5PSIzMTQiIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdHJhbnNmb3JtLW9yaWdpbj0iMTgyOXB4IDMyNHB4IiBjbGFzcz0idGFzayBtaWxlc3RvbmUgIHRhc2syICIvPjx0ZXh0IGlkPSJtZXJtYWlkLXN2Zy1hMS10ZXh0IiBmb250LXNpemU9IjExIiB4PSIyNTUiIHk9IjYzLjUiIHRleHQtaGVpZ2h0PSIyMCIgY2xhc3M9IiB0YXNrVGV4dE91dHNpZGVSaWdodCB0YXNrVGV4dE91dHNpZGUwICB3aWR0aC0yMjcuNDg0Mzc1Ij5Db29yZGluYXRvciwgYWNjZXNzLCBlbnF1aXJ5IGxvZywgMjRoIHN0YW5kYXJkIDwvdGV4dD48dGV4dCBpZD0ibWVybWFpZC1zdmctYTItdGV4dCIgZm9udC1zaXplPSIxMSIgeD0iMjIxIiB5PSI4Ny41IiB0ZXh0LWhlaWdodD0iMjAiIGNsYXNzPSIgdGFza1RleHQgdGFza1RleHQwICB3aWR0aC0xOTQuODc1Ij5OQVAgYXVkaXQsIHNpZ25ib2FyZCBxdW90ZXMgYW5kIHBlcm1pdCAgICAgICAgIDwvdGV4dD48dGV4dCBpZD0ibWVybWFpZC1zdmctYTMtdGV4dCIgZm9udC1zaXplPSIxMSIgeD0iMjc5LjUiIHk9IjExMS41IiB0ZXh0LWhlaWdodD0iMjAiIGNsYXNzPSIgdGFza1RleHQgdGFza1RleHQwICB3aWR0aC0xNTMuNDUzMTI1Ij5QYXN0LWNsaWVudCBsaXN0IGFuZCByZXZpZXcgc2NyaXB0ICAgICAgICAgICAgIDwvdGV4dD48dGV4dCBpZD0ibWVybWFpZC1zdmctYzItdGV4dCIgZm9udC1zaXplPSIxMSIgeD0iOTUyIiB5PSIzMDMuNSIgdGV4dC1oZWlnaHQ9IjIwIiBjbGFzcz0iIHRhc2tUZXh0IHRhc2tUZXh0MiAgd2lkdGgtMTE3LjY4MTE1MjM0Mzc1Ij5XZWVrbHkgcGlwZWxpbmUgcmV2aWV3cyAgICAgICAgICAgICAgICAgICAgICAgIDwvdGV4dD48dGV4dCBpZD0ibWVybWFpZC1zdmctYjEtdGV4dCIgZm9udC1zaXplPSIxMSIgeD0iMzM4IiB5PSIxNTkuNSIgdGV4dC1oZWlnaHQ9IjIwIiBjbGFzcz0iIHRhc2tUZXh0IHRhc2tUZXh0MSAgd2lkdGgtMTk3LjUiPkdvb2dsZSBCdXNpbmVzcyBQcm9maWxlIGNsYWltIGFuZCBzZXR1cCAgICAgICAgPC90ZXh0Pjx0ZXh0IGlkPSJtZXJtYWlkLXN2Zy1hNC10ZXh0IiBmb250LXNpemU9IjExIiB4PSIzMzgiIHk9IjEzNS41IiB0ZXh0LWhlaWdodD0iMjAiIGNsYXNzPSIgdGFza1RleHQgdGFza1RleHQwICB3aWR0aC0xMDkuNDg0Mzc1Ij5QaG90byBhbmQgdmlkZW8gc2hvb3QgICAgICAgICAgICAgICAgICAgICAgICAgIDwvdGV4dD48dGV4dCBpZD0ibWVybWFpZC1zdmctYjItdGV4dCIgZm9udC1zaXplPSIxMSIgeD0iNjMwLjUiIHk9IjE4My41IiB0ZXh0LWhlaWdodD0iMjAiIGNsYXNzPSIgdGFza1RleHQgdGFza1RleHQxICB3aWR0aC0yMDMuMDMxMjUiPlNpZ25ib2FyZCBhbmQgZGlyZWN0aW9uYWwgc2lnbiBpbnN0YWxsYXRpb24gICAgPC90ZXh0Pjx0ZXh0IGlkPSJtZXJtYWlkLXN2Zy1iMy10ZXh0IiBmb250LXNpemU9IjExIiB4PSI2ODkiIHk9IjIwNy41IiB0ZXh0LWhlaWdodD0iMjAiIGNsYXNzPSIgdGFza1RleHQgdGFza1RleHQxICB3aWR0aC0xNTkuNjE5NjI4OTA2MjUiPldlYnNpdGUgZml4ZXMsIGZvcm0gdGVzdCwgc2NoZW1hICAgICAgICAgICAgICAgPC90ZXh0Pjx0ZXh0IGlkPSJtZXJtYWlkLXN2Zy1iNC10ZXh0IiBmb250LXNpemU9IjExIiB4PSIxMTU2LjUiIHk9IjIzMS41IiB0ZXh0LWhlaWdodD0iMjAiIGNsYXNzPSIgdGFza1RleHQgdGFza1RleHQxICB3aWR0aC0xNzEuNjc2NzU3ODEyNSI+UmV2aWV3IGNhbXBhaWduIOKAlCBmaXJzdCAyMCBjbGllbnRzICAgICAgICAgICAgIDwvdGV4dD48dGV4dCBpZD0ibWVybWFpZC1zdmctYjUtdGV4dCIgZm9udC1zaXplPSIxMSIgeD0iMTE1Ni41IiB5PSIyNTUuNSIgdGV4dC1oZWlnaHQ9IjIwIiBjbGFzcz0iIHRhc2tUZXh0IHRhc2tUZXh0MSAgd2lkdGgtMTQwLjcyMzE0NDUzMTI1Ij5UcmFkZSBvdXRyZWFjaCDigJQgMjAgdGFyZ2V0cyAgICAgICAgICAgICAgICAgICAgPC90ZXh0Pjx0ZXh0IGlkPSJtZXJtYWlkLXN2Zy1jMS10ZXh0IiBmb250LXNpemU9IjExIiB4PSI5NTIiIHk9IjI3OS41IiB0ZXh0LWhlaWdodD0iMjAiIGNsYXNzPSIgdGFza1RleHQgdGFza1RleHQyICB3aWR0aC0xODkuNTQ2ODc1Ij5SYXRlIGNhcmQsIHRlbXBsYXRlcyBhbmQgdGVhbSB0cmFpbmluZyAgICAgICAgIDwvdGV4dD48dGV4dCBpZD0ibWVybWFpZC1zdmctbTEtdGV4dCIgZm9udC1zaXplPSIxMSIgeD0iMTgxNCIgeT0iMzI3LjUiIHRleHQtaGVpZ2h0PSIyMCIgY2xhc3M9IiB0YXNrVGV4dE91dHNpZGVMZWZ0IHRhc2tUZXh0T3V0c2lkZTIgIG1pbGVzdG9uZVRleHQiPkRheS0zMCByZXZpZXcgYW5kIFBoYXNlIDIgZGVjaXNpb24gICAgICAgICAgICAgPC90ZXh0PjwvZz48Zz48dGV4dCBkeT0iMGVtIiB4PSIxMCIgeT0iOTgiIGZvbnQtc2l6ZT0iMTEiIGNsYXNzPSJzZWN0aW9uVGl0bGUgc2VjdGlvblRpdGxlMCI+PHRzcGFuIGFsaWdubWVudC1iYXNlbGluZT0iY2VudHJhbCIgeD0iMTAiPldlZWsgMSDCtyBDb250cm9sIHRoZSBiYXNpY3M8L3RzcGFuPjwvdGV4dD48dGV4dCBkeT0iMGVtIiB4PSIxMCIgeT0iMjA2IiBmb250LXNpemU9IjExIiBjbGFzcz0ic2VjdGlvblRpdGxlIHNlY3Rpb25UaXRsZTEiPjx0c3BhbiBhbGlnbm1lbnQtYmFzZWxpbmU9ImNlbnRyYWwiIHg9IjEwIj5XZWVrIDIgwrcgQmVjb21lIGZpbmRhYmxlPC90c3Bhbj48L3RleHQ+PHRleHQgZHk9IjBlbSIgeD0iMTAiIHk9IjMwMiIgZm9udC1zaXplPSIxMSIgY2xhc3M9InNlY3Rpb25UaXRsZSBzZWN0aW9uVGl0bGUyIj48dHNwYW4gYWxpZ25tZW50LWJhc2VsaW5lPSJjZW50cmFsIiB4PSIxMCI+V2VlayAz4oCTNCDCtyBMb2NrIHRoZSBoYWJpdDwvdHNwYW4+PC90ZXh0PjwvZz48ZyBjbGFzcz0idG9kYXkiPjxsaW5lIHgxPSItNyIgeDI9Ii03IiB5MT0iMjUiIHkyPSIzNjMiIGNsYXNzPSJ0b2RheSIvPjwvZz48dGV4dCB4PSI5NTIiIHk9IjI1IiBjbGFzcz0idGl0bGVUZXh0Ij4zMC1kYXkgbm9uLW5lZ290aWFibGUgc3ByaW50IChraWNrb2ZmIGFzc3VtZWQgOSBOb3ZlbWJlciAyMDI2KTwvdGV4dD48L3N2Zz4=" alt="Indicative 30-day foundation budget (mid-case, GHS)." loading="lazy"><figcaption>Figure 2 — Indicative 30-day foundation budget (mid-case, GHS).</figcaption></figure>
+
+<hr />
+<h2 id="6-what-ds-must-provide-the-non-negotiable-inputs">6. What DS must provide (the non-negotiable inputs)</h2>
+<ol>
+<li><strong>A named Sales Coordinator</strong> by Day 2 — an existing staff member is ideal; the consultant trains them.</li>
+<li><strong>Access</strong> to domain, hosting, website, Google Business Profile, social accounts and WhatsApp by Day 2.</li>
+<li><strong>The past-client list</strong> — at least 40 names and numbers — by Day 7.</li>
+<li><strong>Signboard approval</strong> and two quotes by Day 5; installation by Day 20.</li>
+<li><strong>Website developer availability</strong> by Day 7; if unavailable, written authorisation for the consultant to implement directly.</li>
+<li><strong>Rate card approval</strong> by Day 20.</li>
+<li><strong>30 minutes per week</strong> from the MD for the pipeline review.</li>
+<li><strong>Written confirmation</strong> of the no-paid-ads boundary for the first 30 days.</li>
+</ol>
+<hr />
+<h2 id="7-what-the-consultant-delivers-in-the-30-days">7. What the consultant delivers in the 30 days</h2>
+<ul>
+<li>A short audit recap and the prioritised fix list</li>
+<li>The website brief (form, WhatsApp, schema, showroom page, titles)</li>
+<li>The NAP consistency sheet and Google Business Profile setup</li>
+<li>The review-request scripts, QR cards and approval workflow</li>
+<li>The rate card and four sales templates</li>
+<li>The enquiry log, dashboard and weekly review cadence</li>
+<li>The two-hour team training</li>
+<li>The Day-30 evidence pack and Phase 2 go-ahead</li>
+</ul>
+<p>This work is covered by the Option B Foundation fee in the proposal (§5). The direct costs in §4 are DS's own operating costs.</p>
+<hr />
+<h2 id="8-the-do-not-do-list">8. The do-not-do list</h2>
+<ol>
+<li><strong>No paid ads, boosted posts, ad pixels or customer-list uploads</strong> in the first 30 days.</li>
+<li><strong>No fake reviews, bought followers or review incentives</strong> that breach Google policy.</li>
+<li><strong>No vendor-owned accounts</strong> — domain, hosting, WhatsApp line and social pages must be in DS's name.</li>
+<li><strong>No WhatsApp-only quotes</strong> — every enquiry goes into the log, even if it closes on the phone.</li>
+<li><strong>No quoting without the rate card</strong> after Day 20.</li>
+<li><strong>No stock photos</strong> on Google Business Profile — real premises, real team, real projects only.</li>
+<li><strong>No "top ranking" promises</strong> — the target is consistent visibility, verifiable proof and a working pipeline.</li>
+</ol>
+<hr />
+<h2 id="9-definition-of-done-by-day-30">9. Definition of done by Day 30</h2>
+<ul>
+<li class="task"><span class="cb" aria-hidden="true"></span>Sales Coordinator named, trained and working 45 minutes/day</li>
+<li class="task"><span class="cb" aria-hidden="true"></span>Enquiry log live; every new enquiry logged; 24-hour response standard in use</li>
+<li class="task"><span class="cb" aria-hidden="true"></span>Google Business Profile verified with 20+ real photos, correct NAP, hours, services, products and showroom directions</li>
+<li class="task"><span class="cb" aria-hidden="true"></span>Klagon frontage signboard installed, plus directional sign and QR review decal</li>
+<li class="task"><span class="cb" aria-hidden="true"></span>15+ Google reviews (target), every review answered within 48 hours</li>
+<li class="task"><span class="cb" aria-hidden="true"></span>Website enquiry form tested end-to-end; WhatsApp click-to-chat, local schema and top-5 page titles live</li>
+<li class="task"><span class="cb" aria-hidden="true"></span>Rate card and four templates in daily use; first three quotes issued from templates</li>
+<li class="task"><span class="cb" aria-hidden="true"></span>40-name past-client list and 20 trade targets contacted</li>
+<li class="task"><span class="cb" aria-hidden="true"></span>Weekly dashboard running four consecutive weeks</li>
+<li class="task"><span class="cb" aria-hidden="true"></span>No paid ads and no ad tracking installed</li>
+<li class="task"><span class="cb" aria-hidden="true"></span>Day-30 review signed; Phase 2 go-ahead decided</li>
+</ul>
+<hr />
+<h2 id="10-risks-and-mitigations">10. Risks and mitigations</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Risk</th>
+<th>Mitigation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Signage permit delays installation</td>
+<td>Apply on Day 5; use a compliant temporary banner only if the assembly allows it; keep photo evidence of the process</td>
+</tr>
+<tr>
+<td>Client discomfort asking for reviews</td>
+<td>Consultant supplies scripts and runs the first 20 requests with the coordinator; MD approves every public quote</td>
+</tr>
+<tr>
+<td>Website developer is slow or unavailable</td>
+<td>Exact brief supplied by Day 7; written authorisation to implement directly if the developer misses the date</td>
+</tr>
+<tr>
+<td>Tax/tracking concern resurfaces</td>
+<td>Organic-only plan; no pixels; no customer-list uploads; records stay in DS's systems; paid media deferred to Day 90+ with written consent</td>
+</tr>
+<tr>
+<td>Showroom access or photo quality</td>
+<td>Book the shoot by Day 7; a coached phone shoot is acceptable; no stock images</td>
+</tr>
+<tr>
+<td>Staff bandwidth</td>
+<td>45 minutes/day for one coordinator, 30 minutes/week for the MD; no additional meetings</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="11-sign-off">11. Sign-off</h2>
+<p>By signing, DS confirms the 30 actions, the named owners and the direct budget in §4. The consultant confirms delivery of the items listed in §7. The Day-90 KPI sheet in the proposal remains the basis for Parts 2 and 3 of the fee.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>For DS Construction Limited</th>
+<th>For the Consultant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name: ______________________</td>
+<td>Name: Gideon B. Abochie</td>
+</tr>
+<tr>
+<td>Title: ______________________</td>
+<td>Title: Principal, Gabochie Marketing</td>
+</tr>
+<tr>
+<td>Signature: __________________</td>
+<td>Signature: __________________</td>
+</tr>
+<tr>
+<td>Date: ______________________</td>
+<td>Date: ______________________</td>
+</tr>
+</tbody>
+</table></div>
+    <p class="footer-note">Prepared by Gideon B. Abochie · Gabochie Marketing / Gabochie Corp · admin@gabochie.com · +233 26 824 8970 · mkt.gabochie.com</p>
+  </main>
+</div>
+<button class="print-btn" onclick="window.print()" type="button">Print / Save as PDF</button>
+</body>
+</html>

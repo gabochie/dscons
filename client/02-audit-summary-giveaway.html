@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Market & Digital Presence Audit — DS Construction Limited</title>
+<meta name="author" content="Gideon B. Abochie, Gabochie Marketing / Gabochie Corp">
+<meta name="description" content="Client document for DS Construction Limited, prepared by Gideon B. Abochie.">
+<style>
+:root {
+  --ink: #1f2a30;
+  --muted: #5c6b73;
+  --accent: #14532d;
+  --accent-2: #b45309;
+  --accent-soft: #eef5ef;
+  --panel: #f6f8f7;
+  --border: #d8e2dc;
+  --paper: #ffffff;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: #e9eeea;
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+.page { max-width: 980px; margin: 0 auto; background: var(--paper); box-shadow: 0 18px 60px rgba(20, 50, 35, .12); }
+.cover {
+  position: relative;
+  padding: 68px 64px 52px;
+  background: radial-gradient(1100px 420px at 110% -10%, rgba(20,83,45,.12), transparent 60%), linear-gradient(180deg, #fbfdfb 0%, #ffffff 100%);
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+}
+.cover::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 10px; background: linear-gradient(180deg, var(--accent), var(--accent-2)); }
+.eyebrow { margin: 0 0 14px; color: var(--accent); font-size: 12px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+.cover h1 { margin: 0 0 12px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(34px, 5vw, 52px); line-height: 1.08; letter-spacing: -0.02em; color: var(--accent); }
+.subtitle { margin: 0 0 28px; max-width: 760px; color: var(--muted); font-size: 19px; line-height: 1.45; }
+.cover-note { margin: 0 0 26px; padding: 14px 18px; background: var(--accent-soft); border-left: 4px solid var(--accent); border-radius: 4px; font-size: 14px; }
+.meta { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 36px; margin: 0 0 26px; padding: 24px 0 0; border-top: 1px solid var(--border); }
+.meta div { min-width: 0; }
+.meta dt { color: var(--muted); font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 3px; }
+.meta dd { margin: 0; font-size: 14.5px; line-height: 1.5; }
+.meta dd strong { color: var(--accent); }
+.enclosure-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.enclosure-list li { padding: 12px 16px; background: var(--accent-soft); border: 1px solid var(--border); border-left: 4px solid var(--accent); border-radius: 4px; font-size: 14px; }
+.enclosure-list span { color: var(--muted); font-weight: 600; }
+.enclosure-list a { color: var(--accent); font-weight: 700; text-decoration: none; }
+.enclosure-list a:hover { text-decoration: underline; }
+.toc-page { padding: 48px 64px 56px; border-bottom: 1px solid var(--border); }
+.toc-page h2 { margin: 0 0 18px; font-family: Georgia, "Times New Roman", serif; font-size: 26px; color: var(--accent); }
+.toc { font-size: 15px; }
+.toc > ul { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 40px; }
+.toc ul ul { display: none; }
+.toc li { margin: 0 0 10px; break-inside: avoid; }
+.toc a { color: var(--ink); text-decoration: none; border-bottom: 1px dotted var(--border); }
+.toc a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+main { padding: 8px 64px 72px; }
+h1, h2, h3, h4 { line-height: 1.25; }
+main h2 { margin: 52px 0 18px; padding-bottom: 10px; border-bottom: 2px solid var(--accent); font-family: Georgia, "Times New Roman", serif; font-size: 28px; color: var(--accent); scroll-margin-top: 18px; }
+main h3 { margin: 34px 0 10px; font-size: 19px; color: var(--accent); }
+main h4 { margin: 28px 0 10px; font-size: 15px; letter-spacing: .04em; text-transform: uppercase; color: var(--accent-2); }
+p { margin: 0 0 15px; }
+ul, ol { margin: 0 0 18px; padding-left: 24px; }
+li { margin: 0 0 8px; }
+li.task { list-style: none; margin-left: -24px; }
+.cb { display: inline-block; width: 14px; height: 14px; margin-right: 10px; border: 1.5px solid var(--accent); border-radius: 3px; vertical-align: -2px; }
+strong { color: #14211a; }
+a { color: var(--accent); }
+blockquote { margin: 0 0 24px; padding: 22px 26px; background: var(--accent-soft); border-left: 5px solid var(--accent); border-radius: 4px; font-size: 17px; line-height: 1.62; }
+blockquote p:last-child { margin-bottom: 0; }
+hr { border: 0; border-top: 1px solid var(--border); margin: 40px 0; }
+.table-wrap { width: 100%; overflow-x: auto; margin: 0 0 24px; }
+table { width: 100%; border-collapse: collapse; font-size: 13.5px; line-height: 1.45; }
+th, td { padding: 10px 12px; border: 1px solid var(--border); text-align: left; vertical-align: top; }
+thead th { background: var(--accent); color: #fff; font-size: 12px; letter-spacing: .03em; }
+tbody tr:nth-child(even) { background: #f8fbf8; }
+tbody td:first-child { font-weight: 600; color: #24322a; }
+figure.diagram { margin: 26px 0 30px; padding: 18px; background: #fff; border: 1px solid var(--border); border-radius: 8px; text-align: center; break-inside: avoid; }
+figure.diagram img { display: block; max-width: 100%; height: auto; margin: 0 auto; }
+figure.diagram figcaption { margin-top: 12px; color: var(--muted); font-size: 12.5px; font-style: italic; }
+.print-btn { position: fixed; right: 22px; bottom: 22px; z-index: 50; padding: 12px 18px; border: 0; border-radius: 999px; background: var(--accent); color: #fff; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer; box-shadow: 0 10px 26px rgba(20, 83, 45, .28); }
+.print-btn:hover { background: #0f3d22; }
+.footer-note { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--border); color: var(--muted); font-size: 12.5px; }
+@media (max-width: 760px) {
+  .cover, .toc-page, main { padding-left: 24px; padding-right: 24px; }
+  .cover { padding-top: 44px; }
+  .meta { grid-template-columns: 1fr; }
+  .toc > ul { columns: 1; }
+  table { font-size: 12.5px; white-space: nowrap; }
+}
+@media print {
+  @page { size: A4; margin: 17mm 15mm 18mm; }
+  body { background: #fff; font-size: 10.5pt; line-height: 1.5; }
+  .page { max-width: none; box-shadow: none; }
+  .print-btn { display: none; }
+  .cover { min-height: 236mm; padding: 40mm 0 0; border: 0; break-after: page; background: #fff; }
+  .cover::before { width: 6px; }
+  .cover h1 { font-size: 38pt; }
+  .subtitle { font-size: 14pt; }
+  .toc-page { padding: 0; border: 0; break-after: page; }
+  main { padding: 0; }
+  main h2 { break-before: page; font-size: 20pt; margin-top: 0; }
+  main h2:first-of-type { break-before: auto; }
+  h3 { font-size: 13pt; }
+  table { font-size: 9pt; }
+  th, td { padding: 6px 7px; }
+  figure.diagram { padding: 10px; margin: 16px 0 20px; }
+  figure.diagram img { max-height: 105mm; width: auto; max-width: 100%; }
+  blockquote { padding: 14px 16px; font-size: 11pt; }
+  a { color: var(--ink); text-decoration: none; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="cover">
+    <p class="eyebrow">AUDIT SUMMARY</p>
+    <h1>Market & Digital Presence Audit</h1>
+    <p class="subtitle">DS Construction Limited · Prepared by Gideon B. Abochie (Gabochie Marketing / Gabochie Corp) · 6 November 2026</p>
+    <p class="cover-note">This summary is yours to keep whether or not you proceed with the accompanying proposal. The full detailed audit is shared after engagement begins.</p>
+    
+    <ul class="enclosure-list"><li><span>Companion:</span> <a href="03-30-day-non-negotiable-foundations.html">30-Day Non-Negotiable Foundations</a></li><li><span>Companion:</span> <a href="01-winning-offer-proposal.html">The DS Growth & Sales System — Proposal</a></li></ul>
+  </header>
+
+  <nav class="toc-page" aria-label="Contents">
+    <h2>Contents</h2>
+    <div class="toc">
+<ul>
+<li><a href="#1-what-the-research-covered">1. What the research covered</a></li>
+<li><a href="#2-your-standing-assets-what-the-market-cannot-take-from-you">2. Your standing assets (what the market cannot take from you)</a></li>
+<li><a href="#3-where-buyers-cannot-yet-find-or-verify-you-opportunity-map">3. Where buyers cannot yet find or verify you (opportunity map)</a></li>
+<li><a href="#4-market-timing-external-data-2026">4. Market timing (external data, 2026)</a></li>
+<li><a href="#5-competitive-snapshot-public-positioning-only">5. Competitive snapshot (public positioning only)</a></li>
+<li><a href="#6-conclusion">6. Conclusion</a></li>
+</ul>
+</div>
+
+  </nav>
+
+  <main>
+    <h2 id="1-what-the-research-covered">1. What the research covered</h2>
+<p>Desk research (November 2026) across: your full public web presence (current + archived website versions), your social profiles and directory listings, five direct competitors' public positioning, and Ghana construction-market data (Fitch Solutions, Ghana Statistical Service, Bank of Ghana, GlobalData 2026 releases).</p>
+<h2 id="2-your-standing-assets-what-the-market-cannot-take-from-you">2. Your standing assets (what the market cannot take from you)</h2>
+<ol>
+<li><strong>26 years</strong> of continuous operation (est. 2000) — the longest institutional track record among surveyed glazing specialists</li>
+<li><strong>In-house factory</strong> with production lines — you design, manufacture and install; most rivals assemble or import</li>
+<li><strong>Own fleet</strong> — nationwide delivery plus Togo, without third-party logistics</li>
+<li><strong>A blue-chip client list</strong>: Ashesi University, University of Ghana, Toyota Ghana, GNAT, Ghana Employers' Association, Glenshire Hills Estate — including residential, corporate and government segments</li>
+<li><strong>A recently rebuilt website</strong> — a clean, modern shopfront; the team has already taken a real step forward</li>
+</ol>
+<h2 id="3-where-buyers-cannot-yet-find-or-verify-you-opportunity-map">3. Where buyers cannot yet find or verify you (opportunity map)</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Gap</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Little visible third-party proof (public reviews, client stories)</td>
+<td>Ghanaian buyers now verify trust online before shortlisting</td>
+</tr>
+<tr>
+<td>Limited search presence for high-intent searches ("aluminium windows Accra" etc.)</td>
+<td>The tender's first filter is increasingly Google, not reputation heard on site</td>
+</tr>
+<tr>
+<td>Enquiries handled conversationally rather than as a tracked pipeline</td>
+<td>Industry-wide, 40–60% of quotes are never followed up — a system lifts win rates materially</td>
+</tr>
+<tr>
+<td>New website's technical checks incomplete (tracking, search titles, enquiry-form delivery test)</td>
+<td>Small fixes with outsized returns, achievable within weeks</td>
+</tr>
+<tr>
+<td>No architect-facing technical materials</td>
+<td>Specifiers choose contractors whose documentation commitment matches theirs</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="4-market-timing-external-data-2026">4. Market timing (external data, 2026)</h2>
+<ul>
+<li>Ghana construction output forecast <strong>+5.2% growth in 2026</strong>, ~+5.1% annually through 2030 (Fitch Solutions) — demand exists</li>
+<li>Near-term caution: cement sales −10.3% (Jan–Jul 2026, Bank of Ghana); building cost inflation 5.1% (Sept 2026, GSS) — visible, documented, responsive suppliers win the shorter pie</li>
+<li>Glazing was among the biggest drivers of construction cost inflation this year — an opening to sell energy efficiency and lifecycle value, not just price</li>
+</ul>
+<figure class="diagram"><img src="data:image/svg+xml;base64,PHN2ZyBpZD0ibWVybWFpZC1zdmciIHdpZHRoPSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHN0eWxlPSJtYXgtd2lkdGg6IDcwMHB4OyIgdmlld0JveD0iMCAwIDcwMCA1MDAiIHJvbGU9ImdyYXBoaWNzLWRvY3VtZW50IGRvY3VtZW50IiBhcmlhLXJvbGVkZXNjcmlwdGlvbj0ieHljaGFydCIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxzdHlsZSB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCI+QGltcG9ydCB1cmwoImh0dHBzOi8vY2RuanMuY2xvdWRmbGFyZS5jb20vYWpheC9saWJzL2ZvbnQtYXdlc29tZS83LjIuMC9jc3MvYWxsLm1pbi5jc3MiKTs8L3N0eWxlPjxzdHlsZT4jbWVybWFpZC1zdmd7Zm9udC1mYW1pbHk6InRyZWJ1Y2hldCBtcyIsdmVyZGFuYSxhcmlhbCxzYW5zLXNlcmlmO2ZvbnQtc2l6ZToxNnB4O2ZpbGw6IzMzMzt9QGtleWZyYW1lcyBlZGdlLWFuaW1hdGlvbi1mcmFtZXtmcm9te3N0cm9rZS1kYXNob2Zmc2V0OjA7fX1Aa2V5ZnJhbWVzIGRhc2h7dG97c3Ryb2tlLWRhc2hvZmZzZXQ6MDt9fSNtZXJtYWlkLXN2ZyAuZWRnZS1hbmltYXRpb24tc2xvd3tzdHJva2UtZGFzaGFycmF5OjksNSFpbXBvcnRhbnQ7c3Ryb2tlLWRhc2hvZmZzZXQ6OTAwO2FuaW1hdGlvbjpkYXNoIDUwcyBsaW5lYXIgaW5maW5pdGU7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7fSNtZXJtYWlkLXN2ZyAuZWRnZS1hbmltYXRpb24tZmFzdHtzdHJva2UtZGFzaGFycmF5OjksNSFpbXBvcnRhbnQ7c3Ryb2tlLWRhc2hvZmZzZXQ6OTAwO2FuaW1hdGlvbjpkYXNoIDIwcyBsaW5lYXIgaW5maW5pdGU7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7fSNtZXJtYWlkLXN2ZyAuZXJyb3ItaWNvbntmaWxsOiM1NTIyMjI7fSNtZXJtYWlkLXN2ZyAuZXJyb3ItdGV4dHtmaWxsOiM1NTIyMjI7c3Ryb2tlOiM1NTIyMjI7fSNtZXJtYWlkLXN2ZyAuZWRnZS10aGlja25lc3Mtbm9ybWFse3N0cm9rZS13aWR0aDoxcHg7fSNtZXJtYWlkLXN2ZyAuZWRnZS10aGlja25lc3MtdGhpY2t7c3Ryb2tlLXdpZHRoOjMuNXB4O30jbWVybWFpZC1zdmcgLmVkZ2UtcGF0dGVybi1zb2xpZHtzdHJva2UtZGFzaGFycmF5OjA7fSNtZXJtYWlkLXN2ZyAuZWRnZS10aGlja25lc3MtaW52aXNpYmxle3N0cm9rZS13aWR0aDowO2ZpbGw6bm9uZTt9I21lcm1haWQtc3ZnIC5lZGdlLXBhdHRlcm4tZGFzaGVke3N0cm9rZS1kYXNoYXJyYXk6Mzt9I21lcm1haWQtc3ZnIC5lZGdlLXBhdHRlcm4tZG90dGVke3N0cm9rZS1kYXNoYXJyYXk6Mjt9I21lcm1haWQtc3ZnIC5tYXJrZXJ7ZmlsbDojMzMzMzMzO3N0cm9rZTojMzMzMzMzO30jbWVybWFpZC1zdmcgLm1hcmtlci5jcm9zc3tzdHJva2U6IzMzMzMzMzt9I21lcm1haWQtc3ZnIHN2Z3tmb250LWZhbWlseToidHJlYnVjaGV0IG1zIix2ZXJkYW5hLGFyaWFsLHNhbnMtc2VyaWY7Zm9udC1zaXplOjE2cHg7fSNtZXJtYWlkLXN2ZyBwe21hcmdpbjowO30jbWVybWFpZC1zdmcgLm5vZGUgLm5lby1ub2Rle3N0cm9rZTojOTM3MERCO30jbWVybWFpZC1zdmcgW2RhdGEtbG9vaz0ibmVvIl0ubm9kZSByZWN0LCNtZXJtYWlkLXN2ZyBbZGF0YS1sb29rPSJuZW8iXS5jbHVzdGVyIHJlY3QsI21lcm1haWQtc3ZnIFtkYXRhLWxvb2s9Im5lbyJdLm5vZGUgcG9seWdvbntzdHJva2U6IzkzNzBEQjtmaWx0ZXI6ZHJvcC1zaGFkb3coMXB4IDJweCAycHggcmdiYSgxODUsIDE4NSwgMTg1LCAxKSk7fSNtZXJtYWlkLXN2ZyBbZGF0YS1sb29rPSJuZW8iXS5zd2ltbGFuZS5jbHVzdGVyIHJlY3R7ZmlsdGVyOm5vbmU7fSNtZXJtYWlkLXN2ZyBbZGF0YS1sb29rPSJuZW8iXS5ub2RlIHBhdGh7c3Ryb2tlOiM5MzcwREI7c3Ryb2tlLXdpZHRoOjFweDt9I21lcm1haWQtc3ZnIFtkYXRhLWxvb2s9Im5lbyJdLm5vZGUgLm91dGVyLXBhdGh7ZmlsdGVyOmRyb3Atc2hhZG93KDFweCAycHggMnB4IHJnYmEoMTg1LCAxODUsIDE4NSwgMSkpO30jbWVybWFpZC1zdmcgW2RhdGEtbG9vaz0ibmVvIl0ubm9kZSAubmVvLWxpbmUgcGF0aHtzdHJva2U6IzkzNzBEQjtmaWx0ZXI6bm9uZTt9I21lcm1haWQtc3ZnIFtkYXRhLWxvb2s9Im5lbyJdLm5vZGUgY2lyY2xle3N0cm9rZTojOTM3MERCO2ZpbHRlcjpkcm9wLXNoYWRvdygxcHggMnB4IDJweCByZ2JhKDE4NSwgMTg1LCAxODUsIDEpKTt9I21lcm1haWQtc3ZnIFtkYXRhLWxvb2s9Im5lbyJdLm5vZGUgY2lyY2xlIC5zdGF0ZS1zdGFydHtmaWxsOiMwMDAwMDA7fSNtZXJtYWlkLXN2ZyBbZGF0YS1sb29rPSJuZW8iXS5pY29uLXNoYXBlIC5pY29ue2ZpbGw6IzkzNzBEQjtmaWx0ZXI6ZHJvcC1zaGFkb3coMXB4IDJweCAycHggcmdiYSgxODUsIDE4NSwgMTg1LCAxKSk7fSNtZXJtYWlkLXN2ZyBbZGF0YS1sb29rPSJuZW8iXS5pY29uLXNoYXBlIC5pY29uLW5lbyBwYXRoe3N0cm9rZTojOTM3MERCO2ZpbHRlcjpkcm9wLXNoYWRvdygxcHggMnB4IDJweCByZ2JhKDE4NSwgMTg1LCAxODUsIDEpKTt9I21lcm1haWQtc3ZnIDpyb290ey0tbWVybWFpZC1mb250LWZhbWlseToidHJlYnVjaGV0IG1zIix2ZXJkYW5hLGFyaWFsLHNhbnMtc2VyaWY7fTwvc3R5bGU+PGcvPjxnIGNsYXNzPSJtYWluIj48cmVjdCB3aWR0aD0iNzAwIiBoZWlnaHQ9IjUwMCIgY2xhc3M9ImJhY2tncm91bmQiIGZpbGw9IndoaXRlIi8+PGcgY2xhc3M9ImNoYXJ0LXRpdGxlIj48dGV4dCB4PSIwIiB5PSIwIiBmaWxsPSIjMTMxMzAwIiBmb250LXNpemU9IjIwIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzODIuMjI0MTIyMDQ3NDI0MywgMjEpIHJvdGF0ZSgwKSI+MjAyNiBtYXJrZXQgc2lnbmFscyAoJSBjaGFuZ2UpPC90ZXh0PjwvZz48ZyBjbGFzcz0icGxvdCI+PGcgY2xhc3M9ImJhci1wbG90LTAiPjxyZWN0IHg9Ijc1LjYwMTQ3MzA4MTExMTkyIiB5PSIxMjguNTI4MDAwMDAwMDAwMDIiIHdpZHRoPSIxMTcuNjkzNTQyMDI3NDczNDQiIGhlaWdodD0iMzM4LjQ3MiIgZmlsbD0iI0VDRUNGRiIgc3Ryb2tlPSIjRUNFQ0ZGIiBzdHJva2Utd2lkdGg9IjAiLz48cmVjdCB4PSIyNDAuNzg1MzkxNzE2MTYyMzQiIHk9IjEzMC4xNjQiIHdpZHRoPSIxMTcuNjkzNTQyMDI3NDczNDQiIGhlaWdodD0iMzM2LjgzNiIgZmlsbD0iI0VDRUNGRiIgc3Ryb2tlPSIjRUNFQ0ZGIiBzdHJva2Utd2lkdGg9IjAiLz48cmVjdCB4PSI0MDUuOTY5MzEwMzUxMjEyOCIgeT0iMzgyLjEwOCIgd2lkdGg9IjExNy42OTM1NDIwMjc0NzM0NCIgaGVpZ2h0PSI4NC44OTIiIGZpbGw9IiNFQ0VDRkYiIHN0cm9rZT0iI0VDRUNGRiIgc3Ryb2tlLXdpZHRoPSIwIi8+PHJlY3QgeD0iNTcxLjE1MzIyODk4NjI2MzIiIHk9IjEzMC4xNjQiIHdpZHRoPSIxMTcuNjkzNTQyMDI3NDczNDQiIGhlaWdodD0iMzM2LjgzNiIgZmlsbD0iI0VDRUNGRiIgc3Ryb2tlPSIjRUNFQ0ZGIiBzdHJva2Utd2lkdGg9IjAiLz48L2c+PC9nPjxnIGNsYXNzPSJib3R0b20tYXhpcyI+PGcgY2xhc3M9ImF4aXMtbGluZSI+PHBhdGggZD0iTSA2NC40NDgyNDQwOTQ4NDg2Myw0NjggTCA3MDAsNDY4IiBmaWxsPSJub25lIiBzdHJva2U9IiMxMzEzMDAiIHN0cm9rZS13aWR0aD0iMiIvPjwvZz48ZyBjbGFzcz0ibGFiZWwiPjx0ZXh0IHg9IjAiIHk9IjAiIGZpbGw9IiMxMzEzMDAiIGZvbnQtc2l6ZT0iMTQiIGRvbWluYW50LWJhc2VsaW5lPSJ0ZXh0LWJlZm9yZS1lZGdlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMzQuNDQ4MjQ0MDk0ODQ4NjMsIDQ3OSkgcm90YXRlKDApIj5Db25zdHJ1Y3Rpb24gb3V0cHV0IDIwMjY8L3RleHQ+PHRleHQgeD0iMCIgeT0iMCIgZmlsbD0iIzEzMTMwMCIgZm9udC1zaXplPSIxNCIgZG9taW5hbnQtYmFzZWxpbmU9InRleHQtYmVmb3JlLWVkZ2UiIHRleHQtYW5jaG9yPSJtaWRkbGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI5OS42MzIxNjI3Mjk4OTkwNSwgNDc5KSByb3RhdGUoMCkiPk91dHB1dCBwLmEuIHRvIDIwMzA8L3RleHQ+PHRleHQgeD0iMCIgeT0iMCIgZmlsbD0iIzEzMTMwMCIgZm9udC1zaXplPSIxNCIgZG9taW5hbnQtYmFzZWxpbmU9InRleHQtYmVmb3JlLWVkZ2UiIHRleHQtYW5jaG9yPSJtaWRkbGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ2NC44MTYwODEzNjQ5NDk1LCA0NzkpIHJvdGF0ZSgwKSI+Q2VtZW50IHNhbGVzIEphbuKAk0p1bDwvdGV4dD48dGV4dCB4PSIwIiB5PSIwIiBmaWxsPSIjMTMxMzAwIiBmb250LXNpemU9IjE0IiBkb21pbmFudC1iYXNlbGluZT0idGV4dC1iZWZvcmUtZWRnZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjMwLCA0NzkpIHJvdGF0ZSgwKSI+QnVpbGRpbmcgY29zdCBpbmZsYXRpb24gU2VwPC90ZXh0PjwvZz48ZyBjbGFzcz0idGlja3MiPjxwYXRoIGQ9Ik0gMTM0LjQ0ODI0NDA5NDg0ODYzLDQ2OSBMIDEzNC40NDgyNDQwOTQ4NDg2Myw0NzQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzEzMTMwMCIgc3Ryb2tlLXdpZHRoPSIyIi8+PHBhdGggZD0iTSAyOTkuNjMyMTYyNzI5ODk5MDUsNDY5IEwgMjk5LjYzMjE2MjcyOTg5OTA1LDQ3NCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTMxMzAwIiBzdHJva2Utd2lkdGg9IjIiLz48cGF0aCBkPSJNIDQ2NC44MTYwODEzNjQ5NDk1LDQ2OSBMIDQ2NC44MTYwODEzNjQ5NDk1LDQ3NCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTMxMzAwIiBzdHJva2Utd2lkdGg9IjIiLz48cGF0aCBkPSJNIDYzMCw0NjkgTCA2MzAsNDc0IiBmaWxsPSJub25lIiBzdHJva2U9IiMxMzEzMDAiIHN0cm9rZS13aWR0aD0iMiIvPjwvZz48L2c+PGcgY2xhc3M9ImxlZnQtYXhpcyI+PGcgY2xhc3M9ImF4aXNsLWxpbmUiPjxwYXRoIGQ9Ik0gNjMuNDQ4MjQ0MDk0ODQ4NjMsNDIgTCA2My40NDgyNDQwOTQ4NDg2Myw0NjcgIiBmaWxsPSJub25lIiBzdHJva2U9IiMxMzEzMDAiIHN0cm9rZS13aWR0aD0iMiIvPjwvZz48ZyBjbGFzcz0ibGFiZWwiPjx0ZXh0IHg9IjAiIHk9IjAiIGZpbGw9IiMxMzEzMDAiIGZvbnQtc2l6ZT0iMTQiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJlbmQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUyLjQ0ODI0NDA5NDg0ODYzLCA1MCkgcm90YXRlKDApIj4xMDwvdGV4dD48dGV4dCB4PSIwIiB5PSIwIiBmaWxsPSIjMTMxMzAwIiBmb250LXNpemU9IjE0IiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0iZW5kIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1Mi40NDgyNDQwOTQ4NDg2MywgODIuNzE5OTk5OTk5OTk5OTgpIHJvdGF0ZSgwKSI+ODwvdGV4dD48dGV4dCB4PSIwIiB5PSIwIiBmaWxsPSIjMTMxMzAwIiBmb250LXNpemU9IjE0IiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0iZW5kIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1Mi40NDgyNDQwOTQ4NDg2MywgMTE1LjQ0MDAwMDAwMDAwMDAxKSByb3RhdGUoMCkiPjY8L3RleHQ+PHRleHQgeD0iMCIgeT0iMCIgZmlsbD0iIzEzMTMwMCIgZm9udC1zaXplPSIxNCIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9ImVuZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTIuNDQ4MjQ0MDk0ODQ4NjMsIDE0OC4xNikgcm90YXRlKDApIj40PC90ZXh0Pjx0ZXh0IHg9IjAiIHk9IjAiIGZpbGw9IiMxMzEzMDAiIGZvbnQtc2l6ZT0iMTQiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJlbmQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUyLjQ0ODI0NDA5NDg0ODYzLCAxODAuODc5OTk5OTk5OTk5OTcpIHJvdGF0ZSgwKSI+MjwvdGV4dD48dGV4dCB4PSIwIiB5PSIwIiBmaWxsPSIjMTMxMzAwIiBmb250LXNpemU9IjE0IiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0iZW5kIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1Mi40NDgyNDQwOTQ4NDg2MywgMjEzLjYwMDAwMDAwMDAwMDAyKSByb3RhdGUoMCkiPjA8L3RleHQ+PHRleHQgeD0iMCIgeT0iMCIgZmlsbD0iIzEzMTMwMCIgZm9udC1zaXplPSIxNCIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9ImVuZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTIuNDQ4MjQ0MDk0ODQ4NjMsIDI0Ni4zMikgcm90YXRlKDApIj4tMjwvdGV4dD48dGV4dCB4PSIwIiB5PSIwIiBmaWxsPSIjMTMxMzAwIiBmb250LXNpemU9IjE0IiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0iZW5kIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1Mi40NDgyNDQwOTQ4NDg2MywgMjc5LjA0KSByb3RhdGUoMCkiPi00PC90ZXh0Pjx0ZXh0IHg9IjAiIHk9IjAiIGZpbGw9IiMxMzEzMDAiIGZvbnQtc2l6ZT0iMTQiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJlbmQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUyLjQ0ODI0NDA5NDg0ODYzLCAzMTEuNzYpIHJvdGF0ZSgwKSI+LTY8L3RleHQ+PHRleHQgeD0iMCIgeT0iMCIgZmlsbD0iIzEzMTMwMCIgZm9udC1zaXplPSIxNCIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9ImVuZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTIuNDQ4MjQ0MDk0ODQ4NjMsIDM0NC40Nzk5OTk5OTk5OTk5Nikgcm90YXRlKDApIj4tODwvdGV4dD48dGV4dCB4PSIwIiB5PSIwIiBmaWxsPSIjMTMxMzAwIiBmb250LXNpemU9IjE0IiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0iZW5kIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1Mi40NDgyNDQwOTQ4NDg2MywgMzc3LjIwMDAwMDAwMDAwMDA1KSByb3RhdGUoMCkiPi0xMDwvdGV4dD48dGV4dCB4PSIwIiB5PSIwIiBmaWxsPSIjMTMxMzAwIiBmb250LXNpemU9IjE0IiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0iZW5kIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1Mi40NDgyNDQwOTQ4NDg2MywgNDA5LjkyKSByb3RhdGUoMCkiPi0xMjwvdGV4dD48dGV4dCB4PSIwIiB5PSIwIiBmaWxsPSIjMTMxMzAwIiBmb250LXNpemU9IjE0IiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0iZW5kIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1Mi40NDgyNDQwOTQ4NDg2MywgNDQyLjY0KSByb3RhdGUoMCkiPi0xNDwvdGV4dD48L2c+PGcgY2xhc3M9InRpY2tzIj48cGF0aCBkPSJNIDYyLjQ0ODI0NDA5NDg0ODYzLDUwIEwgNTcuNDQ4MjQ0MDk0ODQ4NjMsNTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzEzMTMwMCIgc3Ryb2tlLXdpZHRoPSIyIi8+PHBhdGggZD0iTSA2Mi40NDgyNDQwOTQ4NDg2Myw4Mi43MTk5OTk5OTk5OTk5OCBMIDU3LjQ0ODI0NDA5NDg0ODYzLDgyLjcxOTk5OTk5OTk5OTk4IiBmaWxsPSJub25lIiBzdHJva2U9IiMxMzEzMDAiIHN0cm9rZS13aWR0aD0iMiIvPjxwYXRoIGQ9Ik0gNjIuNDQ4MjQ0MDk0ODQ4NjMsMTE1LjQ0MDAwMDAwMDAwMDAxIEwgNTcuNDQ4MjQ0MDk0ODQ4NjMsMTE1LjQ0MDAwMDAwMDAwMDAxIiBmaWxsPSJub25lIiBzdHJva2U9IiMxMzEzMDAiIHN0cm9rZS13aWR0aD0iMiIvPjxwYXRoIGQ9Ik0gNjIuNDQ4MjQ0MDk0ODQ4NjMsMTQ4LjE2IEwgNTcuNDQ4MjQ0MDk0ODQ4NjMsMTQ4LjE2IiBmaWxsPSJub25lIiBzdHJva2U9IiMxMzEzMDAiIHN0cm9rZS13aWR0aD0iMiIvPjxwYXRoIGQ9Ik0gNjIuNDQ4MjQ0MDk0ODQ4NjMsMTgwLjg3OTk5OTk5OTk5OTk3IEwgNTcuNDQ4MjQ0MDk0ODQ4NjMsMTgwLjg3OTk5OTk5OTk5OTk3IiBmaWxsPSJub25lIiBzdHJva2U9IiMxMzEzMDAiIHN0cm9rZS13aWR0aD0iMiIvPjxwYXRoIGQ9Ik0gNjIuNDQ4MjQ0MDk0ODQ4NjMsMjEzLjYwMDAwMDAwMDAwMDAyIEwgNTcuNDQ4MjQ0MDk0ODQ4NjMsMjEzLjYwMDAwMDAwMDAwMDAyIiBmaWxsPSJub25lIiBzdHJva2U9IiMxMzEzMDAiIHN0cm9rZS13aWR0aD0iMiIvPjxwYXRoIGQ9Ik0gNjIuNDQ4MjQ0MDk0ODQ4NjMsMjQ2LjMyIEwgNTcuNDQ4MjQ0MDk0ODQ4NjMsMjQ2LjMyIiBmaWxsPSJub25lIiBzdHJva2U9IiMxMzEzMDAiIHN0cm9rZS13aWR0aD0iMiIvPjxwYXRoIGQ9Ik0gNjIuNDQ4MjQ0MDk0ODQ4NjMsMjc5LjA0IEwgNTcuNDQ4MjQ0MDk0ODQ4NjMsMjc5LjA0IiBmaWxsPSJub25lIiBzdHJva2U9IiMxMzEzMDAiIHN0cm9rZS13aWR0aD0iMiIvPjxwYXRoIGQ9Ik0gNjIuNDQ4MjQ0MDk0ODQ4NjMsMzExLjc2IEwgNTcuNDQ4MjQ0MDk0ODQ4NjMsMzExLjc2IiBmaWxsPSJub25lIiBzdHJva2U9IiMxMzEzMDAiIHN0cm9rZS13aWR0aD0iMiIvPjxwYXRoIGQ9Ik0gNjIuNDQ4MjQ0MDk0ODQ4NjMsMzQ0LjQ3OTk5OTk5OTk5OTk2IEwgNTcuNDQ4MjQ0MDk0ODQ4NjMsMzQ0LjQ3OTk5OTk5OTk5OTk2IiBmaWxsPSJub25lIiBzdHJva2U9IiMxMzEzMDAiIHN0cm9rZS13aWR0aD0iMiIvPjxwYXRoIGQ9Ik0gNjIuNDQ4MjQ0MDk0ODQ4NjMsMzc3LjIwMDAwMDAwMDAwMDA1IEwgNTcuNDQ4MjQ0MDk0ODQ4NjMsMzc3LjIwMDAwMDAwMDAwMDA1IiBmaWxsPSJub25lIiBzdHJva2U9IiMxMzEzMDAiIHN0cm9rZS13aWR0aD0iMiIvPjxwYXRoIGQ9Ik0gNjIuNDQ4MjQ0MDk0ODQ4NjMsNDA5LjkyIEwgNTcuNDQ4MjQ0MDk0ODQ4NjMsNDA5LjkyIiBmaWxsPSJub25lIiBzdHJva2U9IiMxMzEzMDAiIHN0cm9rZS13aWR0aD0iMiIvPjxwYXRoIGQ9Ik0gNjIuNDQ4MjQ0MDk0ODQ4NjMsNDQyLjY0IEwgNTcuNDQ4MjQ0MDk0ODQ4NjMsNDQyLjY0IiBmaWxsPSJub25lIiBzdHJva2U9IiMxMzEzMDAiIHN0cm9rZS13aWR0aD0iMiIvPjwvZz48ZyBjbGFzcz0idGl0bGUiPjx0ZXh0IHg9IjAiIHk9IjAiIGZpbGw9IiMxMzEzMDAiIGZvbnQtc2l6ZT0iMTYiIGRvbWluYW50LWJhc2VsaW5lPSJ0ZXh0LWJlZm9yZS1lZGdlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1LCAyNTQuNSkgcm90YXRlKDI3MCkiPlBlcmNlbnQgY2hhbmdlPC90ZXh0PjwvZz48L2c+PC9nPjxnIGNsYXNzPSJtZXJtYWlkLXRtcC1ncm91cCIvPjwvc3ZnPg==" alt="2026 market signals (% change)." loading="lazy"><figcaption>Figure 1 — 2026 market signals (% change).</figcaption></figure>
+
+<p><em>Demand is growing overall, but near-term caution rewards the supplier buyers can find and verify — exactly the gap this audit identifies.</em></p>
+<h2 id="5-competitive-snapshot-public-positioning-only">5. Competitive snapshot (public positioning only)</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Company</th>
+<th>Their story</th>
+<th>Your natural counter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>K3 Aluproducts (est. 2014)</td>
+<td>Italian-systems prestige, Airport City address</td>
+<td>26 years of Ghana-verified institutional proof</td>
+</tr>
+<tr>
+<td>Emmaldo Glazing</td>
+<td>International brand partnerships</td>
+<td>In-house manufacture vs. distributor dependence</td>
+</tr>
+<tr>
+<td>Welcraft (est. 2012)</td>
+<td>Guarantees + benefit-led website</td>
+<td>Factory complexity: "projects that scare other fabricators"</td>
+</tr>
+<tr>
+<td>AluMaster</td>
+<td>Affordability + live chat</td>
+<td>Institutional-grade quality at scale</td>
+</tr>
+</tbody>
+</table></div>
+<p>None of these can copy your history or factory. None of them, yet, has built a strong public review base either — the first mover earns default trust.</p>
+<h3 id="positioning-map-the-empty-top-right-corner">Positioning map — the empty top-right corner</h3>
+<figure class="diagram"><img src="data:image/svg+xml;base64,PHN2ZyBpZD0ibWVybWFpZC1zdmciIHdpZHRoPSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHN0eWxlPSJtYXgtd2lkdGg6IDUwMHB4OyIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHJvbGU9ImdyYXBoaWNzLWRvY3VtZW50IGRvY3VtZW50IiBhcmlhLXJvbGVkZXNjcmlwdGlvbj0icXVhZHJhbnRDaGFydCIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxzdHlsZSB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCI+QGltcG9ydCB1cmwoImh0dHBzOi8vY2RuanMuY2xvdWRmbGFyZS5jb20vYWpheC9saWJzL2ZvbnQtYXdlc29tZS83LjIuMC9jc3MvYWxsLm1pbi5jc3MiKTs8L3N0eWxlPjxzdHlsZT4jbWVybWFpZC1zdmd7Zm9udC1mYW1pbHk6InRyZWJ1Y2hldCBtcyIsdmVyZGFuYSxhcmlhbCxzYW5zLXNlcmlmO2ZvbnQtc2l6ZToxNnB4O2ZpbGw6IzMzMzt9QGtleWZyYW1lcyBlZGdlLWFuaW1hdGlvbi1mcmFtZXtmcm9te3N0cm9rZS1kYXNob2Zmc2V0OjA7fX1Aa2V5ZnJhbWVzIGRhc2h7dG97c3Ryb2tlLWRhc2hvZmZzZXQ6MDt9fSNtZXJtYWlkLXN2ZyAuZWRnZS1hbmltYXRpb24tc2xvd3tzdHJva2UtZGFzaGFycmF5OjksNSFpbXBvcnRhbnQ7c3Ryb2tlLWRhc2hvZmZzZXQ6OTAwO2FuaW1hdGlvbjpkYXNoIDUwcyBsaW5lYXIgaW5maW5pdGU7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7fSNtZXJtYWlkLXN2ZyAuZWRnZS1hbmltYXRpb24tZmFzdHtzdHJva2UtZGFzaGFycmF5OjksNSFpbXBvcnRhbnQ7c3Ryb2tlLWRhc2hvZmZzZXQ6OTAwO2FuaW1hdGlvbjpkYXNoIDIwcyBsaW5lYXIgaW5maW5pdGU7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7fSNtZXJtYWlkLXN2ZyAuZXJyb3ItaWNvbntmaWxsOiM1NTIyMjI7fSNtZXJtYWlkLXN2ZyAuZXJyb3ItdGV4dHtmaWxsOiM1NTIyMjI7c3Ryb2tlOiM1NTIyMjI7fSNtZXJtYWlkLXN2ZyAuZWRnZS10aGlja25lc3Mtbm9ybWFse3N0cm9rZS13aWR0aDoxcHg7fSNtZXJtYWlkLXN2ZyAuZWRnZS10aGlja25lc3MtdGhpY2t7c3Ryb2tlLXdpZHRoOjMuNXB4O30jbWVybWFpZC1zdmcgLmVkZ2UtcGF0dGVybi1zb2xpZHtzdHJva2UtZGFzaGFycmF5OjA7fSNtZXJtYWlkLXN2ZyAuZWRnZS10aGlja25lc3MtaW52aXNpYmxle3N0cm9rZS13aWR0aDowO2ZpbGw6bm9uZTt9I21lcm1haWQtc3ZnIC5lZGdlLXBhdHRlcm4tZGFzaGVke3N0cm9rZS1kYXNoYXJyYXk6Mzt9I21lcm1haWQtc3ZnIC5lZGdlLXBhdHRlcm4tZG90dGVke3N0cm9rZS1kYXNoYXJyYXk6Mjt9I21lcm1haWQtc3ZnIC5tYXJrZXJ7ZmlsbDojMzMzMzMzO3N0cm9rZTojMzMzMzMzO30jbWVybWFpZC1zdmcgLm1hcmtlci5jcm9zc3tzdHJva2U6IzMzMzMzMzt9I21lcm1haWQtc3ZnIHN2Z3tmb250LWZhbWlseToidHJlYnVjaGV0IG1zIix2ZXJkYW5hLGFyaWFsLHNhbnMtc2VyaWY7Zm9udC1zaXplOjE2cHg7fSNtZXJtYWlkLXN2ZyBwe21hcmdpbjowO30jbWVybWFpZC1zdmcgLm5vZGUgLm5lby1ub2Rle3N0cm9rZTojOTM3MERCO30jbWVybWFpZC1zdmcgW2RhdGEtbG9vaz0ibmVvIl0ubm9kZSByZWN0LCNtZXJtYWlkLXN2ZyBbZGF0YS1sb29rPSJuZW8iXS5jbHVzdGVyIHJlY3QsI21lcm1haWQtc3ZnIFtkYXRhLWxvb2s9Im5lbyJdLm5vZGUgcG9seWdvbntzdHJva2U6IzkzNzBEQjtmaWx0ZXI6ZHJvcC1zaGFkb3coMXB4IDJweCAycHggcmdiYSgxODUsIDE4NSwgMTg1LCAxKSk7fSNtZXJtYWlkLXN2ZyBbZGF0YS1sb29rPSJuZW8iXS5zd2ltbGFuZS5jbHVzdGVyIHJlY3R7ZmlsdGVyOm5vbmU7fSNtZXJtYWlkLXN2ZyBbZGF0YS1sb29rPSJuZW8iXS5ub2RlIHBhdGh7c3Ryb2tlOiM5MzcwREI7c3Ryb2tlLXdpZHRoOjFweDt9I21lcm1haWQtc3ZnIFtkYXRhLWxvb2s9Im5lbyJdLm5vZGUgLm91dGVyLXBhdGh7ZmlsdGVyOmRyb3Atc2hhZG93KDFweCAycHggMnB4IHJnYmEoMTg1LCAxODUsIDE4NSwgMSkpO30jbWVybWFpZC1zdmcgW2RhdGEtbG9vaz0ibmVvIl0ubm9kZSAubmVvLWxpbmUgcGF0aHtzdHJva2U6IzkzNzBEQjtmaWx0ZXI6bm9uZTt9I21lcm1haWQtc3ZnIFtkYXRhLWxvb2s9Im5lbyJdLm5vZGUgY2lyY2xle3N0cm9rZTojOTM3MERCO2ZpbHRlcjpkcm9wLXNoYWRvdygxcHggMnB4IDJweCByZ2JhKDE4NSwgMTg1LCAxODUsIDEpKTt9I21lcm1haWQtc3ZnIFtkYXRhLWxvb2s9Im5lbyJdLm5vZGUgY2lyY2xlIC5zdGF0ZS1zdGFydHtmaWxsOiMwMDAwMDA7fSNtZXJtYWlkLXN2ZyBbZGF0YS1sb29rPSJuZW8iXS5pY29uLXNoYXBlIC5pY29ue2ZpbGw6IzkzNzBEQjtmaWx0ZXI6ZHJvcC1zaGFkb3coMXB4IDJweCAycHggcmdiYSgxODUsIDE4NSwgMTg1LCAxKSk7fSNtZXJtYWlkLXN2ZyBbZGF0YS1sb29rPSJuZW8iXS5pY29uLXNoYXBlIC5pY29uLW5lbyBwYXRoe3N0cm9rZTojOTM3MERCO2ZpbHRlcjpkcm9wLXNoYWRvdygxcHggMnB4IDJweCByZ2JhKDE4NSwgMTg1LCAxODUsIDEpKTt9I21lcm1haWQtc3ZnIDpyb290ey0tbWVybWFpZC1mb250LWZhbWlseToidHJlYnVjaGV0IG1zIix2ZXJkYW5hLGFyaWFsLHNhbnMtc2VyaWY7fTwvc3R5bGU+PGcvPjxnIGNsYXNzPSJtYWluIj48ZyBjbGFzcz0icXVhZHJhbnRzIj48ZyBjbGFzcz0icXVhZHJhbnQiPjxyZWN0IHg9IjI2MyIgeT0iNDUiIHdpZHRoPSIyMzIiIGhlaWdodD0iMjEyIiBmaWxsPSIjRUNFQ0ZGIi8+PHRleHQgeD0iMCIgeT0iMCIgZmlsbD0iIzEzMTMwMCIgZm9udC1zaXplPSIxNiIgZG9taW5hbnQtYmFzZWxpbmU9ImhhbmdpbmciIHRleHQtYW5jaG9yPSJtaWRkbGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM3OSwgNTApIHJvdGF0ZSgwKSI+VGhlIGRlZmF1bHQgY2hvaWNlPC90ZXh0PjwvZz48ZyBjbGFzcz0icXVhZHJhbnQiPjxyZWN0IHg9IjMxIiB5PSI0NSIgd2lkdGg9IjIzMiIgaGVpZ2h0PSIyMTIiIGZpbGw9IiNmMWYxZmYiLz48dGV4dCB4PSIwIiB5PSIwIiBmaWxsPSIjMGUwZTAwIiBmb250LXNpemU9IjE2IiBkb21pbmFudC1iYXNlbGluZT0iaGFuZ2luZyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTQ3LCA1MCkgcm90YXRlKDApIj5Qcm92ZW4gYnV0IHVuZGVyLXZlcmlmaWVkPC90ZXh0PjwvZz48ZyBjbGFzcz0icXVhZHJhbnQiPjxyZWN0IHg9IjMxIiB5PSIyNTciIHdpZHRoPSIyMzIiIGhlaWdodD0iMjEyIiBmaWxsPSIjZjZmNmZmIi8+PHRleHQgeD0iMCIgeT0iMCIgZmlsbD0iIzA5MDkwMCIgZm9udC1zaXplPSIxNiIgZG9taW5hbnQtYmFzZWxpbmU9ImhhbmdpbmciIHRleHQtYW5jaG9yPSJtaWRkbGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE0NywgMjYyKSByb3RhdGUoMCkiPk5vdCB5ZXQgaW4gY29udGVudGlvbjwvdGV4dD48L2c+PGcgY2xhc3M9InF1YWRyYW50Ij48cmVjdCB4PSIyNjMiIHk9IjI1NyIgd2lkdGg9IjIzMiIgaGVpZ2h0PSIyMTIiIGZpbGw9IiNmYmZiZmYiLz48dGV4dCB4PSIwIiB5PSIwIiBmaWxsPSIjMDQwNDAwIiBmb250LXNpemU9IjE2IiBkb21pbmFudC1iYXNlbGluZT0iaGFuZ2luZyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzc5LCAyNjIpIHJvdGF0ZSgwKSI+VmlzaWJsZSBidXQgdW5wcm92ZW48L3RleHQ+PC9nPjwvZz48ZyBjbGFzcz0iYm9yZGVyIj48bGluZSB4MT0iMzAiIHkxPSI0NSIgeDI9IjQ5NiIgeTI9IjQ1IiBzdHlsZT0ic3Ryb2tlOiByZ2IoMTk5LCAxOTksIDI0MSk7IHN0cm9rZS13aWR0aDogMjsiLz48bGluZSB4MT0iNDk1IiB5MT0iNDYiIHgyPSI0OTUiIHkyPSI0NjgiIHN0eWxlPSJzdHJva2U6IHJnYigxOTksIDE5OSwgMjQxKTsgc3Ryb2tlLXdpZHRoOiAyOyIvPjxsaW5lIHgxPSIzMCIgeTE9IjQ2OSIgeDI9IjQ5NiIgeTI9IjQ2OSIgc3R5bGU9InN0cm9rZTogcmdiKDE5OSwgMTk5LCAyNDEpOyBzdHJva2Utd2lkdGg6IDI7Ii8+PGxpbmUgeDE9IjMxIiB5MT0iNDYiIHgyPSIzMSIgeTI9IjQ2OCIgc3R5bGU9InN0cm9rZTogcmdiKDE5OSwgMTk5LCAyNDEpOyBzdHJva2Utd2lkdGg6IDI7Ii8+PGxpbmUgeDE9IjI2MyIgeTE9IjQ2IiB4Mj0iMjYzIiB5Mj0iNDY4IiBzdHlsZT0ic3Ryb2tlOiByZ2IoMTk5LCAxOTksIDI0MSk7IHN0cm9rZS13aWR0aDogMTsiLz48bGluZSB4MT0iMzIiIHkxPSIyNTciIHgyPSI0OTQiIHkyPSIyNTciIHN0eWxlPSJzdHJva2U6IHJnYigxOTksIDE5OSwgMjQxKTsgc3Ryb2tlLXdpZHRoOiAxOyIvPjwvZz48ZyBjbGFzcz0iZGF0YS1wb2ludHMiPjxnIGNsYXNzPSJkYXRhLXBvaW50Ij48Y2lyY2xlIGN4PSIzMDkuNCIgY3k9IjM4NC4yMDAwMDAwMDAwMDAwNSIgcj0iNSIgZmlsbD0iaHNsKDI0MCwgMTAwJSwgTmFOJSkiIHN0cm9rZT0iaHNsKDI0MCwgMTAwJSwgTmFOJSkiIHN0cm9rZS13aWR0aD0iMHB4Ii8+PHRleHQgeD0iMCIgeT0iMCIgZmlsbD0iIzEzMTMwMCIgZm9udC1zaXplPSIxMiIgZG9taW5hbnQtYmFzZWxpbmU9ImhhbmdpbmciIHRleHQtYW5jaG9yPSJtaWRkbGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMwOS40LCAzODkuMjAwMDAwMDAwMDAwMDUpIHJvdGF0ZSgwKSI+QWx1TWFzdGVyPC90ZXh0PjwvZz48ZyBjbGFzcz0iZGF0YS1wb2ludCI+PGNpcmNsZSBjeD0iMzU1LjgiIGN5PSIzMjAuNiIgcj0iNSIgZmlsbD0iaHNsKDI0MCwgMTAwJSwgTmFOJSkiIHN0cm9rZT0iaHNsKDI0MCwgMTAwJSwgTmFOJSkiIHN0cm9rZS13aWR0aD0iMHB4Ii8+PHRleHQgeD0iMCIgeT0iMCIgZmlsbD0iIzEzMTMwMCIgZm9udC1zaXplPSIxMiIgZG9taW5hbnQtYmFzZWxpbmU9ImhhbmdpbmciIHRleHQtYW5jaG9yPSJtaWRkbGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM1NS44LCAzMjUuNikgcm90YXRlKDApIj5XZWxjcmFmdDwvdGV4dD48L2c+PGcgY2xhc3M9ImRhdGEtcG9pbnQiPjxjaXJjbGUgY3g9IjI4Ni4yIiBjeT0iMjk5LjQiIHI9IjUiIGZpbGw9ImhzbCgyNDAsIDEwMCUsIE5hTiUpIiBzdHJva2U9ImhzbCgyNDAsIDEwMCUsIE5hTiUpIiBzdHJva2Utd2lkdGg9IjBweCIvPjx0ZXh0IHg9IjAiIHk9IjAiIGZpbGw9IiMxMzEzMDAiIGZvbnQtc2l6ZT0iMTIiIGRvbWluYW50LWJhc2VsaW5lPSJoYW5naW5nIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyODYuMiwgMzA0LjQpIHJvdGF0ZSgwKSI+RW1tYWxkbyBHbGF6aW5nPC90ZXh0PjwvZz48ZyBjbGFzcz0iZGF0YS1wb2ludCI+PGNpcmNsZSBjeD0iMzE4LjY3OTk5OTk5OTk5OTk1IiBjeT0iMjc4LjIwMDAwMDAwMDAwMDA1IiByPSI1IiBmaWxsPSJoc2woMjQwLCAxMDAlLCBOYU4lKSIgc3Ryb2tlPSJoc2woMjQwLCAxMDAlLCBOYU4lKSIgc3Ryb2tlLXdpZHRoPSIwcHgiLz48dGV4dCB4PSIwIiB5PSIwIiBmaWxsPSIjMTMxMzAwIiBmb250LXNpemU9IjEyIiBkb21pbmFudC1iYXNlbGluZT0iaGFuZ2luZyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzE4LjY3OTk5OTk5OTk5OTk1LCAyODMuMjAwMDAwMDAwMDAwMDUpIHJvdGF0ZSgwKSI+SzMgQWx1cHJvZHVjdHM8L3RleHQ+PC9nPjxnIGNsYXNzPSJkYXRhLXBvaW50Ij48Y2lyY2xlIGN4PSIxMTQuNTIiIGN5PSI3OC45MTk5OTk5OTk5OTk5OSIgcj0iNSIgZmlsbD0iaHNsKDI0MCwgMTAwJSwgTmFOJSkiIHN0cm9rZT0iaHNsKDI0MCwgMTAwJSwgTmFOJSkiIHN0cm9rZS13aWR0aD0iMHB4Ii8+PHRleHQgeD0iMCIgeT0iMCIgZmlsbD0iIzEzMTMwMCIgZm9udC1zaXplPSIxMiIgZG9taW5hbnQtYmFzZWxpbmU9ImhhbmdpbmciIHRleHQtYW5jaG9yPSJtaWRkbGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDExNC41MiwgODMuOTE5OTk5OTk5OTk5OTkpIHJvdGF0ZSgwKSI+RFMgQ29uc3RydWN0aW9uPC90ZXh0PjwvZz48L2c+PGcgY2xhc3M9ImxhYmVscyI+PGcgY2xhc3M9ImxhYmVsIj48dGV4dCB4PSIwIiB5PSIwIiBmaWxsPSIjMTMxMzAwIiBmb250LXNpemU9IjE2IiBkb21pbmFudC1iYXNlbGluZT0iaGFuZ2luZyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTQ3LCA0NzkpIHJvdGF0ZSgwKSI+TG93IHZpc2libGUgZGlnaXRhbCBwcm9vZjwvdGV4dD48L2c+PGcgY2xhc3M9ImxhYmVsIj48dGV4dCB4PSIwIiB5PSIwIiBmaWxsPSIjMTMxMzAwIiBmb250LXNpemU9IjE2IiBkb21pbmFudC1iYXNlbGluZT0iaGFuZ2luZyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzc5LCA0NzkpIHJvdGF0ZSgwKSI+SGlnaCB2aXNpYmxlIGRpZ2l0YWwgcHJvb2Y8L3RleHQ+PC9nPjxnIGNsYXNzPSJsYWJlbCI+PHRleHQgeD0iMCIgeT0iMCIgZmlsbD0iIzEzMTMwMCIgZm9udC1zaXplPSIxNiIgZG9taW5hbnQtYmFzZWxpbmU9ImhhbmdpbmciIHRleHQtYW5jaG9yPSJtaWRkbGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUsIDM2Mykgcm90YXRlKC05MCkiPlNob3J0IHRyYWNrIHJlY29yZDwvdGV4dD48L2c+PGcgY2xhc3M9ImxhYmVsIj48dGV4dCB4PSIwIiB5PSIwIiBmaWxsPSIjMTMxMzAwIiBmb250LXNpemU9IjE2IiBkb21pbmFudC1iYXNlbGluZT0iaGFuZ2luZyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNSwgMTUxKSByb3RhdGUoLTkwKSI+TG9uZyBpbnN0aXR1dGlvbmFsIHRyYWNrIHJlY29yZDwvdGV4dD48L2c+PC9nPjxnIGNsYXNzPSJ0aXRsZSI+PHRleHQgeD0iMCIgeT0iMCIgZmlsbD0iIzEzMTMwMCIgZm9udC1zaXplPSIyMCIgZG9taW5hbnQtYmFzZWxpbmU9ImhhbmdpbmciIHRleHQtYW5jaG9yPSJtaWRkbGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI1MCwgMTApIHJvdGF0ZSgwKSI+Q29tcGV0aXRpdmUgcG9zaXRpb25pbmcgb24gcHVibGljIGV2aWRlbmNlIChOb3ZlbWJlciAyMDI2KTwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" alt="Competitive positioning on public evidence (November 2026)." loading="lazy"><figcaption>Figure 2 — Competitive positioning on public evidence (November 2026).</figcaption></figure>
+
+<p><em>DS already owns the strongest track record in the market but sits in the "proven but under-verified" quadrant. No competitor yet occupies the top-right "default choice" position. The engagement's purpose is to move DS there first — before anyone else does.</em></p>
+<h2 id="6-conclusion">6. Conclusion</h2>
+<p>The gap between the company DS actually is and the company buyers can currently <em>see</em> is the single largest and most fixable value leak identified. Closing it does not require triumph over the market — it requires a system for visibility, proof and enquiry handling. The accompanying proposal sets out, milestone by milestone, how that system is built and how payment follows verified results.</p>
+<p><em>Detailed evidence, per-page findings and the complete 90-day plan are shared at kickoff.</em></p>
+    <p class="footer-note">Prepared by Gideon B. Abochie · Gabochie Marketing / Gabochie Corp · admin@gabochie.com · +233 26 824 8970 · mkt.gabochie.com</p>
+  </main>
+</div>
+<button class="print-btn" onclick="window.print()" type="button">Print / Save as PDF</button>
+</body>
+</html>

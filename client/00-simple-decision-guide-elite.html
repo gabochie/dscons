@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Your Options, Explained Simply — DS Construction Limited</title>
+<style>
+  @font-face { font-family: "Playfair"; src: url(file:///public/dscons/internal/fonts/PlayfairDisplay.ttf); }
+  @font-face { font-family: "Playfair"; src: url(file:///public/dscons/internal/fonts/PlayfairDisplay-Italic.ttf); font-style: italic; }
+  @font-face { font-family: "Marcellus"; src: url(file:///public/dscons/internal/fonts/Marcellus-Regular.ttf); }
+
+  /* ---------- page masters ---------- */
+  @page {
+    size: A4;
+    margin: 26mm 20mm 24mm 20mm;
+    @top-center {
+      content: "DS CONSTRUCTION LTD  ·  YOUR OPTIONS, EXPLAINED SIMPLY";
+      font-family: "Open Sans"; font-size: 7pt; letter-spacing: 2.2pt;
+      color: #9aa094; vertical-align: bottom; padding-bottom: 5mm;
+    }
+    @bottom-left {
+      content: "Prepared by Gideon B. Abochie  ·  Gabochie Marketing  ·  Private & Confidential";
+      font-family: "Open Sans"; font-size: 7pt; letter-spacing: .6pt; color: #9aa094;
+    }
+    @bottom-right {
+      content: "Page " counter(page) " of " counter(pages);
+      font-family: "Open Sans"; font-size: 7pt; letter-spacing: .6pt; color: #9aa094;
+    }
+  }
+  @page cover {
+    margin: 0;
+    @top-center { content: none; }
+    @bottom-left { content: none; }
+    @bottom-right { content: none; }
+  }
+
+  /* ---------- base ---------- */
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Open Sans"; font-size: 10.2pt; line-height: 1.72;
+    color: #26312b; background: #ffffff;
+  }
+  p { margin: 0 0 9pt; }
+  strong { color: #14211a; font-weight: 700; }
+  .gold { color: #a4813a; }
+  .sec { break-before: page; }
+  .block { break-inside: avoid; margin-bottom: 16pt; }
+
+  .label {
+    font-size: 7.5pt; font-weight: 700; letter-spacing: 3pt; text-transform: uppercase;
+    color: #a4813a; margin-bottom: 7pt;
+  }
+  h2 {
+    font-family: "Marcellus"; font-weight: 400; font-size: 19pt; letter-spacing: .8pt;
+    color: #14342a; margin: 0 0 12pt;
+  }
+  h2 .thin { color: #7c837a; }
+  .rule { border: 0; border-top: 1.4pt solid #14342a; width: 26mm; margin: 0 0 16pt; }
+  .lead { font-size: 11.5pt; color: #3a453e; }
+
+  /* ---------- cover ---------- */
+  .page-cover {
+    page: cover; break-before: auto;
+    width: 210mm; height: 297mm; position: relative;
+    background: linear-gradient(155deg, #081f13 0%, #123b26 52%, #081f13 100%);
+    color: #ece7d6;
+  }
+  .cover-frame {
+    position: absolute; top: 10mm; left: 10mm; right: 10mm; bottom: 10mm;
+    border: 0.7pt solid rgba(201,164,92,.55);
+  }
+  .cover-inner { position: absolute; top: 10mm; left: 10mm; right: 10mm; bottom: 10mm; padding: 20mm 17mm; }
+  .cover-brand {
+    text-align: center; margin-top: 6mm;
+  }
+  .monogram {
+    display: inline-block; width: 17mm; height: 17mm; border: 1pt solid #c9a45c; border-radius: 50%;
+    text-align: center; line-height: 16.6mm; font-family: "Marcellus"; font-size: 14pt; color: #c9a45c;
+    letter-spacing: 1pt;
+  }
+  .cover-firm {
+    margin-top: 5mm; font-size: 8.5pt; letter-spacing: 4.5pt; text-transform: uppercase; color: #c9a45c;
+  }
+  .cover-conf {
+    margin-top: 2mm; font-size: 7pt; letter-spacing: 3pt; text-transform: uppercase; color: #8d9a8d;
+  }
+  .cover-rule { width: 30mm; border: 0; border-top: 1pt solid #c9a45c; margin: 14mm auto 12mm; }
+  .cover-title {
+    font-family: "Playfair"; font-weight: 700; font-size: 37pt; line-height: 1.14;
+    text-align: center; color: #f4efdf;
+  }
+  .cover-sub {
+    margin: 9mm auto 0; width: 128mm; text-align: center;
+    font-size: 11.5pt; font-weight: 300; line-height: 1.75; color: #c8d1c4;
+  }
+  .cover-sub em { font-family: "Playfair"; font-style: italic; color: #e6d9b4; }
+  .cover-parties { position: absolute; bottom: 30mm; left: 17mm; right: 17mm; }
+  table.party { width: 100%; border-collapse: collapse; margin-top: 6mm; }
+  table.party td { vertical-align: top; padding: 0 4mm; }
+  table.party td.lbl {
+    width: 22mm; font-size: 7pt; font-weight: 700; letter-spacing: 2.4pt;
+    text-transform: uppercase; color: #c9a45c; padding-top: 2.2pt; white-space: nowrap;
+  }
+  table.party td.val { font-size: 9.5pt; line-height: 1.6; color: #ece7d6; }
+  .party-rule { border: 0; border-top: 0.7pt solid rgba(201,164,92,.45); margin: 0 0 2mm; }
+  .cover-foot {
+    position: absolute; bottom: 14mm; left: 17mm; right: 17mm; text-align: center;
+    font-size: 7.5pt; letter-spacing: 2.2pt; text-transform: uppercase; color: #8d9a8d;
+  }
+
+  /* ---------- statement page ---------- */
+  .five { font-family: "Playfair"; font-size: 17.5pt; line-height: 1.62; color: #22302a; }
+  .five p { margin-bottom: 14pt; }
+  .five strong { color: #0d3b26; }
+  .stat-band { width: 100%; border-collapse: collapse; margin: 14pt 0 6pt; }
+  .stat-band td { width: 33.33%; text-align: center; padding: 10pt 8pt; border-left: 0.7pt solid #ddd8c8; vertical-align: top; }
+  .stat-band td:first-child { border-left: 0; }
+  .stat-num { font-family: "Playfair"; font-weight: 700; font-size: 19pt; color: #0d3b26; line-height: 1.25; }
+  .stat-cap { font-size: 7.8pt; line-height: 1.55; color: #6b7268; margin-top: 3pt; }
+  .stat-note { font-size: 7.6pt; font-style: italic; color: #8b9086; }
+
+  .glance { width: 100%; border-collapse: collapse; margin-top: 12pt; }
+  .glance td { border: 0.7pt solid #e3ddc9; border-collapse: collapse; padding: 9pt 10pt; vertical-align: top; width: 33.33%; }
+  .glance .door { font-family: "Marcellus"; font-size: 10.5pt; letter-spacing: 1.2pt; color: #14342a; }
+  .glance .pay { font-size: 8pt; letter-spacing: 1.6pt; color: #a4813a; text-transform: uppercase; margin-top: 2pt; }
+  .glance .txt { font-size: 8.8pt; color: #4c554e; line-height: 1.6; margin-top: 4pt; }
+  .glance tr.sel td { background: #f5f1e3; border-color: #cbb87e; }
+  .route-hint {
+    margin-top: 14pt; padding: 9pt 12pt; background: #f4f2ea; border-left: 2.4pt solid #a4813a;
+    font-size: 9pt; color: #4c554e;
+  }
+
+  /* ---------- problem cards ---------- */
+  .cards { width: 100%; border-collapse: separate; border-spacing: 0 8pt; }
+  .cards td {
+    border: 0.7pt solid #e3ddc9; padding: 12pt 14pt; vertical-align: top; width: 33.33%;
+  }
+  .cards .n { font-family: "Playfair"; font-weight: 700; font-size: 15pt; color: #a4813a; }
+  .cards .t { font-family: "Marcellus"; font-size: 11pt; color: #14342a; margin-top: 3pt; }
+  .cards .d { font-size: 9pt; color: #4c554e; line-height: 1.65; margin-top: 5pt; }
+  .cards .c { font-size: 7.6pt; letter-spacing: 1.4pt; text-transform: uppercase; color: #a4813a; margin-top: 8pt; }
+
+  .money-line {
+    margin-top: 6pt; padding: 14pt 16pt; background: #f5f1e3; border: 0.7pt solid #cbb87e;
+  }
+  .money-line .big { font-family: "Playfair"; font-weight: 700; font-size: 14.5pt; color: #0d3b26; line-height: 1.5; }
+  .money-line .sub { font-size: 8.6pt; color: #6b7268; font-style: italic; margin-top: 4pt; }
+
+  /* ---------- doors ---------- */
+  .door-band {
+    padding: 11pt 14pt; background: #14342a; color: #f4efdf;
+  }
+  .door-band .n { font-size: 8pt; letter-spacing: 3pt; text-transform: uppercase; color: #c9a45c; }
+  .door-band .t { font-family: "Marcellus"; font-size: 15pt; letter-spacing: .6pt; color: #f4efdf; margin-top: 2pt; }
+  .door-reco {
+    display: inline-block; padding: 2.6pt 8pt; margin-left: 8pt; vertical-align: middle;
+    background: #c9a45c; color: #10231a; font-size: 6.8pt; font-weight: 700; letter-spacing: 1.8pt; text-transform: uppercase;
+  }
+  .steps { width: 100%; border-collapse: collapse; margin-top: 2pt; }
+  .steps td { padding: 8pt 0; border-bottom: 0.7pt solid #e8e4d6; vertical-align: top; }
+  .steps td.no {
+    width: 12mm; font-family: "Playfair"; font-weight: 700; font-size: 15pt; color: #c9a45c; text-align: left;
+  }
+  .steps td.tx { font-size: 10pt; color: #3a453e; }
+  .cost-line { margin-top: 10pt; font-size: 9pt; letter-spacing: .4pt; color: #4c554e; }
+  .cost-line .zero { font-family: "Playfair"; font-weight: 700; font-size: 15pt; color: #0d3b26; }
+
+  table.two { width: 100%; border-collapse: collapse; margin-top: 12pt; }
+  table.two th, table.two td { border: 0.7pt solid #e3ddc9; padding: 8pt 10pt; vertical-align: top; }
+  table.two th {
+    background: #14342a; color: #f4efdf; font-family: "Marcellus"; font-weight: 400;
+    font-size: 10.5pt; letter-spacing: .8pt; text-align: left;
+  }
+  table.two td.rowlbl {
+    width: 30mm; font-size: 7.6pt; font-weight: 700; letter-spacing: 1.4pt; text-transform: uppercase;
+    color: #6b6045; background: #f7f5ec;
+  }
+  table.two td { font-size: 9.4pt; color: #3a453e; line-height: 1.6; }
+  table.two td em.goldline { font-family: "Playfair"; font-style: italic; color: #8a6d2e; }
+  .promise {
+    margin-top: 12pt; padding: 11pt 14pt; background: #f5f1e3; border-left: 2.4pt solid #c9a45c;
+    font-size: 10pt; color: #37423b;
+  }
+  .promise .pl { font-size: 7.4pt; letter-spacing: 2.4pt; text-transform: uppercase; color: #a4813a; }
+
+  .max-line { margin-top: 12pt; text-align: center; padding: 10pt 0 2pt; }
+  .max-line .m { font-family: "Playfair"; font-weight: 700; font-size: 16pt; color: #0d3b26; }
+  .max-line .s { font-size: 9pt; color: #6b7268; font-style: italic; margin-top: 3pt; }
+
+  /* ---------- small start option ---------- */
+  .smallpath { margin-top: 10pt; padding: 9pt 12pt; border: 0.7pt dashed #b9ad84; font-size: 9pt; color: #4c554e; }
+  .smallpath b { color: #14342a; }
+
+  /* ---------- wait ---------- */
+  .wait { width: 100%; border-collapse: collapse; }
+  .wait td { vertical-align: top; padding: 9pt 0; border-bottom: 0.7pt solid #edeadd; }
+  .wait td.no { width: 9mm; font-family: "Playfair"; font-weight: 700; font-size: 14pt; color: #c9a45c; }
+  .wait td.tx { font-size: 10.2pt; color: #3a453e; }
+
+  /* ---------- Q&A ---------- */
+  .qa { margin-bottom: 13pt; break-inside: avoid; }
+  .qa .q {
+    font-family: "Playfair"; font-style: italic; font-weight: 600; font-size: 12.5pt; color: #14342a;
+  }
+  .qa .a { margin-top: 3pt; font-size: 9.8pt; color: #3a453e; padding-left: 2pt; }
+  .needs { margin-top: 14pt; padding: 10pt 13pt; background: #f7f5ec; border: 0.7pt solid #e3ddc9; break-inside: avoid; }
+  .needs .nt { font-size: 7.4pt; letter-spacing: 2.4pt; text-transform: uppercase; color: #a4813a; margin-bottom: 5pt; }
+  .needs ul { margin-left: 12pt; font-size: 9.2pt; color: #3a453e; }
+  .needs li { margin-bottom: 3pt; }
+
+  /* ---------- decision ---------- */
+  .tree { width: 100%; border-collapse: collapse; margin-top: 4pt; }
+  .tree td { padding: 10pt 0; border-bottom: 0.7pt solid #edeadd; vertical-align: top; }
+  .tree .qn { font-family: "Playfair"; font-weight: 700; font-size: 15pt; color: #c9a45c; width: 9mm; }
+  .tree .qq { font-family: "Marcellus"; font-size: 11.5pt; color: #14342a; }
+  .tree .aa { font-size: 9pt; color: #4c554e; line-height: 1.7; margin-top: 3pt; }
+  .tree .aa b { color: #0d3b26; }
+
+  /* ---------- choice & signature ---------- */
+  .choice { width: 100%; border-collapse: collapse; margin-top: 8pt; }
+  .choice td { border: 0.7pt solid #e3ddc9; padding: 10pt 12pt; vertical-align: middle; }
+  .choice .box {
+    display: inline-block; width: 4.4mm; height: 4.4mm; border: 1.1pt solid #14342a; vertical-align: -1mm;
+  }
+  .mini-box {
+    display: inline-block; width: 3.4mm; height: 3.4mm; border: 0.9pt solid #14342a; vertical-align: -1.2mm; margin-right: 2pt;
+  }
+  .choice .cd { font-family: "Marcellus"; font-size: 11pt; color: #14342a; }
+  .choice .cs { font-size: 8.6pt; color: #6b7268; margin-top: 2pt; }
+  .choice tr.rec td { background: #f5f1e3; border-color: #cbb87e; }
+
+  .sig { margin-top: 16pt; }
+  table.sigrow { width: 100%; border-collapse: collapse; margin-top: 10pt; }
+  table.sigrow td { width: 50%; padding: 0 8mm 0 0; vertical-align: bottom; }
+  table.sigrow td.r { padding: 0 0 0 8mm; border-left: 0.7pt solid #edeadd; }
+  .sigline { border-bottom: 0.9pt solid #14342a; height: 13mm; }
+  .sigcap { font-size: 7.4pt; letter-spacing: 1.8pt; text-transform: uppercase; color: #6b7268; margin-top: 4pt; }
+  .signame { font-size: 9.4pt; color: #3a453e; margin-top: 2pt; }
+
+  .closing {
+    margin-top: 14pt; padding: 11pt 14pt; background: #14342a; color: #dfd8c2;
+    font-family: "Playfair"; font-style: italic; font-size: 11.5pt; line-height: 1.7; text-align: center;
+  }
+  .foot-note {
+    margin-top: 12pt; font-size: 8pt; color: #8b9086; text-align: center; line-height: 1.7;
+  }
+</style>
+</head>
+<body>
+
+<!-- ================= COVER ================= -->
+<div class="page-cover">
+  <div class="cover-frame"></div>
+  <div class="cover-inner">
+    <div class="cover-brand">
+      <span class="monogram">GA</span>
+      <div class="cover-firm">Gabochie Design · Gabochie Marketing</div>
+      <div class="cover-conf">Private &amp; Confidential · Presented in Person</div>
+    </div>
+    <div class="cover-rule"></div>
+    <div class="cover-title">Your Options,<br>Explained Simply</div>
+    <p class="cover-sub">Three doors for DS Construction — chosen in one sitting, with the bigger share of any fee
+      payable <em>only after you have seen the results with your own eyes.</em></p>
+
+    <div class="cover-parties">
+      <div class="party-rule"></div>
+      <table class="party">
+        <tr>
+          <td class="lbl">To</td>
+          <td class="val"><strong style="color:#f4efdf">Mr. Daniel Sogbodjor</strong> — Director, DS Construction Limited<br>
+            <span style="color:#aeb8ab">13 Onyaa Crescent, Nima — Accra · GA-026-8877</span></td>
+        </tr>
+        <tr>
+          <td class="lbl">From</td>
+          <td class="val"><strong style="color:#f4efdf">Gideon B. Abochie</strong> — Founder, Gabochie Design<br>
+            <span style="color:#aeb8ab">Gabochie Marketing · mkt.gabochie.com — the B2B marketing-outcomes brand of Gabochie Design · design.gabochie.com</span><br>
+            <span style="color:#aeb8ab">+233 26 824 8970 (call &amp; WhatsApp) · +233 50 638 4917 (marketing desk)</span><br>
+            <span style="color:#aeb8ab">admin@gabochie.com · gabochiemarketing@gmail.com · P.O. Box SK 2125, Sakumono, Tema — Ghana</span></td>
+        </tr>
+        <tr>
+          <td class="lbl">Date</td>
+          <td class="val">November 2026 &nbsp;·&nbsp; This offer stays open until 6 December 2026</td>
+        </tr>
+      </table>
+    </div>
+    <div class="cover-foot">26 Years of Proven Work · One Decision · Every Route Safe</div>
+  </div>
+</div>
+
+<!-- ================= STATEMENT ================= -->
+<div class="sec">
+  <div class="label">The Whole Offer</div>
+  <h2>In five sentences</h2>
+  <hr class="rule">
+  <div class="five">
+    <p><strong>DS has done fine work for 26 years</strong> — everyone on a project site knows it.</p>
+    <p>But when a new buyer looks for a glazing company today, they find your competitors first, not you.</p>
+    <p>The praise from your past clients stays private instead of convincing the next buyer.</p>
+    <p>And enquiries that arrive by phone or WhatsApp sometimes quietly die because nobody follows them up.</p>
+    <p>We put a simple system around your business so nothing gets lost — and you only pay the larger share of our fee <strong>after you have seen the results yourself.</strong></p>
+  </div>
+
+  <table class="stat-band">
+    <tr>
+      <td><div class="stat-num">26 years</div><div class="stat-cap">of institutional proof — your advantage, and nobody else's</div></td>
+      <td><div class="stat-num">40–60%</div><div class="stat-cap">of quote opportunities across the industry die without follow-up</div></td>
+      <td><div class="stat-num">GHS 5M+</div><div class="stat-cap">plausibly recoverable each year under cautious assumptions</div></td>
+    </tr>
+  </table>
+  <p class="stat-note">Estimates are indicative and will be calibrated together with your real sales records in Week 1 — the model then becomes a revenue plan, not a sales pitch.</p>
+</div>
+
+<!-- ================= AT A GLANCE ================= -->
+<div class="sec">
+  <div class="label">Your Choices At A Glance</div>
+  <h2>Three doors <span class="thin">— every one safe</span></h2>
+  <hr class="rule">
+  <p class="lead">You cannot pick wrong. In every door, the big money moves only after you have seen results — and the first step costs nothing.</p>
+
+  <table class="glance">
+    <tr class="sel">
+      <td><div class="door">DOOR 1</div><div class="pay">Nothing to Pay</div>
+        <div class="txt">We build a free private Heritage Book from three of your iconic project photos. You judge it on its own merit — no obligation either way.</div></td>
+      <td><div class="door">DOOR 2</div><div class="pay">Quiet Partnership</div>
+        <div class="txt">Private introductions to developers, contractors and architects. No public advertising at all. GHS 4,000 to start; monthly fee only after delivery.</div></td>
+      <td><div class="door">DOOR 3</div><div class="pay">Full System</div>
+        <div class="txt">Google listing, 25+ reviews, website upgrades, enquiry routine — everything public. More than half the fee waits for your verification.</div></td>
+    </tr>
+  </table>
+
+  <div class="route-hint"><strong>Short on time?</strong> Pages 5–7 carry the money, pages 8–9 answer the hard questions, page 10 is the decision — signable today.</div>
+</div>
+
+<!-- ================= PROBLEMS ================= -->
+<div class="sec">
+  <div class="label">Where Value Leaks</div>
+  <h2>The three problems <span class="thin">— in everyday words</span></h2>
+  <hr class="rule">
+  <table class="cards">
+    <tr>
+      <td><div class="n">1</div><div class="t">People cannot find you</div>
+        <div class="d">When somebody searches on their phone for “aluminium windows Accra”, other companies appear before you.</div>
+        <div class="c">Enquiries go to other firms</div></td>
+      <td><div class="n">2</div><div class="t">Your good name is hidden</div>
+        <div class="d">26 years of fine buildings — but a new buyer cannot easily see or check that anywhere.</div>
+        <div class="c">Buyers verify, not assume</div></td>
+      <td><div class="n">3</div><div class="t">Jobs go cold</div>
+        <div class="d">A quote is given, nobody calls back, the job goes somewhere else.</div>
+        <div class="c">40–60% never followed up</div></td>
+    </tr>
+  </table>
+
+  <div class="money-line">
+    <div class="big">In careful terms, the business is plausibly passing up several million cedis a year in jobs that never come back to it — and recovering <span class="gold">one</span> extra mid-size institutional job would repay the whole engagement.</div>
+    <div class="sub">We will measure the real number together in Week 1, from your own records, before any targets are set.</div>
+  </div>
+
+  <p class="lead" style="margin-top:12pt">Every door below is designed around the same promise: <strong>the money follows the work, never the other way round.</strong></p>
+</div>
+
+<!-- ================= DOOR 1 ================= -->
+<div class="sec">
+  <div class="label">Door One</div>
+  <h2>Start with the free sample</h2>
+  <hr class="rule">
+  <table class="steps">
+    <tr><td class="no">1</td><td class="tx">You send us photographs of <strong>three of your most iconic completed buildings</strong>.</td></tr>
+    <tr><td class="no">2</td><td class="tx">We build a premium <strong>private Heritage Book</strong> — a beautiful showcase of 26 years of your work, for you to judge.</td></tr>
+    <tr><td class="no">3</td><td class="tx">If it does not impress you, we part as friends and you owe nothing. If it does, that same book starts bringing you real introductions.</td></tr>
+  </table>
+
+  <div class="cost-line">TO PAY TODAY&nbsp;&nbsp; <span class="zero">GHS 0</span></div>
+  <p style="font-size:9.4pt;color:#6b7268;margin-top:4pt">This door is open no matter what — it is how every route below begins, and it can start the day this document reaches you.</p>
+
+  <div class="block">
+    <div class="label" style="margin-top:16pt">What the Heritage Book is</div>
+    <p>A private, premium portfolio — <em>“26 Years of Engineering Glass &amp; Steel: Selected Structural Glazing Case Studies in Ghana”</em> — built from your own iconic projects. It is never published publicly; it is used only when we put your record directly in front of the people who decide who installs the glass: estate developers, main contractors, procurement heads, architects and quantity surveyors.</p>
+  </div>
+
+  <div class="promise">
+    <div class="pl">The point of Door 1</div>
+    You take zero risk and judge our craft before a single cedi moves. A sample page is enclosed with the full pack so you can see the standard already.
+  </div>
+</div>
+
+<!-- ================= DOOR 2 ================= -->
+<div class="sec">
+  <div class="label">Door Two</div>
+  <h2>The Quiet Partnership<span class="door-reco">Recommended</span></h2>
+  <hr class="rule">
+  <p class="lead">A private arrangement that brings big jobs to your table <strong>without any public advertising</strong> — no adverts bearing your name, no public pages, no tracking tools, nothing for the public or the authorities to see. Your 26-year record goes straight to the decision-makers. The public sees nothing; your pipeline fills quietly.</p>
+
+  <table class="two">
+    <tr>
+      <th style="width:30mm">&nbsp;</th>
+      <th>We do it for you</th>
+      <th>We train your own people</th>
+    </tr>
+    <tr>
+      <td class="rowlbl">To start</td>
+      <td><strong>GHS 4,000</strong> — once</td>
+      <td><strong>GHS 12,000–15,000</strong> — spread over two months</td>
+    </tr>
+    <tr>
+      <td class="rowlbl">Each month</td>
+      <td><strong>GHS 5,500</strong> — paid <em class="goldline">only after</em> the month's introductions are delivered</td>
+      <td><strong>GHS 3,000</strong> oversight from month 3</td>
+    </tr>
+    <tr>
+      <td class="rowlbl">When a job signs</td>
+      <td>1% of contract value — <em class="goldline">only when the client actually pays its deposit</em></td>
+      <td><strong>Nothing</strong> — your team wins it, you keep 100%</td>
+    </tr>
+  </table>
+
+  <div class="promise">
+    <div class="pl">The written promise</div>
+    <strong>3–5 real site-measurement meetings every month</strong> with named decision-makers of live projects — or that month is <strong>free</strong>. A “real introduction” means a confirmed meeting or site visit with a named Project Manager, Site Engineer, Owner or Architect, on a live project, for work DS actually does. No counting of vague contacts.
+  </div>
+
+  <div class="max-line">
+    <div class="m">One privately introduced contract makes the entire year's fee look trivial against the value it helped win.</div>
+    <div class="s">Typically active within seven working days of your yes.</div>
+  </div>
+</div>
+
+<!-- ================= DOOR 3 ================= -->
+<div class="sec">
+  <div class="label">Door Three</div>
+  <h2>The Full Visibility System</h2>
+  <hr class="rule">
+  <p class="lead">The public route: your free Google listing properly built up, 25+ client reviews made visible, your website upgraded so buyers find it, an enquiry routine so nothing goes cold, and price lists and quote templates your team uses daily.</p>
+
+  <table class="two">
+    <tr><th style="width:30mm">Payment</th><th style="width:32mm">When</th><th>Condition</th></tr>
+    <tr><td class="rowlbl">GHS 40,000</td><td>At the start</td><td>Covers the foundation work — audit, templates, systems, training: assets you keep forever</td></tr>
+    <tr><td class="rowlbl">GHS 25,000</td><td>Day 60</td><td><em class="goldline">Only if</em> you personally verify: pages live, trade pack ready, videos published</td></tr>
+    <tr><td class="rowlbl">GHS 25,000</td><td>Day 90</td><td><em class="goldline">Only if</em> you verify the day-90 checklist — reviews counted, pages opened, records shown</td></tr>
+    <tr><td class="rowlbl">GHS 5,000 / month</td><td>From month 4</td><td><em class="goldline">Only in months</em> you confirm the agreed numbers</td></tr>
+  </table>
+
+  <div class="max-line">
+    <div class="m">Maximum GHS 105,000 — and more than half of it waits until you have seen the results.</div>
+    <div class="s">Less than 15% of the value of one average commercial curtain-wall contract.</div>
+  </div>
+
+  <div class="smallpath">If even GHS 40,000 is too heavy for a first step, there is a smaller version: <b>strategy and documents only, GHS 45,000 maximum</b>, with the right to upgrade at day 90. Ask, and it will be laid out on one page.</div>
+</div>
+
+<!-- ================= WAIT & QUESTIONS ================= -->
+<div class="sec">
+  <div class="label">Two Honest Answers</div>
+  <h2>“What if we just wait?”</h2>
+  <hr class="rule">
+  <p class="lead">You can wait, and you keep the audit summary we gave you either way — nothing is owed. But know two things first:</p>
+  <table class="wait">
+    <tr><td class="no">1</td><td class="tx"><strong>The season does not wait.</strong> Facade packages are decided <em>before</em> the dry-season build window. The firms that introduce themselves now are the ones written into the bills of quantities later. Waiting is free in cedis, but it can cost you the season.</td></tr>
+    <tr><td class="no">2</td><td class="tx"><strong>Your competitors are not waiting.</strong> Firms like K3 are already courting your institutional clients with polished presentations. None of them has your 26 years of proof — an advantage that only counts when buyers can see it.</td></tr>
+  </table>
+
+  <div class="promise">
+    <div class="pl">And if you decide to wait</div>
+    Keep the audit summary with our compliments. Nothing is owed, no appointment needed — and should you return later, the first step (the free Heritage Book) will still be open to you.
+  </div>
+</div>
+
+<!-- ================= QUESTIONS ================= -->
+<div class="sec">
+  <div class="label">The Questions We Expect</div>
+  <h2>Asked plainly, answered plainly</h2>
+  <hr class="rule">
+  <div class="qa">
+    <div class="q">“We are not computer people.”</div>
+    <div class="a">That is exactly why this is designed the way it is. Every technical thing stays on our side. You will see <strong>one short page of numbers each week</strong>, in plain words: enquiries that came in, quotes that went out, jobs won or lost and why. One of your staff spends about 45 minutes a day on the routine — we train them, start to finish.</div>
+  </div>
+  <div class="qa">
+    <div class="q">“Can't we just use our own staff?”</div>
+    <div class="a">Yes — and Door 2's second column is precisely that: we build the system, write the scripts and train your people properly, then they run it and you keep everything it earns.</div>
+  </div>
+  <div class="qa">
+    <div class="q">“We don't want our business in anybody's public eye.”</div>
+    <div class="a">Then Door 2 was built for you. No advertisements in your name, no tracking tools, no public campaigns, nothing posted publicly. Progress reports arrive privately to management.</div>
+  </div>
+  <div class="qa">
+    <div class="q">“Consultants collect money and disappear.”</div>
+    <div class="a">Look at the payment tables again. In Door 3, more than half the fee is released only when <strong>you</strong> verify results. In Door 2, a month without the promised introductions is a month you do not pay. We designed this so the money only follows the work.</div>
+  </div>
+  <div class="needs">
+    <div class="nt">What I would need from you</div>
+    <ul>
+      <li>One trusted staff member to train</li>
+      <li>Permission to approach past clients for reviews — you approve everything before it goes public</li>
+      <li>About 45 minutes of the MD's time on execution days</li>
+      <li>Access to your website and social accounts</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ================= DECISION ================= -->
+<div class="sec">
+  <div class="label">How to Decide Today</div>
+  <h2>Answer three questions</h2>
+  <hr class="rule">
+  <table class="tree">
+    <tr>
+      <td class="qn">1</td>
+      <td><div class="qq">Do you want new big jobs this coming building season?</div>
+        <div class="aa"><b>No</b> → keep the audit summary with our compliments; no hard feelings. &nbsp;&nbsp;<b>Yes</b> → continue.</div></td>
+    </tr>
+    <tr>
+      <td class="qn">2</td>
+      <td><div class="qq">Do you prefer to grow quietly or publicly?</div>
+        <div class="aa"><b>Quietly</b> → Door 2, the Quiet Partnership. &nbsp;&nbsp;<b>Publicly</b> → Door 3, the Full Visibility System.</div></td>
+    </tr>
+    <tr>
+      <td class="qn">3</td>
+      <td><div class="qq">Should we do the work, or should your own people run it?</div>
+        <div class="aa"><b>We do it</b> → Door 2, first column. &nbsp;&nbsp;<b>Our people</b> → Door 2, second column.</div></td>
+    </tr>
+  </table>
+  <p class="lead" style="margin-top:12pt">And whatever you choose — even <em>“let me think about it”</em> — the first step is the same and costs nothing: <strong>send the three photographs, and judge the free Heritage Book on its own merit.</strong></p>
+</div>
+
+<!-- ================= CHOICE & SIGNATURE ================= -->
+<div class="sec">
+  <div class="label">Your Choice — Please Tick One</div>
+  <h2>The decision, in one table</h2>
+  <hr class="rule">
+  <table class="choice">
+    <tr>
+      <td style="width:7mm"><span class="box"></span></td>
+      <td><div class="cd">DOOR 1 — Start with the free Heritage Book sample</div><div class="cs">Nothing to pay. We begin immediately on receipt of three project photographs.</div></td>
+    </tr>
+    <tr class="rec">
+      <td><span class="box"></span></td>
+      <td><div class="cd">DOOR 2 — The Quiet Partnership <span class="door-reco">Recommended</span></div>
+        <div class="cs">Tick one:&nbsp; <span class="mini-box"></span>&nbsp; We do it for you &nbsp;&nbsp;&nbsp; <span class="mini-box"></span>&nbsp; Train our own people</div></td>
+    </tr>
+    <tr>
+      <td><span class="box"></span></td>
+      <td><div class="cd">DOOR 3 — The Full Visibility System</div><div class="cs">The GHS 40,000 + verify-as-you-go route.</div></td>
+    </tr>
+  </table>
+
+  <div class="sig">
+    <table class="sigrow">
+      <tr>
+        <td>
+          <div class="sigline"></div>
+          <div class="sigcap">For DS Construction Limited</div>
+          <div class="signame">Name &amp; signature — Mr. Daniel Sogbodjor</div>
+          <div class="signame" style="color:#8b9086">Date: ____________________</div>
+        </td>
+        <td class="r">
+          <div class="sigline"></div>
+          <div class="sigcap">For the Consultant</div>
+          <div class="signame">Gideon B. Abochie — Founder, Gabochie Design</div>
+          <div class="signame" style="color:#8b9086">Date: ____________________</div>
+        </td>
+      </tr>
+    </table>
+    <p class="foot-note">Signing starts the chosen route. Door 2 is confirmed on the separate one-page Private Growth Partnership agreement already prepared for you; Door 3 on the main proposal's one-page verification checklist — every target something you can see, count, or open for yourself.</p>
+  </div>
+
+  <div class="closing">“I will not ask you to be computer people.<br>I will simply make sure the next buyer finds you, believes you, and cannot lose your number.”</div>
+  <div class="foot-note">This guide is a companion to the full proposal — <em>The DS Growth &amp; Sales System</em> — which carries the complete detail, deliverables and timelines.<br><br>
+  <span style="letter-spacing:1.4pt; text-transform:uppercase; font-size:7pt; color:#6b6045">Gabochie Design — value-driven development facilitation</span><br>
+  design.gabochie.com · +233 26 824 8970 (call &amp; WhatsApp) · admin@gabochie.com · P.O. Box SK 2125, Sakumono, Tema — Ghana<br><br>
+  <span style="letter-spacing:1.4pt; text-transform:uppercase; font-size:7pt; color:#6b6045">Gabochie Marketing — B2B marketing outcomes for Ghanaian companies</span><br>
+  mkt.gabochie.com · +233 50 638 4917 · gabochiemarketing@gmail.com</div>
+</div>
+
+</body>
+</html>
