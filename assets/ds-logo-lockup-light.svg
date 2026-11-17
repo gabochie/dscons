@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="96" viewBox="0 0 420 96">
+  <g transform="translate(8,16)">
+    <g transform="skewX(-8)">
+      <rect x="0" y="0" width="64" height="64" fill="none" stroke="#b78b2a" stroke-width="3"/>
+    </g>
+    <text x="32" y="42" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="800" fill="#b78b2a">DS</text>
+  </g>
+  <text x="88" y="42" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" letter-spacing="1" fill="#11161c">DS CONSTRUCTION</text>
+  <text x="89" y="62" font-family="Arial, Helvetica, sans-serif" font-size="9.5" font-weight="400" letter-spacing="2.6" fill="#b78b2a">ARCHITECTURAL SOLUTIONS</text>
+</svg>
